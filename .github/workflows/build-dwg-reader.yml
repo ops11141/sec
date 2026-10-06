@@ -1,0 +1,33 @@
+name: Validate self-hosted DWG reader
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/build-dwg-reader.yml'
+      - 'cad-viewer/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate reader files
+        run: |
+          test -f cad-viewer/index.html
+          test -f cad-viewer/viewer.js
+          test -f cad-viewer/parser-worker.js
+          test -f cad-viewer/bindings/libredwg-web.js
+          test -f cad-viewer/wasm/libredwg-web.wasm
+          echo "CAD reader files are present."
+
+      - name: Validate JavaScript
+        run: |
+          node --check cad-viewer/viewer.js
+          node --check cad-viewer/parser-worker.js
+          node --check cad-viewer/cad-search.js
+          echo "CAD reader JavaScript syntax is valid."
