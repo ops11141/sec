@@ -1,0 +1,282 @@
+[
+  {
+    "name": "GRIDSTATION#4",
+    "x": 110804.3174384871,
+    "y": 20251.46600992943,
+    "z": 0,
+    "layer": "Level 37",
+    "type": "MTEXT"
+  },
+  {
+    "name": "GRIDSTATION#4",
+    "x": 125820.780084978,
+    "y": 13585.88189874981,
+    "z": 0,
+    "layer": "Level 37",
+    "type": "MTEXT"
+  },
+  {
+    "name": "S/S-303",
+    "x": 109271.248948792,
+    "y": 12691.66357511021,
+    "z": 0,
+    "layer": "d_eos no",
+    "type": "MTEXT"
+  },
+  {
+    "name": "GRIDSTATION#2",
+    "x": 113378.1581492893,
+    "y": 21807.22060037125,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "SS-309",
+    "x": 117321.0642494971,
+    "y": 20842.7092154623,
+    "z": 0,
+    "layer": "FDR  3  01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#1",
+    "x": 118105.0826142736,
+    "y": 20166.39025814046,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#1",
+    "x": 117744.1260059529,
+    "y": 20167.09719417629,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#3",
+    "x": 119016.7326010687,
+    "y": 22216.93411639452,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#5",
+    "x": 121953.7462428275,
+    "y": 21087.4701098583,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "S/S#570",
+    "x": 130871.6253672302,
+    "y": 21762.54621479155,
+    "z": 0,
+    "layer": "Level 37",
+    "type": "TEXT"
+  },
+  {
+    "name": "S/S-0303",
+    "x": 111716.5583151345,
+    "y": 20713.03688322631,
+    "z": 0,
+    "layer": "d_village name",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#7",
+    "x": 114453.3078666817,
+    "y": 20133.57841087914,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#8",
+    "x": 117508.6012358209,
+    "y": 22110.72590896828,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-01",
+    "x": 115130.1836880036,
+    "y": 16029.80183986721,
+    "z": 0,
+    "layer": "d_eos no",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-02",
+    "x": 113696.0927873794,
+    "y": 15986.72760245404,
+    "z": 0,
+    "layer": "d_eos no",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-03",
+    "x": 111650.42519202,
+    "y": 16115.16098137208,
+    "z": 0,
+    "layer": "d_eos no",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-04",
+    "x": 108604.4267628849,
+    "y": 16440.66107061702,
+    "z": 0,
+    "layer": "d_eos no",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-05",
+    "x": 102795.716293984,
+    "y": 15477.48874054129,
+    "z": 0,
+    "layer": "d_eos no",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-06",
+    "x": 101494.3370454933,
+    "y": 15481.00832980551,
+    "z": 0,
+    "layer": "d_eos no",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-07",
+    "x": 99707.34500196669,
+    "y": 15476.31803710321,
+    "z": 0,
+    "layer": "d_eos no",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-08",
+    "x": 95994.50896798845,
+    "y": 15683.51301488879,
+    "z": 0,
+    "layer": "d_eos no",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#06",
+    "x": 124620.533646735,
+    "y": 20357.76239930591,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-06",
+    "x": 122083.9496206489,
+    "y": 15578.20319327654,
+    "z": 0,
+    "layer": "ABS NUMBER",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-08",
+    "x": 122083.9496206489,
+    "y": 15578.20319327654,
+    "z": 0,
+    "layer": "ABS NUMBER",
+    "type": "TEXT"
+  },
+  {
+    "name": "SUB-07",
+    "x": 125485.9898676111,
+    "y": 21503.88212521652,
+    "z": 0,
+    "layer": "Level 37",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#5",
+    "x": 125675.0665311536,
+    "y": 12635.81902744136,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#06",
+    "x": 125605.8784992386,
+    "y": 11817.92692543001,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#7",
+    "x": 125622.2592786314,
+    "y": 11016.22894467259,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#8",
+    "x": 125611.6914989643,
+    "y": 10233.72493808584,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#1",
+    "x": 125488.3312917247,
+    "y": 15739.94586675967,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#1",
+    "x": 126413.2009929343,
+    "y": 15725.69968947548,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#2",
+    "x": 125533.3734603918,
+    "y": 15028.16720605738,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#2",
+    "x": 126444.4846465723,
+    "y": 15015.52264516095,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "GRIDSTATION#3",
+    "x": 125953.6100489464,
+    "y": 14260.24301363888,
+    "z": 0,
+    "layer": "GRID STATION 01",
+    "type": "TEXT"
+  },
+  {
+    "name": "S/S#570",
+    "x": 87460.44043905527,
+    "y": 713.4627917406143,
+    "z": 0,
+    "layer": "d_ug cable",
+    "type": "TEXT"
+  }
+]

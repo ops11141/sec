@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>مواقع المغذيات | قسم الصيانة</title>
+
+<style>
+:root{
+  --green:#075f49;
+  --green2:#0b7a5d;
+  --light:#eef7f4;
+  --bg:#f1f6f4;
+  --card:#ffffff;
+  --text:#17332c;
+  --muted:#6b7773;
+  --border:#dbe7e3;
+  --shadow:0 8px 30px rgba(20,70,55,.08);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Tahoma,Arial,sans-serif;
+}
+
+header{
+  background:linear-gradient(135deg,var(--green),var(--green2));
+  color:#fff;
+  padding:22px 16px;
+}
+
+.header-inner{
+  max-width:1250px;
+  margin:auto;
+}
+
+.header-title{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.header-title h1{
+  margin:0;
+  font-size:25px;
+}
+
+.header-title span{
+  opacity:.9;
+  font-size:14px;
+}
+
+.nav{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+
+.nav a{
+  background:#fff;
+  color:var(--green);
+  text-decoration:none;
+  padding:10px 14px;
+  border-radius:12px;
+  font-weight:bold;
+}
+
+.container{
+  max-width:1250px;
+  margin:20px auto;
+  padding:0 14px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:20px;
+  margin-bottom:18px;
+  box-shadow:var(--shadow);
+}
+
+.card h2{
+  margin-top:0;
+}
+
+.muted{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.search-area{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.search-area input{
+  flex:1;
+  min-width:230px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:14px;
+  font:inherit;
+  outline:none;
+}
+
+.search-area input:focus{
+  border-color:var(--green2);
+  box-shadow:0 0 0 3px rgba(11,122,93,.1);
+}
+
+button{
+  font:inherit;
+}
+
+.btn{
+  border:0;
+  border-radius:14px;
+  padding:13px 18px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.btn-green{
+  background:var(--green);
+  color:#fff;
+}
+
+.btn-light{
+  background:#e5f2ee;
+  color:var(--green);
+}
+
+.status{
+  margin-top:14px;
+  padding:13px;
+  border-radius:13px;
+  background:var(--light);
+}
+
+.status.error{
+  background:#fff0f0;
+  color:#a21e1e;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-top:16px;
+}
+
+.stat{
+  background:#edf7f4;
+  border-radius:16px;
+  padding:15px;
+  text-align:center;
+}
+
+.stat span{
+  display:block;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.stat strong{
+  display:block;
+  color:var(--green);
+  font-size:25px;
+  margin-top:5px;
+}
+
+.toolbar{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:15px;
+}
+
+.toolbar select{
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:12px;
+  background:#fff;
+  font:inherit;
+}
+
+.results-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:12px;
+}
+
+.results-count{
+  color:var(--green);
+  font-weight:bold;
+}
+
+.feeders-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.feeder-card{
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:14px;
+  background:#fff;
+  cursor:pointer;
+  transition:.15s;
+}
+
+.feeder-card:hover{
+  border-color:var(--green2);
+  transform:translateY(-1px);
+  box-shadow:0 5px 15px rgba(20,70,55,.08);
+}
+
+.feeder-name{
+  color:var(--green);
+  font-size:17px;
+  font-weight:bold;
+  direction:ltr;
+  text-align:right;
+}
+
+.feeder-meta{
+  color:var(--muted);
+  font-size:12px;
+  margin-top:7px;
+  line-height:1.7;
+}
+.station-chip{display:inline-block;margin-top:8px;padding:5px 9px;border-radius:999px;background:#eef7f4;color:var(--green);font-size:12px;font-weight:bold}
+.drawing-box{margin-top:18px;border:1px solid var(--border);border-radius:18px;overflow:hidden;background:#fafcfb}
+.drawing-toolbar{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:12px;background:#f2f8f6}
+.drawing-actions{display:flex;gap:7px;flex-wrap:wrap}
+.drawing-viewer{position:relative;width:100%;height:72vh;min-height:420px;overflow:auto;background:#fff;touch-action:none;cursor:grab}
+.drawing-viewer.dragging{cursor:grabbing}
+.drawing-image{display:block;max-width:none;width:auto;height:auto;transform-origin:top left;user-select:none;-webkit-user-drag:none}
+.drawing-help{padding:8px 12px;color:var(--muted);font-size:12px;background:#f7fbf9;border-top:1px solid var(--border)}
+@media(max-width:700px){.drawing-viewer{height:70vh;min-height:420px}.full-drawing-viewer{height:70vh!important;min-height:420px!important}}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.info-item{padding:12px;border:1px solid var(--border);border-radius:14px;background:#fbfdfc}
+.info-item span{display:block;color:var(--muted);font-size:12px;margin-bottom:4px}
+.info-item strong{color:var(--green)}
+@media(max-width:700px){.info-grid{grid-template-columns:1fr}.drawing-frame{min-height:320px}}
+
+.detail{
+  display:none;
+}
+
+.detail.show{
+  display:block;
+}
+
+.detail-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.detail-title h2{
+  margin:0;
+  color:var(--green);
+}
+
+.badges{
+  margin:12px 0;
+}
+
+.badge{
+  display:inline-block;
+  background:#e7f3ef;
+  color:var(--green);
+  padding:6px 10px;
+  border-radius:999px;
+  margin:3px;
+  font-size:12px;
+}
+
+.table-wrap{
+  overflow:auto;
+}
+
+table{
+  border-collapse:collapse;
+  width:100%;
+  min-width:700px;
+}
+
+th,
+td{
+  padding:10px;
+  border-bottom:1px solid var(--border);
+  text-align:right;
+}
+
+th{
+  background:#f2f8f6;
+  color:var(--green);
+}
+
+.coordinate{
+  direction:ltr;
+  text-align:left;
+  font-family:monospace;
+}
+
+.empty{
+  padding:30px;
+  text-align:center;
+  color:var(--muted);
+}
+
+.loading{
+  animation:pulse 1.2s infinite;
+}
+
+@keyframes pulse{
+  50%{
+    opacity:.45;
+  }
+}
+
+@media(max-width:1000px){
+  .feeders-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .stats{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:700px){
+  .feeders-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:520px){
+
+  header{
+    padding:18px 12px;
+  }
+
+  .header-title h1{
+    font-size:20px;
+  }
+
+  .container{
+    padding:0 10px;
+  }
+
+  .card{
+    padding:15px;
+    border-radius:18px;
+  }
+
+  .feeders-grid{
+    grid-template-columns:1fr;
+  }
+
+  .stats{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .search-area{
+    display:block;
+  }
+
+  .search-area input{
+    width:100%;
+    margin-bottom:8px;
+  }
+
+  .btn{
+    width:100%;
+  }
+}
+
+/* الواجهة الرئيسية للفني: الرسم فقط. قاعدة البيانات والمنطق القديم محفوظان للاستخدام لاحقًا. */
+.container > section:not(#fullDrawingSection):not(#detail){
+  display:none !important;
+}
+#fullDrawingSection{
+  margin-top:20px;
+}
+
+.find-box{
+  margin-bottom:14px;
+  padding:14px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:#f7fbf9;
+}
+.find-row{display:flex;gap:8px;flex-wrap:wrap}
+.find-row input{flex:1;min-width:220px;border:1px solid var(--border);border-radius:12px;padding:13px;font:inherit;direction:ltr;text-align:left}
+.find-results{margin-top:10px;display:grid;gap:8px}
+.find-result{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:#fff}
+.find-result strong{direction:ltr}
+.find-result small{color:var(--muted)}
+.find-empty{color:var(--muted);padding:8px}
+
+.equipment-lookup{margin-top:18px;padding:16px;border:1px solid var(--border);border-radius:18px;background:#f7fbf9}
+.equipment-lookup h3{margin:0 0 6px;color:var(--green)}
+.equipment-lookup .lookup-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.equipment-lookup input{flex:1;min-width:220px;border:1px solid var(--border);border-radius:12px;padding:13px;font:inherit;direction:ltr;text-align:left}
+.equipment-results{display:grid;gap:10px;margin-top:12px}
+.equipment-result{border:1px solid var(--border);border-radius:15px;background:#fff;padding:14px}
+.equipment-result-title{font-size:18px;font-weight:bold;color:var(--green);direction:ltr;text-align:right}
+.equipment-coords{margin:7px 0;color:#435952;direction:ltr;text-align:right;font-family:monospace}
+.equipment-coord-dms{font-size:12px;color:var(--muted);direction:ltr;text-align:right;line-height:1.7}
+.equipment-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.equipment-actions .btn{flex:1;min-width:150px}
+.equipment-empty{padding:10px;color:var(--muted);font-size:13px}
+.drawing-focus{margin-top:14px;border:2px solid #c92727;border-radius:16px;background:#05080b;overflow:hidden}
+.drawing-focus[hidden]{display:none}
+.focus-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:10px 12px;background:#111;color:#fff}
+.focus-head strong{color:#fff}
+.focus-head .btn{padding:9px 12px}
+.focus-viewport{position:relative;height:62vh;min-height:360px;overflow:auto;background:#05080b;touch-action:pan-x pan-y pinch-zoom}
+.focus-canvas{position:relative;width:100%;min-width:100%;line-height:0}
+.focus-canvas img{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none}
+.focus-markers{position:absolute;inset:0;pointer-events:none}
+.focus-marker{position:absolute;width:34px;height:34px;border:4px solid #ff2b2b;border-radius:50%;background:rgba(255,40,40,.16);box-shadow:0 0 0 3px rgba(255,255,255,.9),0 0 18px rgba(255,40,40,.8);transform:translate(-50%,-50%);z-index:2}
+.focus-marker.primary{width:48px;height:48px;border-width:5px;animation:focusPulse 1s ease-in-out 3}
+@keyframes focusPulse{50%{transform:translate(-50%,-50%) scale(1.22)}}
+.focus-hint{padding:9px 12px;background:#111;color:#ddd;font-size:12px}
+.cad-search-controls{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:10px 0}
+.cad-search-controls .btn{padding:8px 12px}
+.cad-search-counter{min-width:58px;text-align:center;font-weight:800;font-size:16px}
+.cad-tag-toggle{font-size:13px;display:flex;align-items:center;gap:5px;margin-inline-start:8px}
+.cad-tag-toggle input{width:18px;height:18px}
+.find-result.active{outline:3px solid #e31b23;background:#fff8f8}
+@media(max-width:700px){.focus-viewport{height:58vh;min-height:320px}.focus-marker{width:30px;height:30px}.focus-marker.primary{width:44px;height:44px}}
+@media(max-width:600px){.find-result{align-items:flex-start;flex-direction:column}.find-row .btn{width:auto}}
+
+.mobile-drawing-image{display:none;width:100%;height:auto;min-width:100%;background:#05080b;touch-action:pan-x pan-y pinch-zoom;image-rendering:auto;-webkit-user-drag:none}
+
+
+.vector-search-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}.vector-search-bar input{flex:1;min-width:220px;border:1px solid var(--border);border-radius:12px;padding:13px;font:inherit}.vector-drawing-viewport{position:relative;height:75vh;min-height:480px;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#050505;touch-action:none}.vector-drawing-viewport iframe{width:100%;height:100%;display:block;border:0;background:#050505}.vector-fallback{position:absolute;inset:0;display:grid;place-items:center;color:#ddd;background:#050505}.vector-search-bar .btn{width:auto}.vector-search-bar .muted{min-width:180px}@media(max-width:700px){.vector-drawing-viewport{height:70vh;min-height:420px}.vector-search-bar .btn{width:auto}.vector-search-bar{align-items:stretch}.vector-search-bar input{min-width:160px}}
+.drawing-export-top{position:relative;z-index:30;white-space:nowrap}
+.drawing-export-menu-top{display:none;position:absolute;z-index:50;top:calc(100% + 7px);left:0;min-width:190px;padding:7px;border-radius:13px;background:rgba(18,22,21,.97);border:1px solid rgba(255,255,255,.18);box-shadow:0 10px 26px rgba(0,0,0,.35)}
+.drawing-export-menu-top.open{display:grid;gap:5px}
+.drawing-export-menu-top button{border:0;border-radius:9px;padding:10px 11px;background:#26312e;color:#fff;text-align:right;font:inherit;font-weight:700;cursor:pointer}
+.drawing-export-menu-top button:hover{background:#33433e}
+.drawing-export-status{display:none;margin-top:6px;padding:7px 9px;border-radius:9px;background:rgba(0,0,0,.82);color:#fff;font-size:11px;line-height:1.5;max-width:230px}
+@media(max-width:700px){.drawing-export-top{min-width:118px;padding:9px 11px;font-size:13px}.drawing-export-menu-top{min-width:175px}}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="header-inner">
+
+<div class="header-title">
+
+<h1>🔌 دليل المغذيات</h1>
+
+<span>قاعدة المغذيات المستخرجة من الرسم الكهربائي</span>
+
+</div>
+
+<div class="nav">
+
+<a href="index.html">الرئيسية</a>
+
+<a href="equipment.html">⚡ مواقع المعدات</a>
+
+<a href="meters.html">🔢 مواقع العدادات</a>
+
+<a href="feeders.html">🔌 مواقع المغذيات</a>
+
+<a href="dwg-inspector.html">🧰 بيانات الرسم</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<div class="container">
+
+
+<!-- البحث -->
+
+<section class="card">
+
+<h2>🔎 البحث عن مغذي</h2>
+
+<p class="muted">
+ابحث عن رقم المغذي كما هو في الرسم، مثل:
+F-8.13 أو FDR#2.20 أو BSP.F-15.
+هذه الصفحة مخصصة لتعريف المغذي والمحطة والرسم؛ أما الموقع والإحداثيات الجغرافية فتظهر في صفحة المعدات.
+</p>
+
+<div class="search-area">
+
+<button
+class="btn btn-green drawing-export-top"
+type="button"
+onclick="toggleDrawingExportMenu()"
+aria-haspopup="menu"
+aria-expanded="false"
+>
+📸 تصوير الرسم
+</button>
+
+<input
+id="search"
+type="search"
+placeholder="اكتب اسم المغذي..."
+autocomplete="off"
+>
+
+<button
+class="btn btn-light"
+onclick="clearSearch()"
+>
+مسح البحث
+</button>
+
+<div class="drawing-export-menu drawing-export-menu-top" id="drawingExportTopMenu" role="menu" aria-label="خيارات تصوير الرسم">
+  <button type="button" onclick="exportCurrentDrawingPNG()">🖼️ PNG عالي الجودة</button>
+  <button type="button" onclick="exportCurrentDrawingSVG()">📐 SVG متجهي</button>
+  <button type="button" onclick="shareCurrentDrawing()">📤 مشاركة الرسم</button>
+</div>
+
+</div>
+
+
+<div class="toolbar">
+
+<select id="categoryFilter">
+<option value="">جميع الأنواع</option>
+<option value="F">F-...</option>
+<option value="FDR">FDR#...</option>
+<option value="PREFIX">XXX.F-...</option>
+</select>
+
+<button
+class="btn btn-green"
+onclick="loadDatabase()"
+>
+↻ تحديث البيانات
+</button>
+
+</div>
+
+
+<div id="status" class="status loading">
+جاري تحميل قاعدة بيانات المغذيات...
+</div>
+
+
+<div class="stats">
+
+<div class="stat">
+<span>إجمالي المغذيات</span>
+<strong id="totalFeeders">0</strong>
+</div>
+
+<div class="stat">
+<span>F-...</span>
+<strong id="totalF">0</strong>
+</div>
+
+<div class="stat">
+<span>FDR#...</span>
+<strong id="totalFDR">0</strong>
+</div>
+
+<div class="stat">
+<span>XXX.F-...</span>
+<strong id="totalPrefix">0</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- قارئ DWG الداخلي -->
+<section class="card" id="fullDrawingSection">
+<div class="results-header">
+<div>
+<h2 style="margin-bottom:6px">📐 الرسم الكهربائي الكامل</h2>
+<div class="muted">قارئ DWG داخلي يعمل داخل الموقع نفسه، مع البحث داخل النصوص والتكبير والتحريك.</div>
+</div>
+<div class="drawing-actions">
+<a class="btn btn-light" href="cad-viewer/index.html?file=../cad/FINAL%20DISPATCH%20-%20UPDATE.dwg&open=cad" target="_blank" rel="noopener">فتح القارئ كاملًا</a>
+<a class="btn btn-green" href="cad/FINAL%20DISPATCH%20-%20UPDATE.dwg" target="_blank" rel="noopener">فتح ملف DWG</a>
+</div>
+</div>
+
+<div id="fullDrawingStatus" class="status">جاري تحميل قارئ DWG...</div>
+<div class="vector-drawing-viewport" style="height:75vh;min-height:520px">
+  <iframe id="vectorDrawingFrame" src="cad-viewer/index.html?file=../cad/FINAL%20DISPATCH%20-%20UPDATE.dwg&open=cad" title="قارئ DWG الداخلي" loading="eager" allow="fullscreen"></iframe>
+</div>
+<div class="drawing-help">استخدم مربع البحث داخل القارئ للعثور على F-8.13 أو أي نص موجود في الرسم. يدعم التكبير والتحريك على الكمبيوتر والجوال.</div>
+
+<section class="card equipment-lookup" id="equipmentLookupSection">
+  <h3>📍 البحث عن موقع المعدة</h3>
+  <div class="muted">اكتب رقم المعدة وأنت داخل الرسم، وسأعرض لك الموقع والإحداثيات من نفس قاعدة بيانات صفحة «مواقع المعدات».</div>
+  <div class="equipment-row" style="margin-top:10px">
+    <input id="equipmentLookupInput" type="search" inputmode="search" placeholder="مثال: 871 أو 650-007 أو EOS-871" autocomplete="off">
+    <button class="btn btn-green" type="button" onclick="searchEquipmentLocation()">📍 عرض الموقع</button>
+  </div>
+  <div id="equipmentLookupStatus" class="find-empty"></div>
+  <div id="equipmentLookupResults" class="equipment-results"></div>
+</section>
+
+</section>
+
+<!-- النتائج -->
+
+<section class="card" id="feederResultsSection" hidden>
+
+<div class="results-header">
+
+<h2>📋 قائمة المغذيات</h2>
+
+<div
+class="results-count"
+id="resultsCount"
+>
+0 نتيجة
+</div>
+
+</div>
+
+<div
+id="feedersList"
+class="feeders-grid"
+>
+<div class="empty">
+جاري تحميل البيانات...
+</div>
+</div>
+
+</section>
+
+
+<!-- التفاصيل -->
+
+<section
+id="detail"
+class="card detail"
+>
+
+<div class="detail-title">
+
+<h2 id="detailName">
+تفاصيل المغذي
+</h2>
+
+<button
+class="btn btn-light"
+onclick="closeDetail()"
+>
+إغلاق
+</button>
+
+</div>
+
+<div
+id="detailContent"
+>
+</div>
+
+</section>
+
+
+</div>
+
+
+<script>
+
+let database = [];
+let manifest = null;
+
+
+/* ------------------------------------------
+   قراءة JSON
+------------------------------------------ */
+
+async function getJSON(url){
+
+    const response = await fetch(
+        url + "?v=" + Date.now(),
+        {
+            cache:"no-store"
+        }
+    );
+
+    if(!response.ok){
+
+        throw new Error(
+            response.status + " - " + url
+        );
+
+    }
+
+    return await response.json();
+
+}
+
+
+/* ------------------------------------------
+   تحميل قاعدة البيانات
+------------------------------------------ */
+
+async function loadDatabase(){
+
+    const status =
+        document.getElementById("status");
+
+    status.className =
+        "status loading";
+
+    status.textContent =
+        "جاري تحميل قاعدة المغذيات...";
+
+    try{
+
+        const results =
+            await Promise.all([
+
+                getJSON(
+                    "data/feeders/manifest.json"
+                ),
+
+                getJSON(
+                    "data/feeders/feeders.json"
+                )
+
+            ]);
+
+
+        manifest = results[0];
+
+        const raw = results[1];
+
+
+        /*
+          قاعدة البيانات الحالية عبارة عن:
+          [
+            {
+              name,
+              occurrences,
+              layers,
+              positions
+            }
+          ]
+        */
+
+        if(!Array.isArray(raw)){
+
+            throw new Error(
+                "صيغة feeders.json غير صحيحة"
+            );
+
+        }
+
+
+        database =
+            raw.map(item => {
+
+                const name =
+                    String(
+                        item.name || ""
+                    ).trim();
+
+
+                let category = "F";
+
+                if(
+                    /^FDR#/i.test(name)
+                ){
+
+                    category = "FDR";
+
+                }
+                else if(
+                    name.includes(".F-")
+                ){
+
+                    category = "PREFIX";
+
+                }
+
+
+                return {
+
+                    name:name,
+
+                    station: item.station || null,
+                    stationConfidence: item.stationConfidence || "unknown",
+                    stationCandidates: Array.isArray(item.stationCandidates) ? item.stationCandidates : [],
+
+                    category:category,
+
+                    occurrences:
+                        Number(
+                            item.occurrences || 0
+                        ),
+
+                    layers:
+                        Array.isArray(item.layers)
+                        ? item.layers
+                        : [],
+
+                    positions:
+                        Array.isArray(item.positions)
+                        ? item.positions
+                        : []
+
+                };
+
+            });
+
+
+        updateStatistics();
+
+        status.className =
+            "status";
+
+        status.textContent =
+            "✅ تم تحميل قاعدة البيانات بنجاح — " +
+            database.length +
+            " مغذي.";
+
+
+        render();
+
+    }
+    catch(error){
+
+        console.error(error);
+
+        status.className =
+            "status error";
+
+        status.innerHTML =
+            "❌ تعذر تحميل قاعدة البيانات.<br>" +
+            "<small>" +
+            escapeHTML(
+                error.message
+            ) +
+            "</small>";
+
+    }
+
+}
+
+
+/* ------------------------------------------
+   الإحصائيات
+------------------------------------------ */
+
+function updateStatistics(){
+
+    document.getElementById(
+        "totalFeeders"
+    ).textContent =
+        database.length;
+
+
+    document.getElementById(
+        "totalF"
+    ).textContent =
+        database.filter(
+            x => x.category === "F"
+        ).length;
+
+
+    document.getElementById(
+        "totalFDR"
+    ).textContent =
+        database.filter(
+            x => x.category === "FDR"
+        ).length;
+
+
+    document.getElementById(
+        "totalPrefix"
+    ).textContent =
+        database.filter(
+            x => x.category === "PREFIX"
+        ).length;
+
+}
+
+
+/* ------------------------------------------
+   البحث
+------------------------------------------ */
+
+function render(){
+
+    const query =
+        document.getElementById(
+            "search"
+        ).value
+        .trim()
+        .toUpperCase();
+
+
+    const category =
+        document.getElementById(
+            "categoryFilter"
+        ).value;
+
+
+    let results =
+        database.filter(item => {
+
+            const matchSearch =
+                !query ||
+                item.name
+                .toUpperCase()
+                .includes(query);
+
+
+            const matchCategory =
+                !category ||
+                item.category === category;
+
+
+            return (
+                matchSearch &&
+                matchCategory
+            );
+
+        });
+
+
+    results.sort(
+        (a,b) =>
+            a.name.localeCompare(
+                b.name,
+                undefined,
+                {
+                    numeric:true,
+                    sensitivity:"base"
+                }
+            )
+    );
+
+
+    document.getElementById(
+        "resultsCount"
+    ).textContent =
+        results.length +
+        " نتيجة";
+
+
+    const container =
+        document.getElementById(
+            "feedersList"
+        );
+
+
+    if(!results.length){
+
+        container.innerHTML =
+            '<div class="empty">' +
+            'لا توجد نتائج مطابقة للبحث.' +
+            '</div>';
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+        results.map(
+            item => feederCard(item)
+        ).join("");
+
+}
+
+
+/* ------------------------------------------
+   بطاقة المغذي
+------------------------------------------ */
+
+function feederCard(item){
+
+    const layer =
+        item.layers.length
+        ? item.layers.join(", ")
+        : "غير محدد";
+
+
+    return `
+
+<div
+class="feeder-card"
+onclick="showDetail('${escapeAttribute(item.name)}')"
+>
+
+<div class="feeder-name">
+${escapeHTML(item.name)}
+</div>
+
+<div class="feeder-meta">
+
+عدد مرات الظهور:
+<b>${item.occurrences}</b>
+
+<br>
+
+Layer:
+${escapeHTML(layer)}
+
+${item.station ? `<div class="station-chip">🏭 ${escapeHTML(item.station)}</div>` : ""}
+
+</div>
+
+</div>
+
+`;
+
+}
+
+
+/* ------------------------------------------
+   تفاصيل المغذي
+------------------------------------------ */
+
+function showDetail(name){
+
+    const item =
+        database.find(
+            x => x.name === name
+        );
+
+
+    if(!item){
+        return;
+    }
+
+
+    const detail =
+        document.getElementById(
+            "detail"
+        );
+
+
+    document.getElementById(
+        "detailName"
+    ).textContent =
+        "🔌 " + item.name;
+
+
+    let html = `
+
+<div class="badges">
+
+<span class="badge">
+اسم المغذي: ${escapeHTML(item.name)}
+</span>
+
+<span class="badge">
+مرات الظهور: ${item.occurrences}
+</span>
+
+<span class="badge">
+المحطة: ${escapeHTML(item.station || "غير مرتبطة بعد")}
+</span>
+
+</div>
+
+<div class="info-grid">
+<div class="info-item"><span>المغذي</span><strong dir="ltr">${escapeHTML(item.name)}</strong></div>
+<div class="info-item"><span>المحطة</span><strong>${escapeHTML(item.station || "غير محددة")}</strong></div>
+<div class="info-item"><span>الثقة في الربط</span><strong>${escapeHTML(item.stationConfidence || "غير محددة")}</strong></div>
+</div>
+
+<div class="drawing-box">
+<div class="drawing-toolbar">
+<strong>📐 الرسم الأصلي من FINAL DISPATCH - UPDATE.dwg</strong>
+<div class="drawing-actions">
+<button class="btn btn-light" type="button" onclick="reloadDrawing()">↻ إعادة فتح الرسم</button>
+<a id="drawingLink" class="btn btn-light" href="#" target="_blank" rel="noopener">فتح ملف DWG</a>
+</div>
+</div>
+<div id="drawingStatus" class="empty">جاري فتح الرسم الأصلي مباشرة...</div>
+<div id="drawingViewer" class="drawing-viewer" style="display:none">
+<iframe id="cadViewerFrame" title="عارض الرسم الكهربائي الأصلي" style="width:100%;height:100%;min-height:420px;border:0;background:#fff" allowfullscreen></iframe>
+</div>
+<div class="drawing-help">هذا هو ملف DWG الأصلي الموجود داخل المشروع؛ لا تتم إعادة تحويله عند زيارة الصفحة. العارض يقرأ الرسم داخل المتصفح ويدعم التكبير والتحريك والطبقات.</div>
+</div>
+
+`;
+
+
+    if(!item.positions.length){
+
+        html += `
+<div class="empty">
+لا توجد إحداثيات لهذا المغذي في البيانات المستخرجة.
+</div>
+`;
+
+    }
+    else{
+
+        html += `
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>#</th>
+<th>X</th>
+<th>Y</th>
+<th>Z</th>
+<th>Layer</th>
+<th>النوع</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+${item.positions.map(
+    (p,index) => `
+
+<tr>
+
+<td>${index + 1}</td>
+
+<td class="coordinate">
+${formatNumber(p.x)}
+</td>
+
+<td class="coordinate">
+${formatNumber(p.y)}
+</td>
+
+<td class="coordinate">
+${formatNumber(p.z)}
+</td>
+
+<td>
+${escapeHTML(
+    p.layer || ""
+)}
+</td>
+
+<td>
+${escapeHTML(
+    p.type || ""
+)}
+</td>
+
+</tr>
+
+`
+).join("")}
+
+</tbody>
+
+</table>
+
+</div>
+
+`;
+
+    }
+
+
+    html += `
+
+<p class="muted" style="margin-top:15px">
+المصدر: FINAL DISPATCH - UPDATE.dwg
+<br>
+الموقع الجغرافي للمعدات لا يُعرض هنا؛ استخدم صفحة <a href="equipment.html">مواقع المعدات</a> للوصول إلى الإحداثيات والخريطة.
+</p>
+
+`;
+
+    setTimeout(() => loadDrawing(item.name), 0);
+
+
+    document.getElementById(
+        "detailContent"
+    ).innerHTML =
+        html;
+
+
+    detail.classList.add(
+        "show"
+    );
+
+
+    detail.scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+    });
+
+}
+
+
+/* ------------------------------------------
+   إغلاق التفاصيل
+------------------------------------------ */
+
+let drawingViewerUrl = "";
+
+function buildCadViewerUrl(){
+    const dwgUrl = "https://raw.githubusercontent.com/ops11141/alla/main/cad/FINAL%20DISPATCH%20-%20UPDATE.dwg";
+    return "https://mlightcad.com/embed.html?url=" +
+        encodeURIComponent(dwgUrl) +
+        "&mode=review&toolbar=1";
+}
+
+function reloadDrawing(){
+    const frame = document.getElementById("cadViewerFrame");
+    const status = document.getElementById("drawingStatus");
+    const viewer = document.getElementById("drawingViewer");
+    if(!frame || !status || !viewer) return;
+
+    drawingViewerUrl = buildCadViewerUrl();
+    status.style.display = "block";
+    status.textContent = "جاري فتح الرسم الأصلي من ملف DWG...";
+    viewer.style.display = "block";
+    frame.src = drawingViewerUrl;
+
+    frame.onload = () => {
+        status.style.display = "none";
+    };
+
+    frame.onerror = () => {
+        status.style.display = "block";
+        status.textContent = "تعذر فتح عارض الرسم. يمكنك استخدام زر «فتح ملف DWG».";
+    };
+}
+
+async function loadDrawing(name){
+    const safe = name.replace(/[^A-Za-z0-9_.-]+/g, "_");
+    const pngUrl = "data/feeders/drawings/" + safe + ".png";
+    const status = document.getElementById("drawingStatus");
+    const viewer = document.getElementById("drawingViewer");
+    const frame = document.getElementById("cadViewerFrame");
+    const link = document.getElementById("drawingLink");
+
+    if(!status || !viewer || !frame || !link) return;
+
+    const dwgUrl = "cad/FINAL%20DISPATCH%20-%20UPDATE.dwg";
+    link.href = dwgUrl;
+
+    status.style.display = "block";
+    status.textContent = "جاري التحقق من الرسم المخصص للمغذي...";
+    viewer.style.display = "none";
+
+    try{
+        const response = await fetch(pngUrl + "?v=" + Date.now(), {
+            method:"HEAD",
+            cache:"no-store"
+        });
+
+        if(response.ok){
+            // إذا أصبح الرسم المخصص للمغذي منشوراً لاحقاً، نعرضه أولاً.
+            viewer.innerHTML =
+                '<img id="drawingImage" class="drawing-image" alt="الرسم الكهربائي الكامل للمغذي" draggable="false">';
+            const img = document.getElementById("drawingImage");
+            img.src = pngUrl + "?v=" + Date.now();
+            img.onload = () => {
+                status.style.display = "none";
+                viewer.style.display = "block";
+            };
+            img.onerror = () => {
+                viewer.innerHTML =
+                    '<iframe id="cadViewerFrame" title="عارض الرسم الكهربائي الأصلي" style="width:100%;height:100%;min-height:420px;border:0;background:#fff" allowfullscreen></iframe>';
+                reloadDrawing();
+            };
+            return;
+        }
+    }catch(error){
+        // لا توجد صورة مخصصة؛ ننتقل مباشرة إلى ملف DWG الأصلي.
+    }
+
+    viewer.innerHTML =
+        '<iframe id="cadViewerFrame" title="عارض الرسم الكهربائي الأصلي" style="width:100%;height:100%;min-height:420px;border:0;background:#fff" allowfullscreen></iframe>';
+    reloadDrawing();
+}
+
+function closeDetail(){
+
+    document
+        .getElementById("detail")
+        .classList.remove("show");
+
+}
+
+
+/* ------------------------------------------
+   مسح البحث
+------------------------------------------ */
+
+function clearSearch(){
+
+    document.getElementById(
+        "search"
+    ).value = "";
+
+    document.getElementById(
+        "categoryFilter"
+    ).value = "";
+
+    render();
+
+}
+
+
+/* ------------------------------------------
+   حماية HTML
+------------------------------------------ */
+
+function escapeHTML(value){
+
+    return String(
+        value ?? ""
+    ).replace(
+        /[&<>"']/g,
+        char => ({
+
+            "&":"&amp;",
+            "<":"&lt;",
+            ">":"&gt;",
+            '"':"&quot;",
+            "'":"&#039;"
+
+        }[char])
+    );
+
+}
+
+
+function escapeAttribute(value){
+
+    return String(
+        value ?? ""
+    )
+    .replace(
+        /\\/g,
+        "\\\\"
+    )
+    .replace(
+        /'/g,
+        "\\'"
+    );
+
+}
+
+
+function formatNumber(value){
+
+    if(
+        value === null ||
+        value === undefined ||
+        value === ""
+    ){
+
+        return "-";
+
+    }
+
+
+    const number =
+        Number(value);
+
+
+    if(!Number.isFinite(number)){
+
+        return escapeHTML(value);
+
+    }
+
+
+    return number.toFixed(3);
+
+}
+
+
+/* ------------------------------------------
+   البحث أثناء الكتابة
+------------------------------------------ */
+
+
+let drawingSearchIndex = null;
+let drawingSearchBusy = false;
+let drawingFocusMeta = null;
+
+function normalizeDrawingText(value){
+  return String(value ?? "")
+    .toUpperCase()
+    .replace(/[\s\-_#./]+/g,"")
+    .trim();
+}
+
+async function loadDrawingTextIndex(){
+  if(drawingSearchIndex) return drawingSearchIndex;
+  if(drawingSearchBusy) return null;
+  drawingSearchBusy = true;
+  const status = document.getElementById("drawingSearchStatus");
+  if(status) status.textContent = "جاري تحميل فهرس الرسم...";
+  try{
+    let payload = null;
+
+    // الفهرس السريع يُستخدم أولاً.
+    try{
+      const response = await fetch("data/feeders/drawing-search-index.json?v=" + Date.now(), {cache:"force-cache"});
+      if(response.ok){
+        const candidate = await response.json();
+        if(candidate && Array.isArray(candidate.entries) && candidate.extents) payload = candidate;
+      }
+    }catch(_){}
+
+    // احتياط مهم: استخدم قاعدة النصوص الموجودة أصلًا في المشروع.
+    // هذا يجعل البحث يعمل حتى لو لم تكتمل عملية GitHub Actions لبناء الفهرس السريع.
+    if(!payload){
+      const response = await fetch("data/feeders/all_text_entities.json?v=" + Date.now(), {cache:"force-cache"});
+      if(!response.ok) throw new Error("تعذر تحميل قاعدة نصوص الرسم");
+      const raw = await response.json();
+      const source = Array.isArray(raw) ? raw : (Array.isArray(raw?.entries) ? raw.entries : []);
+      const entries = source.map(item => {
+        const p = item.position || item.pos || item;
+        return {
+          t: String(item.text ?? item.value ?? item.t ?? ""),
+          n: normalizeDrawingText(item.text ?? item.value ?? item.t ?? ""),
+          x: Number(p?.x),
+          y: Number(p?.y)
+        };
+      }).filter(item => item.t && Number.isFinite(item.x) && Number.isFinite(item.y));
+
+      if(!entries.length) throw new Error("قاعدة نصوص الرسم فارغة");
+      let xmin=Infinity,ymin=Infinity,xmax=-Infinity,ymax=-Infinity;
+      for(const e of entries){
+        xmin=Math.min(xmin,e.x); ymin=Math.min(ymin,e.y);
+        xmax=Math.max(xmax,e.x); ymax=Math.max(ymax,e.y);
+      }
+      payload = {
+        version: 1,
+        format: "fallback-from-all-text-entities",
+        image: "data/feeders/drawing-search.jpg",
+        extents: {xmin,ymin,xmax,ymax},
+        entries
+      };
+    }
+
+    drawingSearchIndex = payload;
+    if(status) status.textContent = "✅ تم تجهيز البحث في كامل الرسم.";
+    return drawingSearchIndex;
+  } finally {
+    drawingSearchBusy = false;
+  }
+}
+
+function drawingSearchScore(text, query){
+  const t = normalizeDrawingText(text);
+  const q = normalizeDrawingText(query);
+  if(!q || !t) return 0;
+  if(t === q) return 1000;
+  if(t.startsWith(q)) return 700;
+  if(t.includes(q)) return 500;
+  return 0;
+}
+
+let drawingSearchMatches = [];
+let drawingSearchCursor = 0;
+
+async function searchDrawing(){
+  const input=document.getElementById("drawingSearch");
+  const status=document.getElementById("drawingSearchStatus");
+  const resultsBox=document.getElementById("drawingSearchResults");
+  const counter=document.getElementById("drawingSearchCounter");
+  const query=(input?.value||"").trim();
+
+  if(!query){
+    drawingSearchMatches=[]; drawingSearchCursor=0;
+    if(status) status.textContent="اكتب رقم المعدة أو اسم المغذي.";
+    if(resultsBox) resultsBox.innerHTML="";
+    if(counter) counter.textContent="0 / 0";
+    closeDrawingFocus();
+    return;
+  }
+
+  if(status) status.textContent="جاري البحث في كامل الرسم...";
+  if(resultsBox) resultsBox.innerHTML="";
+
+  try{
+    const payload=await loadDrawingTextIndex();
+    if(!payload) return;
+
+    const results=[];
+    for(const item of payload.entries||[]){
+      const score=drawingSearchScore(item.t,query);
+      if(score>0){
+        results.push({text:String(item.t||""),score,x:Number(item.x),y:Number(item.y)});
+      }
+    }
+
+    results.sort((a,b)=>b.score-a.score || a.text.localeCompare(b.text) || a.y-b.y || a.x-b.x);
+
+    const unique=[];
+    const seen=new Set();
+    for(const r of results){
+      const key=r.text+"|"+r.x+"|"+r.y;
+      if(!seen.has(key)){seen.add(key);unique.push(r);}
+    }
+
+    drawingSearchMatches=unique;
+    drawingSearchCursor=0;
+
+    if(!unique.length){
+      if(status) status.textContent="❌ لم يتم العثور على هذه المعلومة في كامل الرسم.";
+      if(counter) counter.textContent="0 / 0";
+      closeDrawingFocus();
+      return;
+    }
+
+    if(status) status.innerHTML="✅ تم العثور على <b>"+unique.length+"</b> موضع في الرسم — يمكنك التنقل بين النتائج بالسابق/التالي.";
+    if(counter) counter.textContent="1 / "+unique.length;
+
+    resultsBox.innerHTML=unique.slice(0,80).map((r,i)=>`
+      <div class="find-result" data-search-index="${i}">
+        <div>
+          <strong>${escapeHTML(r.text)}</strong>
+          <small> • X: ${formatNumber(r.x)} • Y: ${formatNumber(r.y)}</small>
+        </div>
+        <button class="btn btn-green" type="button" onclick="goToDrawingSearchResult(${i})">📍 تحديد</button>
+      </div>
+    `).join("");
+
+    await goToDrawingSearchResult(0);
+  }catch(error){
+    console.error(error);
+    if(status) status.textContent="❌ تعذر البحث في فهرس الرسم. أعد تحميل الصفحة وحاول مرة أخرى.";
+  }
+}
+
+async function goToDrawingSearchResult(index){
+  if(!drawingSearchMatches.length) return;
+  drawingSearchCursor=(index+drawingSearchMatches.length)%drawingSearchMatches.length;
+  const result=drawingSearchMatches[drawingSearchCursor];
+  const counter=document.getElementById("drawingSearchCounter");
+  if(counter) counter.textContent=(drawingSearchCursor+1)+" / "+drawingSearchMatches.length;
+
+  document.querySelectorAll("[data-search-index]").forEach(el=>el.classList.remove("active"));
+  const active=document.querySelector('[data-search-index="'+drawingSearchCursor+'"]');
+  if(active) active.classList.add("active");
+
+  await showDrawingLocation(result);
+}
+
+function drawingSearchPrev(){
+  if(drawingSearchMatches.length) goToDrawingSearchResult(drawingSearchCursor-1);
+}
+function drawingSearchNext(){
+  if(drawingSearchMatches.length) goToDrawingSearchResult(drawingSearchCursor+1);
+}
+
+async function showDrawingLocation(result){
+  const status=document.getElementById("drawingSearchStatus");
+  const focus=document.getElementById("drawingFocus");
+  const title=document.getElementById("focusTitle");
+  const hint=document.getElementById("focusHint");
+  const image=document.getElementById("focusImage");
+  const canvas=document.getElementById("focusCanvas");
+  const markers=document.getElementById("focusMarkers");
+  const viewport=document.getElementById("focusViewport");
+  const tagAll=document.getElementById("drawingTagResults")?.checked!==false;
+
+  if(!drawingSearchIndex) await loadDrawingTextIndex();
+  const ext=drawingSearchIndex?.extents;
+  if(!ext || !Number.isFinite(result.x) || !Number.isFinite(result.y)) return;
+
+  const clamp=v=>Math.max(0,Math.min(1,v));
+  const px=clamp((result.x-Number(ext.xmin))/(Number(ext.xmax)-Number(ext.xmin)))*100;
+  const py=(1-clamp((result.y-Number(ext.ymin))/(Number(ext.ymax)-Number(ext.ymin))))*100;
+
+  title.textContent="📍 "+result.text+" — نتيجة "+(drawingSearchCursor+1)+" من "+drawingSearchMatches.length;
+  if(status) status.innerHTML="📍 <b>"+escapeHTML(result.text)+"</b> — الموضع "+(drawingSearchCursor+1)+" من "+drawingSearchMatches.length+" في الرسم.";
+
+  if(markers){
+    markers.innerHTML="";
+    const targetKey=normalizeDrawingText(result.text);
+    const allMatches=tagAll
+      ? (drawingSearchIndex.entries||[]).filter(item=>normalizeDrawingText(item.t)===targetKey)
+      : [result];
+
+    const markerItems=allMatches.length?allMatches:[result];
+    markerItems.forEach(item=>{
+      const mx=clamp((Number(item.x)-Number(ext.xmin))/(Number(ext.xmax)-Number(ext.xmin)))*100;
+      const my=(1-clamp((Number(item.y)-Number(ext.ymin))/(Number(ext.ymax)-Number(ext.ymin))))*100;
+      const marker=document.createElement("div");
+      const primary=Math.abs(Number(item.x)-result.x)<0.001 && Math.abs(Number(item.y)-result.y)<0.001;
+      marker.className="focus-marker"+(primary?" primary":"");
+      marker.style.left=mx+"%"; marker.style.top=my+"%"; marker.title=item.t;
+      markers.appendChild(marker);
+    });
+    hint.textContent=tagAll && markerItems.length>1
+      ? "تم تحديد جميع المواضع المطابقة. استخدم السابق/التالي للانتقال بين كل ظهور."
+      : "تم تحديد هذا الظهور فقط. فعّل «تحديد كل النتائج» لإظهار جميع المواضع.";
+  }
+
+  if(focus) focus.hidden=false;
+  const imageUrl=(drawingSearchIndex?.image || "data/feeders/drawing-search.jpg")+"?v="+Date.now();
+  if(image && image.src!==imageUrl) image.src=imageUrl;
+
+  const zoom=window.matchMedia("(max-width:700px)").matches?3.8:2.6;
+  if(canvas) canvas.style.width=(zoom*100)+"%";
+
+  const centerTarget=()=>{
+    if(!viewport||!canvas) return;
+    const targetX=(px/100)*canvas.clientWidth;
+    const targetY=(py/100)*canvas.clientHeight;
+    viewport.scrollLeft=Math.max(0,targetX-viewport.clientWidth/2);
+    viewport.scrollTop=Math.max(0,targetY-viewport.clientHeight/2);
+  };
+  if(image){
+    if(image.complete) requestAnimationFrame(centerTarget);
+    else image.onload=()=>requestAnimationFrame(centerTarget);
+  }
+  focus?.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function closeDrawingFocus(){
+  const focus = document.getElementById("drawingFocus");
+  if(focus) focus.hidden = true;
+  drawingFocusMeta = null;
+}
+
+let equipmentIndex = null;
+let equipmentIndexBusy = false;
+
+function normalizeEquipmentValue(value){
+  return String(value ?? "")
+    .toUpperCase()
+    .replace(/[\s\-_/.#\\]+/g,"")
+    .trim();
+}
+
+function formatDMS(lat, lon){
+  function one(v, positive, negative, digits){
+    const hemi = v >= 0 ? positive : negative;
+    let a = Math.abs(v);
+    const deg = Math.floor(a);
+    a = (a - deg) * 60;
+    const min = Math.floor(a);
+    const sec = ((a - min) * 60).toFixed(digits);
+    return deg + "° " + min + "' " + sec + '" ' + hemi;
+  }
+  return one(lat,"N","S",3) + " ; " + one(lon,"E","W",3);
+}
+
+async function loadEquipmentIndex(){
+  if(equipmentIndex) return equipmentIndex;
+  if(equipmentIndexBusy) return null;
+  equipmentIndexBusy = true;
+  const status = document.getElementById("equipmentLookupStatus");
+  if(status) status.textContent = "جاري تحميل قاعدة مواقع المعدات...";
+  try{
+    const response = await fetch("data/equipment-lookup.json?v=" + Date.now(), {cache:"force-cache"});
+    if(!response.ok) throw new Error("قاعدة مواقع المعدات غير جاهزة بعد");
+    equipmentIndex = await response.json();
+    if(!equipmentIndex || !equipmentIndex.records) throw new Error("صيغة قاعدة المعدات غير صحيحة");
+    return equipmentIndex;
+  } finally {
+    equipmentIndexBusy = false;
+  }
+}
+
+async function searchEquipmentLocation(){
+  const input = document.getElementById("equipmentLookupInput");
+  const status = document.getElementById("equipmentLookupStatus");
+  const box = document.getElementById("equipmentLookupResults");
+  const query = String(input?.value || "").trim();
+  const q = normalizeEquipmentValue(query);
+
+  if(!q){
+    if(status) status.textContent = "اكتب رقم المعدة للبحث.";
+    if(box) box.innerHTML = "";
+    return;
+  }
+
+  if(status) status.textContent = "جاري البحث في قاعدة مواقع المعدات...";
+  if(box) box.innerHTML = "";
+
+  try{
+    const index = await loadEquipmentIndex();
+    if(!index) return;
+
+    const rows = [];
+    const candidates = [];
+
+    for(const [key, values] of Object.entries(index.records)){
+      const score = key === q ? 1000 : (key.startsWith(q) ? 700 : (key.includes(q) ? 500 : 0));
+      if(!score) continue;
+
+      for(const row of values){
+        const tf = String(row[0] || "");
+        candidates.push({
+          score,
+          tf,
+          lat:Number(row[1]),
+          lon:Number(row[2]),
+          coord:String(row[3] || "")
+        });
+      }
+    }
+
+    candidates.sort((a,b)=>b.score-a.score || a.tf.localeCompare(b.tf));
+
+    const seen = new Set();
+    for(const row of candidates){
+      if(!Number.isFinite(row.lat)||!Number.isFinite(row.lon)) continue;
+      const key = row.tf+"|"+row.lat+"|"+row.lon;
+      if(seen.has(key)) continue;
+      seen.add(key);
+      rows.push(row);
+      if(rows.length>=30) break;
+    }
+
+    if(!rows.length){
+      status.textContent = "لم يتم العثور على رقم المعدة في قاعدة مواقع المعدات.";
+      return;
+    }
+
+    status.textContent = "تم العثور على " + rows.length + " موقع. البيانات مأخوذة من قاعدة صفحة المعدات.";
+
+    box.innerHTML = rows.map(row => {
+      const maps = "https://www.google.com/maps?q=" + encodeURIComponent(row.lat + "," + row.lon);
+      const dms = row.coord || formatDMS(row.lat,row.lon);
+      return `
+        <article class="equipment-result">
+          <div class="equipment-result-title">⚡ ${escapeHTML(row.tf)}</div>
+          <div class="equipment-result-meta">
+            📍 الإحداثيات: <b dir="ltr">${row.lat.toFixed(7)} , ${row.lon.toFixed(7)}</b><br>
+            ${escapeHTML(dms)}
+          </div>
+          <div class="equipment-actions">
+            <a class="equipment-map" href="${maps}" target="_blank" rel="noopener">📍 فتح الموقع في الخريطة</a>
+            <button class="equipment-focus" type="button" onclick='focusEquipmentOnDrawing(${JSON.stringify(row)})'>🔎 تحديده في الرسم</button>
+          </div>
+        </article>`;
+    }).join("");
+  }catch(error){
+    console.error(error);
+    if(status) status.textContent = "تعذر تحميل قاعدة مواقع المعدات.";
+  }
+}
+
+function focusEquipmentOnDrawing(item){
+  const value = String(item?.tf || "").trim();
+  const status = document.getElementById("equipmentLookupStatus");
+  document.getElementById("fullDrawingSection")?.scrollIntoView({behavior:"smooth",block:"start"});
+  if(value){
+    try{
+      navigator.clipboard?.writeText(value);
+    }catch(_){}
+    if(status){
+      status.textContent = "تم نسخ رقم المعدة (" + value + "). افتح البحث داخل قارئ الرسم وابحث بالرقم.";
+    }
+  }
+}
+
+let vectorSvgDoc = null;
+let vectorSvgRoot = null;
+let vectorBaseViewBox = null;
+let vectorSearchResults = [];
+let vectorSearchCursor = 0;
+
+function setVectorStatus(text, cls="status"){
+  const el=document.getElementById("fullDrawingStatus");
+  if(el){ el.className=cls; el.textContent=text; }
+}
+
+function initVectorDrawing(){
+  const frame=document.getElementById("vectorDrawingFrame");
+  const fallback=document.getElementById("vectorDrawingFallback");
+  if(!frame) return;
+
+  const ready=()=>{
+    try{
+      vectorSvgDoc=frame.contentDocument;
+      vectorSvgRoot=vectorSvgDoc?.documentElement;
+      if(!vectorSvgRoot) throw new Error("SVG unavailable");
+      const vb=vectorSvgRoot.viewBox?.baseVal;
+      if(vb && vb.width && vb.height){
+        vectorBaseViewBox={x:vb.x,y:vb.y,width:vb.width,height:vb.height};
+      }else{
+        const box=vectorSvgRoot.getBBox();
+        vectorBaseViewBox={x:box.x,y:box.y,width:box.width,height:box.height};
+        vectorSvgRoot.setAttribute("viewBox",box.x+" "+box.y+" "+box.width+" "+box.height);
+      }
+      if(fallback) fallback.hidden=true;
+      setVectorStatus("✅ تم فتح الرسم المتجهي. جاهز للبحث والتكبير.","status");
+      const s=document.getElementById("vectorSearchStatus");
+      if(s) s.textContent="اكتب النص أو رقم المعدة ثم اضغط بحث.";
+      enableVectorPan();
+    }catch(e){
+      console.error(e);
+      setVectorStatus("⏳ الرسم كبير ويجري تحميله...","status");
+    }
+  };
+
+  frame.addEventListener("load",ready);
+  setTimeout(()=>{
+    if(!vectorSvgRoot){
+      setVectorStatus("⏳ ما زال الرسم المتجهي قيد التحميل — انتظر حتى يكتمل تحميل الملف.","status");
+    }
+  },15000);
+}
+function toggleDrawingExportMenu(){
+  const menu=document.getElementById("drawingExportTopMenu");
+  const button=document.querySelector(".drawing-export-top");
+  if(!menu) return;
+  const open=menu.classList.toggle("open");
+  if(button) button.setAttribute("aria-expanded",open?"true":"false");
+}
+
+document.addEventListener("click",e=>{
+  const menu=document.getElementById("drawingExportTopMenu");
+  const button=document.querySelector(".drawing-export-top");
+  if(menu && !menu.contains(e.target) && !button?.contains(e.target)){
+    menu.classList.remove("open");
+    if(button) button.setAttribute("aria-expanded","false");
+  }
+});
+
+function setDrawingExportStatus(message){
+  const el=document.getElementById("drawingExportStatus");
+  if(!el) return;
+  el.textContent=message;
+  el.style.display=message?"block":"none";
+  if(message){
+    clearTimeout(window.__drawingExportStatusTimer);
+    window.__drawingExportStatusTimer=setTimeout(()=>{el.style.display="none";},5000);
+  }
+}
+
+function getCurrentVectorExport(){
+  if(!vectorSvgRoot || !vectorSvgRoot.viewBox) throw new Error("الرسم لم يجهز بعد.");
+  const vb=vectorSvgRoot.viewBox.baseVal;
+  if(!vb || !(vb.width>0) || !(vb.height>0)) throw new Error("تعذر تحديد حدود الرسم.");
+  const clone=vectorSvgRoot.cloneNode(true);
+  clone.setAttribute("xmlns","http://www.w3.org/2000/svg");
+  clone.setAttribute("xmlns:xlink","http://www.w3.org/1999/xlink");
+  clone.setAttribute("viewBox",vb.x+" "+vb.y+" "+vb.width+" "+vb.height);
+
+  const ratio=vb.width/vb.height;
+  const maxSide=6000;
+  let width,height;
+  if(ratio>=1){
+    width=maxSide;
+    height=Math.max(1,Math.round(maxSide/ratio));
+  }else{
+    height=maxSide;
+    width=Math.max(1,Math.round(maxSide*ratio));
+  }
+  clone.setAttribute("width",String(width));
+  clone.setAttribute("height",String(height));
+
+  const bg=document.createElementNS("http://www.w3.org/2000/svg","rect");
+  bg.setAttribute("x",String(vb.x));
+  bg.setAttribute("y",String(vb.y));
+  bg.setAttribute("width",String(vb.width));
+  bg.setAttribute("height",String(vb.height));
+  bg.setAttribute("fill","#050505");
+  clone.insertBefore(bg,clone.firstChild);
+
+  const serializer=new XMLSerializer();
+  const svgText=serializer.serializeToString(clone);
+  return {svgText,width,height};
+}
+
+function getDrawingFileBase(){
+  const stamp=new Date().toISOString().replace(/[:.]/g,"-").slice(0,19);
+  return "feeder-drawing-"+stamp;
+}
+
+function downloadBlob(blob,name){
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=url;
+  a.download=name;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),2000);
+}
+
+async function exportCurrentDrawingSVG(){
+  try{
+    setDrawingExportStatus("جاري تجهيز SVG المتجهي...");
+    const data=getCurrentVectorExport();
+    const blob=new Blob([data.svgText],{type:"image/svg+xml;charset=utf-8"});
+    downloadBlob(blob,getDrawingFileBase()+".svg");
+    setDrawingExportStatus("✅ تم تصدير SVG بجودة متجهية عالية.");
+  }catch(error){
+    console.error(error);
+    setDrawingExportStatus("❌ "+error.message);
+  }
+}
+
+async function exportCurrentDrawingPNG(){
+  try{
+    setDrawingExportStatus("جاري إنشاء صورة PNG عالية الجودة...");
+    const data=getCurrentVectorExport();
+    const blob=new Blob([data.svgText],{type:"image/svg+xml;charset=utf-8"});
+    const url=URL.createObjectURL(blob);
+    const image=new Image();
+    image.decoding="async";
+    image.onload=()=>{
+      try{
+        const canvas=document.createElement("canvas");
+        canvas.width=data.width;
+        canvas.height=data.height;
+        const ctx=canvas.getContext("2d");
+        ctx.fillStyle="#050505";
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+        ctx.drawImage(image,0,0,data.width,data.height);
+        canvas.toBlob(png=>{
+          URL.revokeObjectURL(url);
+          if(!png) throw new Error("تعذر إنشاء ملف PNG.");
+          downloadBlob(png,getDrawingFileBase()+".png");
+          setDrawingExportStatus("✅ تم تصدير PNG — "+data.width+"×"+data.height+" بكسل.");
+        },"image/png");
+      }catch(error){
+        URL.revokeObjectURL(url);
+        console.error(error);
+        setDrawingExportStatus("❌ "+error.message);
+      }
+    };
+    image.onerror=()=>{
+      URL.revokeObjectURL(url);
+      setDrawingExportStatus("❌ تعذر تحويل الرسم إلى صورة PNG. استخدم SVG المتجهي.");
+    };
+    image.src=url;
+  }catch(error){
+    console.error(error);
+    setDrawingExportStatus("❌ "+error.message);
+  }
+}
+
+async function shareCurrentDrawing(){
+  try{
+    setDrawingExportStatus("جاري تجهيز الرسم للمشاركة...");
+    const data=getCurrentVectorExport();
+    const svgBlob=new Blob([data.svgText],{type:"image/svg+xml;charset=utf-8"});
+    const base=getDrawingFileBase();
+    const pngBlob=await new Promise((resolve,reject)=>{
+      const url=URL.createObjectURL(svgBlob);
+      const image=new Image();
+      image.onload=()=>{
+        try{
+          const canvas=document.createElement("canvas");
+          canvas.width=data.width;
+          canvas.height=data.height;
+          const ctx=canvas.getContext("2d");
+          ctx.fillStyle="#050505";
+          ctx.fillRect(0,0,canvas.width,canvas.height);
+          ctx.drawImage(image,0,0,data.width,data.height);
+          canvas.toBlob(blob=>{
+            URL.revokeObjectURL(url);
+            blob?resolve(blob):reject(new Error("تعذر إنشاء صورة المشاركة."));
+          },"image/png");
+        }catch(error){URL.revokeObjectURL(url);reject(error);}
+      };
+      image.onerror=()=>{URL.revokeObjectURL(url);reject(new Error("تعذر تجهيز الرسم."));};
+      image.src=url;
+    });
+
+    const file=new File([pngBlob],base+".png",{type:"image/png"});
+    if(navigator.share && (!navigator.canShare || navigator.canShare({files:[file]}))){
+      await navigator.share({title:"رسم المغذي",text:"رسم كهربائي عالي الجودة",files:[file]});
+      setDrawingExportStatus("✅ تم فتح خيارات المشاركة.");
+    }else{
+      downloadBlob(pngBlob,base+".png");
+      setDrawingExportStatus("ℹ️ المشاركة المباشرة غير متاحة على هذا الجهاز، فتم تنزيل PNG عالي الجودة.");
+    }
+  }catch(error){
+    if(error?.name==="AbortError"){
+      setDrawingExportStatus("تم إلغاء المشاركة.");
+      return;
+    }
+    console.error(error);
+    setDrawingExportStatus("❌ "+error.message);
+  }
+}
+
+function resetVectorView(){
+  if(vectorSvgRoot && vectorBaseViewBox){
+    const v=vectorBaseViewBox;
+    vectorSvgRoot.setAttribute("viewBox",v.x+" "+v.y+" "+v.width+" "+v.height);
+  }
+}
+function zoomVector(factor){
+  if(!vectorSvgRoot) return;
+  const vb=vectorSvgRoot.viewBox.baseVal;
+  const nx=vb.width*factor, ny=vb.height*factor;
+  const cx=vb.x+vb.width/2, cy=vb.y+vb.height/2;
+  vectorSvgRoot.setAttribute("viewBox",(cx-nx/2)+" "+(cy-ny/2)+" "+nx+" "+ny);
+}
+function searchVectorDrawing(){
+  const q=normalizeDrawingText(document.getElementById("vectorSearchInput")?.value||"");
+  const status=document.getElementById("vectorSearchStatus");
+  if(!q || !vectorSvgRoot){
+    if(status) status.textContent=!vectorSvgRoot?"القارئ لم يجهز بعد.":"اكتب النص المطلوب.";
+    return;
+  }
+  const nodes=Array.from(vectorSvgRoot.querySelectorAll("text,tspan"));
+  vectorSearchResults=nodes.filter(n=>normalizeDrawingText(n.textContent).includes(q));
+  vectorSearchCursor=0;
+  if(!vectorSearchResults.length){
+    if(status) status.textContent="❌ لا توجد نتيجة داخل الرسم.";
+    return;
+  }
+  if(status) status.textContent="✅ "+vectorSearchResults.length+" نتيجة — 1 من "+vectorSearchResults.length;
+  focusVectorText(vectorSearchResults[0]);
+}
+function vectorSearchNext(){
+  if(!vectorSearchResults.length){ searchVectorDrawing(); return; }
+  vectorSearchCursor=(vectorSearchCursor+1)%vectorSearchResults.length;
+  const status=document.getElementById("vectorSearchStatus");
+  if(status) status.textContent="✅ "+vectorSearchResults.length+" نتيجة — "+(vectorSearchCursor+1)+" من "+vectorSearchResults.length;
+  focusVectorText(vectorSearchResults[vectorSearchCursor]);
+}
+function focusVectorText(node){
+  if(!vectorSvgRoot || !vectorBaseViewBox || !node) return;
+  try{
+    const b=node.getBBox();
+    const vb=vectorSvgRoot.viewBox.baseVal;
+    const w=Math.max(vb.width*0.18,b.width*20);
+    const h=Math.max(vb.height*0.18,b.height*20);
+    const cx=b.x+b.width/2, cy=b.y+b.height/2;
+    vectorSvgRoot.setAttribute("viewBox",(cx-w/2)+" "+(cy-h/2)+" "+w+" "+h);
+  }catch(e){ console.error(e); }
+}
+function enableVectorPan(){
+  const frame=document.getElementById("vectorDrawingFrame");
+  const root=vectorSvgRoot;
+  if(!frame || !root || root.__panEnabled) return;
+  root.__panEnabled=true;
+
+  let dragging=false,sx=0,sy=0,start=null;
+  root.addEventListener("pointerdown",e=>{
+    if(e.button!==undefined && e.button!==0) return;
+    dragging=true; sx=e.clientX; sy=e.clientY;
+    const vb=root.viewBox.baseVal;
+    start={x:vb.x,y:vb.y,width:vb.width,height:vb.height};
+    root.setPointerCapture?.(e.pointerId);
+  });
+  root.addEventListener("pointermove",e=>{
+    if(!dragging||!start) return;
+    const r=root.getBoundingClientRect();
+    const dx=(e.clientX-sx)/r.width*start.width;
+    const dy=(e.clientY-sy)/r.height*start.height;
+    root.setAttribute("viewBox",(start.x-dx)+" "+(start.y-dy)+" "+start.width+" "+start.height);
+  });
+  root.addEventListener("pointerup",()=>{dragging=false;start=null;});
+  root.addEventListener("pointercancel",()=>{dragging=false;start=null;});
+}
+
+
+
+document
+    .getElementById("search")
+    .addEventListener(
+        "input",
+        render
+    );
+
+
+document
+    .getElementById("categoryFilter")
+    .addEventListener(
+        "change",
+        render
+    );
+
+
+/* ------------------------------------------
+   البداية
+------------------------------------------ */
+
+loadDatabase();
+
+</script>
+
+</body>
+</html>

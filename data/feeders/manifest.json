@@ -1,0 +1,46 @@
+{
+  "source": "cad/FINAL DISPATCH - UPDATE.dwg",
+  "generatedAt": "2026-10-06T02:27:54.448Z",
+  "dwgBytes": 7901364,
+  "dxfBytes": 44810595,
+  "dxfEntities": 116671,
+  "textEntities": 82285,
+  "totalFeeders": 473,
+  "stationLabels": 35,
+  "totalStations": 20,
+  "matchedFeeders": 473,
+  "unmatchedFeeders": 0,
+  "confidence": {
+    "high": 125,
+    "medium": 157,
+    "low": 191
+  },
+  "categories": {
+    "PREFIX.F": 104,
+    "F": 292,
+    "FDR": 77
+  },
+  "stations": [
+    "GRIDSTATION#1",
+    "GRIDSTATION#2",
+    "GRIDSTATION#3",
+    "GRIDSTATION#4",
+    "GRIDSTATION#5",
+    "GRIDSTATION#06",
+    "GRIDSTATION#7",
+    "GRIDSTATION#8",
+    "S/S-303",
+    "S/S-0303",
+    "S/S#570",
+    "SS-309",
+    "SUB-01",
+    "SUB-02",
+    "SUB-03",
+    "SUB-04",
+    "SUB-05",
+    "SUB-06",
+    "SUB-07",
+    "SUB-08"
+  ],
+  "description": "Feeder database extracted directly from the DWG with spatial station matching and raw AutoCAD attribute extraction."
+}

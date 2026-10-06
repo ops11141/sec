@@ -1,0 +1,1366 @@
+﻿const DEFAULT_MODEL_COLOR = [0.36, 0.65, 0.93];
+import { repairExtrusionNormals } from './extrusion-normals.js?v=20260910-3';
+// Creo's ordinary shaded view is a light, neutral engineering viewport.
+// Keep this independent from the 2D drawing canvas' dark-mode preference.
+const CREO_MODEL_BACKGROUND = '#eef0f4';
+
+function fail(message) {
+  throw new Error(message);
+}
+
+function clamp(value, minimum, maximum) {
+  return Math.max(minimum, Math.min(maximum, value));
+}
+
+function normalizeVector(x, y, z) {
+  const length = Math.hypot(x, y, z);
+  return length < 1e-12 ? [0, 0, 1] : [x / length, y / length, z / length];
+}
+
+function faceNormal(a, b, c) {
+  const ux = b[0] - a[0];
+  const uy = b[1] - a[1];
+  const uz = b[2] - a[2];
+  const vx = c[0] - a[0];
+  const vy = c[1] - a[1];
+  const vz = c[2] - a[2];
+  return normalizeVector(
+    uy * vz - uz * vy,
+    uz * vx - ux * vz,
+    ux * vy - uy * vx,
+  );
+}
+
+function normalizeColor(value, fallback = DEFAULT_MODEL_COLOR) {
+  if (!Array.isArray(value) && !ArrayBuffer.isView(value)) return fallback;
+  const color = [Number(value[0]), Number(value[1]), Number(value[2])];
+  if (color.some((component) => !Number.isFinite(component))) return fallback;
+  const divisor = Math.max(...color) > 1 ? 255 : 1;
+  return color.map((component) => clamp(component / divisor, 0, 1));
+}
+
+function colorKeyAt(colors, index) {
+  return [0, 1, 2].map((offset) => Math.round(clamp(Number(colors[index + offset]), 0, 1) * 255)).join(',');
+}
+
+function triangleAreaAt(positions, index) {
+  const ux = positions[index + 3] - positions[index];
+  const uy = positions[index + 4] - positions[index + 1];
+  const uz = positions[index + 5] - positions[index + 2];
+  const vx = positions[index + 6] - positions[index];
+  const vy = positions[index + 7] - positions[index + 1];
+  const vz = positions[index + 8] - positions[index + 2];
+  return Math.hypot(uy * vz - uz * vy, uz * vx - ux * vz, ux * vy - uy * vx) * 0.5;
+}
+
+function dominantMaterialMask(positions, colors, useInputColors) {
+  const metalness = new Float32Array(colors.length / 3);
+  if (!useInputColors) {
+    metalness.fill(1);
+    return metalness;
+  }
+
+  // A monochrome model is metal regardless of its colour. No named-colour
+  // exclusions: multicolour models use only the agreed colour families.
+  const firstColor = colorKeyAt(colors, 0);
+  let monochrome = true;
+  for (let index = 3; index < colors.length; index += 3) {
+    if (colorKeyAt(colors, index) !== firstColor) { monochrome = false; break; }
+  }
+  if (monochrome) { metalness.fill(1); return metalness; }
+
+  for (let index = 0; index < colors.length; index += 3) {
+    metalness[index / 3] = isMetalCandidate(colors.subarray(index, index + 3)) ? 1 : 0;
+  }
+  return metalness;
+}
+
+// OCCT returns linear RGB. Classify in display RGB so the tolerance agrees
+// with Creo colour swatches. This is a user convention, not material inference.
+export function isMetalCandidate(linearColor) {
+  const rgb = Array.from(linearColor, value => {
+    const v = clamp(value, 0, 1);
+    return v <= 0.0031308 ? v * 12.92 : 1.055 * Math.pow(v, 1 / 2.4) - 0.055;
+  });
+  const [r, g, b] = rgb;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  const delta = max - min;
+  const saturation = max > 0 ? delta / max : 0;
+  let hue = 0;
+  if (delta > 0.00001) {
+    hue = 60 * (max === r ? ((g - b) / delta) % 6 : max === g ? (b - r) / delta + 2 : (r - g) / delta + 4);
+    if (hue < 0) hue += 360;
+  }
+  // Broad family ranges, not a red/white/blue exception list.
+  const gold = hue >= 28 && hue <= 65 && saturation >= 0.22 && max >= 0.25;
+  const grey = saturation <= 0.12 && max >= 0.20 && max <= 0.94;
+  const blueGrey = hue >= 185 && hue <= 245 && saturation <= 0.32 && max >= 0.25 && max <= 0.98;
+  const lightBlue = hue >= 185 && hue <= 245 && saturation <= 0.55 && min >= 0.40 && max <= 0.98;
+  return gold || grey || blueGrey || lightBlue;
+}
+
+function hexToRgb(hex) {
+  let text = String(hex || '#090b0e').replace('#', '');
+  if (text.length === 3) {
+    text = text[0] + text[0] + text[1] + text[1] + text[2] + text[2];
+  }
+  const value = Number.parseInt(text, 16);
+  return [
+    ((value >> 16) & 255) / 255,
+    ((value >> 8) & 255) / 255,
+    (value & 255) / 255,
+  ];
+}
+
+function mat4Multiply(a, b) {
+  const output = new Float32Array(16);
+  for (let column = 0; column < 4; column += 1) {
+    for (let row = 0; row < 4; row += 1) {
+      output[column * 4 + row] =
+        a[row] * b[column * 4] +
+        a[4 + row] * b[column * 4 + 1] +
+        a[8 + row] * b[column * 4 + 2] +
+        a[12 + row] * b[column * 4 + 3];
+    }
+  }
+  return output;
+}
+
+function mat4Translation(x, y, z) {
+  return new Float32Array([
+    1, 0, 0, 0,
+    0, 1, 0, 0,
+    0, 0, 1, 0,
+    x, y, z, 1,
+  ]);
+}
+
+function mat4RotationX(angle) {
+  const cosine = Math.cos(angle);
+  const sine = Math.sin(angle);
+  return new Float32Array([
+    1, 0, 0, 0,
+    0, cosine, sine, 0,
+    0, -sine, cosine, 0,
+    0, 0, 0, 1,
+  ]);
+}
+
+function mat4RotationY(angle) {
+  const cosine = Math.cos(angle);
+  const sine = Math.sin(angle);
+  return new Float32Array([
+    cosine, 0, -sine, 0,
+    0, 1, 0, 0,
+    sine, 0, cosine, 0,
+    0, 0, 0, 1,
+  ]);
+}
+
+function mat4Perspective(fieldOfView, aspect, near, far) {
+  const focalLength = 1 / Math.tan(fieldOfView / 2);
+  const range = 1 / (near - far);
+  return new Float32Array([
+    focalLength / aspect, 0, 0, 0,
+    0, focalLength, 0, 0,
+    0, 0, (far + near) * range, -1,
+    0, 0, 2 * far * near * range, 0,
+  ]);
+}
+
+function finalizeGeometry(rawPositions, rawNormals, rawColors, format) {
+  if (!rawPositions.length || rawPositions.length % 9 !== 0) {
+    fail('文件中没有可显示的三角面。');
+  }
+  if (rawNormals.length !== rawPositions.length) {
+    fail('模型法线数据不完整。');
+  }
+
+  const minimum = [Infinity, Infinity, Infinity];
+  const maximum = [-Infinity, -Infinity, -Infinity];
+  for (let index = 0; index < rawPositions.length; index += 3) {
+    for (let axis = 0; axis < 3; axis += 1) {
+      const value = Number(rawPositions[index + axis]);
+      if (!Number.isFinite(value)) fail('模型包含无效坐标。');
+      minimum[axis] = Math.min(minimum[axis], value);
+      maximum[axis] = Math.max(maximum[axis], value);
+    }
+  }
+
+  const center = [
+    (minimum[0] + maximum[0]) / 2,
+    (minimum[1] + maximum[1]) / 2,
+    (minimum[2] + maximum[2]) / 2,
+  ];
+  const dimensions = {
+    x: maximum[0] - minimum[0],
+    y: maximum[1] - minimum[1],
+    z: maximum[2] - minimum[2],
+  };
+  const positions = new Float32Array(rawPositions.length);
+  const normals = new Float32Array(rawNormals);
+  const colors = new Float32Array(rawPositions.length);
+  const useInputColors = rawColors && rawColors.length === rawPositions.length;
+
+  for (let index = 0; index < rawPositions.length; index += 3) {
+    positions[index] = rawPositions[index] - center[0];
+    positions[index + 1] = rawPositions[index + 1] - center[1];
+    positions[index + 2] = rawPositions[index + 2] - center[2];
+    const color = useInputColors
+      ? [rawColors[index], rawColors[index + 1], rawColors[index + 2]]
+      : DEFAULT_MODEL_COLOR;
+    colors[index] = color[0];
+    colors[index + 1] = color[1];
+    colors[index + 2] = color[2];
+  }
+  const metalness = dominantMaterialMask(rawPositions, colors, useInputColors);
+
+  return {
+    positions,
+    normals,
+    colors,
+    metalness,
+    triangles: positions.length / 9,
+    dimensions,
+    radius: Math.max(Math.hypot(dimensions.x, dimensions.y, dimensions.z) / 2, 0.001),
+    format,
+  };
+}
+
+function parseBinaryStl(buffer, faceCount) {
+  const view = new DataView(buffer);
+  const positions = new Float32Array(faceCount * 9);
+  const normals = new Float32Array(faceCount * 9);
+  let sourceOffset = 84;
+  let targetOffset = 0;
+
+  for (let face = 0; face < faceCount; face += 1) {
+    let normal = [
+      view.getFloat32(sourceOffset, true),
+      view.getFloat32(sourceOffset + 4, true),
+      view.getFloat32(sourceOffset + 8, true),
+    ];
+    sourceOffset += 12;
+    const vertices = [];
+    for (let vertex = 0; vertex < 3; vertex += 1) {
+      vertices.push([
+        view.getFloat32(sourceOffset, true),
+        view.getFloat32(sourceOffset + 4, true),
+        view.getFloat32(sourceOffset + 8, true),
+      ]);
+      sourceOffset += 12;
+    }
+    sourceOffset += 2;
+    normal = Math.hypot(...normal) < 1e-12
+      ? faceNormal(vertices[0], vertices[1], vertices[2])
+      : normalizeVector(...normal);
+    for (const vertex of vertices) {
+      positions.set(vertex, targetOffset);
+      normals.set(normal, targetOffset);
+      targetOffset += 3;
+    }
+  }
+  return finalizeGeometry(positions, normals, null, 'Binary STL');
+}
+
+function parseAsciiStl(buffer) {
+  const text = new TextDecoder('utf-8').decode(buffer);
+  const positions = [];
+  const normals = [];
+  let vertices = [];
+  let normal;
+
+  for (const line of text.split(/\r?\n/)) {
+    const parts = line.trim().split(/\s+/);
+    if (parts[0] === 'facet' && parts[1] === 'normal') {
+      normal = [Number.parseFloat(parts[2]), Number.parseFloat(parts[3]), Number.parseFloat(parts[4])];
+    } else if (parts[0] === 'vertex' && parts.length >= 4) {
+      vertices.push([Number.parseFloat(parts[1]), Number.parseFloat(parts[2]), Number.parseFloat(parts[3])]);
+      if (vertices.length === 3) {
+        const validNormal = normal && normal.every(Number.isFinite);
+        const triangleNormal = validNormal ? normalizeVector(...normal) : faceNormal(...vertices);
+        for (const vertex of vertices) {
+          positions.push(...vertex);
+          normals.push(...triangleNormal);
+        }
+        vertices = [];
+      }
+    }
+  }
+  return finalizeGeometry(positions, normals, null, 'ASCII STL');
+}
+
+export function parseStl(buffer) {
+  if (!(buffer instanceof ArrayBuffer)) fail('STL 数据必须是 ArrayBuffer。');
+  if (buffer.byteLength < 15) fail('文件过小，不是有效的 STL。');
+
+  let isBinary = false;
+  let faceCount = 0;
+  if (buffer.byteLength >= 84) {
+    const view = new DataView(buffer);
+    faceCount = view.getUint32(80, true);
+    const expectedSize = 84 + faceCount * 50;
+    const header = new TextDecoder('ascii')
+      .decode(buffer.slice(0, Math.min(80, buffer.byteLength)))
+      .trim()
+      .toLowerCase();
+    isBinary = faceCount > 0 && expectedSize <= buffer.byteLength &&
+      (expectedSize === buffer.byteLength || !header.startsWith('solid'));
+  }
+  return isBinary ? parseBinaryStl(buffer, faceCount) : parseAsciiStl(buffer);
+}
+
+function rebuildOcctSmoothNormals(positions, indices, sourceNormals) {
+  if (!sourceNormals || sourceNormals.length !== positions.length || !indices || indices.length < 3) {
+    return sourceNormals;
+  }
+
+  const accumulated = new Float64Array(positions.length);
+  // Only blend triangles that already belong to the same smooth CAD region.
+  // A 34-degree crease guard keeps machined edges and part boundaries crisp.
+  const creaseCosine = Math.cos(34 * Math.PI / 180);
+
+  for (let triangle = 0; triangle + 2 < indices.length; triangle += 3) {
+    const vertexIndices = [Number(indices[triangle]), Number(indices[triangle + 1]), Number(indices[triangle + 2])];
+    const points = vertexIndices.map((vertexIndex) => {
+      const offset = vertexIndex * 3;
+      return [Number(positions[offset]), Number(positions[offset + 1]), Number(positions[offset + 2])];
+    });
+    let triangleNormal = faceNormal(points[0], points[1], points[2]);
+    const sourceDirection = vertexIndices.reduce((sum, vertexIndex) => {
+      const offset = vertexIndex * 3;
+      sum[0] += Number(sourceNormals[offset]);
+      sum[1] += Number(sourceNormals[offset + 1]);
+      sum[2] += Number(sourceNormals[offset + 2]);
+      return sum;
+    }, [0, 0, 0]);
+    if (triangleNormal[0] * sourceDirection[0] + triangleNormal[1] * sourceDirection[1] + triangleNormal[2] * sourceDirection[2] < 0) {
+      triangleNormal = triangleNormal.map((component) => -component);
+    }
+
+    for (let corner = 0; corner < 3; corner += 1) {
+      const vertexIndex = vertexIndices[corner];
+      const offset = vertexIndex * 3;
+      const sourceNormal = normalizeVector(
+        Number(sourceNormals[offset]),
+        Number(sourceNormals[offset + 1]),
+        Number(sourceNormals[offset + 2]),
+      );
+      const agreement = triangleNormal[0] * sourceNormal[0] + triangleNormal[1] * sourceNormal[1] + triangleNormal[2] * sourceNormal[2];
+      if (agreement < creaseCosine) continue;
+
+      const point = points[corner];
+      const previous = points[(corner + 2) % 3];
+      const next = points[(corner + 1) % 3];
+      const toPrevious = normalizeVector(previous[0] - point[0], previous[1] - point[1], previous[2] - point[2]);
+      const toNext = normalizeVector(next[0] - point[0], next[1] - point[1], next[2] - point[2]);
+      const cornerAngle = Math.acos(clamp(
+        toPrevious[0] * toNext[0] + toPrevious[1] * toNext[1] + toPrevious[2] * toNext[2],
+        -1,
+        1,
+      ));
+      accumulated[offset] += triangleNormal[0] * cornerAngle;
+      accumulated[offset + 1] += triangleNormal[1] * cornerAngle;
+      accumulated[offset + 2] += triangleNormal[2] * cornerAngle;
+    }
+  }
+
+  const smoothed = new Float32Array(sourceNormals.length);
+  for (let offset = 0; offset < sourceNormals.length; offset += 3) {
+    const hasContribution = Math.hypot(accumulated[offset], accumulated[offset + 1], accumulated[offset + 2]) > 1e-10;
+    const normal = hasContribution
+      ? normalizeVector(accumulated[offset], accumulated[offset + 1], accumulated[offset + 2])
+      : normalizeVector(sourceNormals[offset], sourceNormals[offset + 1], sourceNormals[offset + 2]);
+    smoothed.set(normal, offset);
+  }
+  return smoothed;
+}
+
+function geometryFromOcctResult(result, format) {
+  if (!result || result.success !== true || !Array.isArray(result.meshes)) {
+    fail(result && result.error ? String(result.error) : 'OpenCascade 无法解析此模型。');
+  }
+
+  let triangleCount = 0;
+  for (const mesh of result.meshes) {
+    const indices = mesh && mesh.index && mesh.index.array;
+    if (indices) triangleCount += Math.floor(indices.length / 3);
+  }
+  if (!triangleCount) fail('文件中没有可显示的实体网格。');
+
+  const positions = new Float32Array(triangleCount * 9);
+  const normals = new Float32Array(triangleCount * 9);
+  const colors = new Float32Array(triangleCount * 9);
+  let outputOffset = 0;
+
+  for (const mesh of result.meshes) {
+    const sourcePositions = mesh && mesh.attributes && mesh.attributes.position && mesh.attributes.position.array;
+    const sourceNormals = mesh && mesh.attributes && mesh.attributes.normal && mesh.attributes.normal.array;
+    const indices = mesh && mesh.index && mesh.index.array;
+    if (!sourcePositions || !indices) continue;
+    // OCCT supplies surface normals. Re-averaging the tessellation introduces
+    // triangulation-dependent ripples in mirror reflections on smooth CAD faces.
+    const displayNormals = sourceNormals && sourceNormals.length === sourcePositions.length
+      ? repairExtrusionNormals(mesh) : rebuildOcctSmoothNormals(sourcePositions, indices, sourceNormals);
+
+    // Missing imported appearance is not an actual cyan finish. Give unassigned
+    // CAD surfaces a neutral metal candidate; explicit face colours still win.
+    const defaultColor = normalizeColor(mesh.color, [0.40, 0.44, 0.50]);
+    const faces = Array.isArray(mesh.brep_faces) ? mesh.brep_faces : [];
+    let faceCursor = 0;
+    for (let triangle = 0; triangle < Math.floor(indices.length / 3); triangle += 1) {
+      while (faceCursor < faces.length && triangle > faces[faceCursor].last) faceCursor += 1;
+      const face = faceCursor < faces.length &&
+        triangle >= faces[faceCursor].first &&
+        triangle <= faces[faceCursor].last
+        ? faces[faceCursor]
+        : null;
+      const color = normalizeColor(face && face.color, defaultColor);
+      const triangleVertices = [];
+      for (let corner = 0; corner < 3; corner += 1) {
+        const vertexIndex = Number(indices[triangle * 3 + corner]);
+        const sourceOffset = vertexIndex * 3;
+        const vertex = [
+          Number(sourcePositions[sourceOffset]),
+          Number(sourcePositions[sourceOffset + 1]),
+          Number(sourcePositions[sourceOffset + 2]),
+        ];
+        triangleVertices.push(vertex);
+        positions.set(vertex, outputOffset + corner * 3);
+        colors.set(color, outputOffset + corner * 3);
+        if (displayNormals && displayNormals.length >= sourceOffset + 3) {
+          normals.set([
+            Number(displayNormals[sourceOffset]),
+            Number(displayNormals[sourceOffset + 1]),
+            Number(displayNormals[sourceOffset + 2]),
+          ], outputOffset + corner * 3);
+        }
+      }
+      if (!displayNormals) {
+        const normal = faceNormal(...triangleVertices);
+        normals.set(normal, outputOffset);
+        normals.set(normal, outputOffset + 3);
+        normals.set(normal, outputOffset + 6);
+      }
+      outputOffset += 9;
+    }
+  }
+
+  return finalizeGeometry(
+    positions.subarray(0, outputOffset),
+    normals.subarray(0, outputOffset),
+    colors.subarray(0, outputOffset),
+    format,
+  );
+}
+
+function compileShader(gl, type, source) {
+  const shader = gl.createShader(type);
+  gl.shaderSource(shader, source);
+  gl.compileShader(shader);
+  if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+    const message = gl.getShaderInfoLog(shader);
+    gl.deleteShader(shader);
+    fail('WebGL 着色器编译失败：' + message);
+  }
+  return shader;
+}
+
+function createProgram(gl) {
+  const vertexSource = [
+    'attribute vec3 aPosition;',
+    'attribute vec3 aNormal;',
+    'attribute vec3 aColor;',
+    'attribute float aMetalness;',
+    'uniform mat4 uProjection;',
+    'uniform mat4 uView;',
+    'uniform mat4 uModel;',
+    'uniform mat3 uNormalMatrix;',
+    'varying vec3 vNormal;',
+    'varying vec3 vColor;',
+    'varying float vMetalness;',
+    'varying vec3 vViewPosition;',
+    'varying vec3 vObjectPosition;',
+    'varying vec3 vObjectNormal;',
+    'uniform vec3 uMetalColor;',
+    'uniform float uRoughness;',
+    'uniform float uReflectionStrength;',
+    'void main(void) {',
+    '  vNormal = normalize(uNormalMatrix * aNormal);',
+    '  vColor = aColor;',
+    '  vMetalness = aMetalness;',
+    '  vObjectPosition = aPosition;',
+    '  vObjectNormal = aNormal;',
+    '  vec4 viewPosition = uView * uModel * vec4(aPosition, 1.0);',
+    '  vViewPosition = viewPosition.xyz;',
+    '  gl_Position = uProjection * viewPosition;',
+    '}',
+  ].join('\n');
+  const fragmentSource = [
+    '#ifdef GL_FRAGMENT_PRECISION_HIGH',
+    'precision highp float;',
+    '#else',
+    'precision mediump float;',
+    '#endif',
+    'varying vec3 vNormal;',
+    'varying vec3 vColor;',
+    'varying float vMetalness;',
+    'varying vec3 vViewPosition;',
+    'varying vec3 vObjectPosition;',
+    'varying vec3 vObjectNormal;',
+    'uniform vec3 uMetalColor;',
+    'uniform float uRoughness;',
+    'uniform float uReflectionStrength;',
+    'uniform float uMetalBodyTint;',
+    'uniform float uAntiqueStrength;',
+    'uniform vec3 uPatinaColor;',
+    'uniform float uModelRadius;',
+    'uniform sampler2D uAntiqueTexture;',
+    'uniform float uAntiqueAtlasOffset;',
+    'uniform float uAntiqueTextureScale;',
+    'uniform float uAntiquePitStrength;',
+    'uniform sampler2D uStudioTexture;',
+    'uniform float uStudioReady;',
+    'vec3 linearToSrgb(vec3 color) {',
+    '  return pow(clamp(color, 0.0, 1.0), vec3(1.0 / 2.2));',
+    '}',
+    'vec3 acesToneMap(vec3 color) {',
+    '  return clamp((color * (2.51 * color + 0.03)) / (color * (2.43 * color + 0.59) + 0.14), 0.0, 1.0);',
+    '}',
+    'vec3 fresnelSchlick(float cosine, vec3 f0) {',
+    '  return f0 + (1.0 - f0) * pow(1.0 - cosine, 5.0);',
+    '}',
+    'float antiqueHash(vec3 point) {',
+    '  return fract(sin(dot(point, vec3(12.9898, 78.233, 37.719))) * 43758.5453);',
+    '}',
+    'float antiqueNoise(vec3 point) {',
+    '  vec3 cell = floor(point);',
+    '  vec3 local = fract(point);',
+    '  local = local * local * (3.0 - 2.0 * local);',
+    '  float n000 = antiqueHash(cell);',
+    '  float n100 = antiqueHash(cell + vec3(1.0, 0.0, 0.0));',
+    '  float n010 = antiqueHash(cell + vec3(0.0, 1.0, 0.0));',
+    '  float n110 = antiqueHash(cell + vec3(1.0, 1.0, 0.0));',
+    '  float n001 = antiqueHash(cell + vec3(0.0, 0.0, 1.0));',
+    '  float n101 = antiqueHash(cell + vec3(1.0, 0.0, 1.0));',
+    '  float n011 = antiqueHash(cell + vec3(0.0, 1.0, 1.0));',
+    '  float n111 = antiqueHash(cell + vec3(1.0, 1.0, 1.0));',
+    '  float bottom = mix(mix(n000, n100, local.x), mix(n010, n110, local.x), local.y);',
+    '  float top = mix(mix(n001, n101, local.x), mix(n011, n111, local.x), local.y);',
+    '  return mix(bottom, top, local.z);',
+    '}',
+    'float distributionGgx(float nDotH, float roughness) {',
+    '  float alpha = roughness * roughness;',
+    '  float alpha2 = alpha * alpha;',
+    '  float denominator = nDotH * nDotH * (alpha2 - 1.0) + 1.0;',
+    '  return alpha2 / max(3.14159265 * denominator * denominator, 0.0001);',
+    '}',
+    'float geometrySchlickGgx(float nDotDirection, float roughness) {',
+    '  float k = (roughness + 1.0) * (roughness + 1.0) / 8.0;',
+    '  return nDotDirection / max(nDotDirection * (1.0 - k) + k, 0.0001);',
+    '}',
+    // Explicit atlas levels avoid screen-derivative LOD jumps at longitude seams
+    // on every WebGL device, including those without texture-LOD extensions.
+    'vec3 studioLevel(vec2 uv, float level) {',
+    '  float scale = exp2(-level);',
+    '  vec2 size = vec2(1024.0, 512.0) * scale;',
+    '  float top = 1024.0 * (1.0 - scale) + 2.0 * level;',
+    '  vec2 pixel = vec2(1.0, top + 1.0) + uv * size;',
+    '  vec3 encoded = texture2D(uStudioTexture, pixel / vec2(1026.0, 1040.0)).rgb;',
+    '  return encoded * encoded * 32.0;',
+    '}',
+    'vec3 studioSample(vec3 direction, float blur) {',
+    '  vec2 uv = vec2(fract(atan(direction.z, direction.x) / 6.2831853 + 0.65), 1.0 - acos(clamp(direction.y, -1.0, 1.0)) / 3.14159265);',
+    '  float lod = clamp(2.0 + blur * 7.0, 0.0, 8.0);',
+    '  float low = floor(lod);',
+    '  return mix(studioLevel(uv, low), studioLevel(uv, min(low + 1.0, 8.0)), fract(lod));',
+    '}',
+    'vec3 studioEnvironment(vec3 direction) {',
+    '  if (uStudioReady > 0.5) {',
+    '    return studioSample(direction, uRoughness);',
+    '  }',
+    '  float height = direction.y * 0.5 + 0.5;',
+    '  vec3 environment = mix(vec3(0.018, 0.022, 0.032), vec3(0.62, 0.68, 0.78), smoothstep(0.08, 0.92, height));',
+    // Broad white cards make the long flowing reflections seen in product
+    // photography; slim black flags provide the contrasting dark streaks.
+    '  float topCard = smoothstep(0.38, 0.78, direction.y) * (1.0 - smoothstep(0.52, 0.92, abs(direction.x)));',
+    '  float leftCard = smoothstep(0.28, 0.82, -direction.x) * (1.0 - smoothstep(0.42, 0.90, abs(direction.y - 0.10)));',
+    '  float frontCard = pow(max(direction.z, 0.0), 18.0);',
+    '  float blackFlagA = (1.0 - smoothstep(0.035, 0.16, abs(direction.x + 0.34))) * smoothstep(-0.45, 0.55, direction.y);',
+    '  float blackFlagB = (1.0 - smoothstep(0.025, 0.12, abs(direction.x - 0.48))) * smoothstep(-0.20, 0.72, direction.y);',
+    '  environment += vec3(1.35, 1.30, 1.18) * topCard;',
+    '  environment += vec3(0.95, 1.00, 1.08) * leftCard;',
+    '  environment += vec3(0.80) * frontCard;',
+    '  environment *= 1.0 - 0.88 * max(blackFlagA, blackFlagB);',
+    '  return environment;',
+    '}',
+    'vec3 sampleAntiqueAtlas(vec2 coordinates) {',
+    // Mirrored repetition makes opposite texture edges meet with the same
+    // pixels, eliminating the straight seams of a non-tileable photograph.
+    '  vec2 wrapped = 1.0 - abs(fract(coordinates * 0.5) * 2.0 - 1.0);',
+    '  float gutter = 0.003;',
+    '  float atlasX = mix(uAntiqueAtlasOffset + gutter, uAntiqueAtlasOffset + 0.5 - gutter, wrapped.x);',
+    '  return texture2D(uAntiqueTexture, vec2(atlasX, mix(gutter, 1.0 - gutter, wrapped.y))).rgb;',
+    '}',
+    'void main(void) {',
+    '  vec3 normal = normalize(vNormal);',
+    // Gold/yellow and subdued grey/blue-grey source colours are the agreed
+    // metal candidates. Other colours keep ordinary nonmetal shading.
+    '  float metalness = clamp(vMetalness, 0.0, 1.0);',
+    '  vec3 inputColor = max(vColor, vec3(0.0));',
+    '  vec3 metalF0 = uMetalColor;',
+    '  vec3 viewDirection = normalize(-vViewPosition);',
+    '  vec3 lightDirection = normalize(vec3(0.42, 0.72, 0.55));',
+    '  vec3 halfVector = normalize(viewDirection + lightDirection);',
+    '  float nDotV = max(dot(normal, viewDirection), 0.001);',
+    '  float nDotL = max(dot(normal, lightDirection), 0.0);',
+    '  float nDotH = max(dot(normal, halfVector), 0.0);',
+    '  float vDotH = max(dot(viewDirection, halfVector), 0.0);',
+    '  float roughness = clamp(uRoughness, 0.06, 0.62);',
+    '  vec3 fresnel = fresnelSchlick(vDotH, metalF0);',
+    '  float distribution = distributionGgx(nDotH, roughness);',
+    '  float geometry = geometrySchlickGgx(nDotV, roughness) * geometrySchlickGgx(max(nDotL, 0.001), roughness);',
+    '  vec3 directSpecular = distribution * geometry * fresnel / max(4.0 * nDotV * max(nDotL, 0.001), 0.001);',
+    '  vec3 reflectionDirection = reflect(-viewDirection, normal);',
+    '  vec3 environment = studioEnvironment(reflectionDirection);',
+    '  environment = mix(environment, vec3(0.50, 0.52, 0.55), clamp(roughness * roughness * 3.1, 0.0, 0.88) * (1.0 - uStudioReady));',
+    '  vec3 edgeFresnel = fresnelSchlick(nDotV, metalF0);',
+    '  vec3 metalSurface = environment * edgeFresnel * uReflectionStrength + directSpecular * nDotL * vec3(2.8, 2.65, 2.35) * uReflectionStrength * 0.78 * (1.0 - uStudioReady);',
+    '  metalSurface += metalF0 * uMetalBodyTint;',
+    // Antique finishes use stable object-space variation, so the aged marks
+    // remain attached to the product while it rotates instead of shimmering.
+    '  vec3 antiquePoint = vObjectPosition / max(uModelRadius, 0.001);',
+    '  float antiqueCloud = antiqueNoise(antiquePoint * 7.5);',
+    '  float antiqueStreak = antiqueNoise(vec3(antiquePoint.x * 15.0, antiquePoint.y * 48.0, antiquePoint.z * 15.0));',
+    '  float patina = smoothstep(0.60, 0.88, antiqueCloud * 0.68 + antiqueStreak * 0.32) * 0.22;',
+    // Smooth triplanar projection applies the supplied reference without UVs.
+    // Blending all three axes avoids the hard direction boundary that appeared
+    // as a straight line of black points on rounded surfaces.
+    '  vec3 antiqueUvPoint = antiquePoint * uAntiqueTextureScale;',
+    '  vec3 stableNormal = abs(normalize(vObjectNormal));',
+    '  vec3 textureWeights = pow(stableNormal, vec3(3.0));',
+    '  textureWeights /= max(textureWeights.x + textureWeights.y + textureWeights.z, 0.0001);',
+    '  vec2 antiqueUvX = antiqueUvPoint.yz;',
+    '  vec2 antiqueUvY = antiqueUvPoint.xz;',
+    '  vec2 antiqueUvZ = antiqueUvPoint.xy;',
+    '  vec3 textureColor =',
+    '    sampleAntiqueAtlas(antiqueUvX) * textureWeights.x +',
+    '    sampleAntiqueAtlas(antiqueUvY) * textureWeights.y +',
+    '    sampleAntiqueAtlas(antiqueUvZ) * textureWeights.z;',
+    '  float textureLuma = dot(textureColor, vec3(0.2126, 0.7152, 0.0722));',
+    '  vec2 pitOffset = vec2(0.006, 0.004);',
+    '  vec3 nearbyPositive =',
+    '    sampleAntiqueAtlas(antiqueUvX + pitOffset) * textureWeights.x +',
+    '    sampleAntiqueAtlas(antiqueUvY + pitOffset) * textureWeights.y +',
+    '    sampleAntiqueAtlas(antiqueUvZ + pitOffset) * textureWeights.z;',
+    '  vec3 nearbyNegative =',
+    '    sampleAntiqueAtlas(antiqueUvX - pitOffset) * textureWeights.x +',
+    '    sampleAntiqueAtlas(antiqueUvY - pitOffset) * textureWeights.y +',
+    '    sampleAntiqueAtlas(antiqueUvZ - pitOffset) * textureWeights.z;',
+    '  float nearbyLuma = dot((nearbyPositive + nearbyNegative) * 0.5, vec3(0.2126, 0.7152, 0.0722));',
+    '  float pits = smoothstep(0.020, 0.12, max(nearbyLuma - textureLuma, 0.0));',
+    '  float textureMean = mix(0.34, 0.57, step(0.25, uAntiqueAtlasOffset));',
+    '  float materialVariation = clamp(pow(max(textureLuma / textureMean, 0.05), 0.62), 0.48, 1.38);',
+    '  float exposedHighlight = smoothstep(0.42, 0.92, nDotL) * (1.0 - patina);',
+    '  vec3 wornReflection = studioSample(reflectionDirection, 0.48) * edgeFresnel * uReflectionStrength;',
+    '  float wear = smoothstep(0.20, 0.70, antiqueCloud * 0.6 + antiqueStreak * 0.4);',
+    '  vec3 agedMetal = mix(metalSurface, wornReflection, wear * uStudioReady * 0.25) * mix(0.98, 0.62, patina);',
+    '  agedMetal *= mix(1.0, materialVariation, 0.72);',
+    '  agedMetal = mix(agedMetal, uPatinaColor, clamp(patina * 0.15 + pits * uAntiquePitStrength, 0.0, 0.88));',
+    '  agedMetal += metalF0 * (0.035 + exposedHighlight * 0.05);',
+    '  metalSurface = mix(metalSurface, agedMetal, clamp(uAntiqueStrength, 0.0, 1.0));',
+    // Broad satin scattering: soften reflected images without painting white
+    // over the surface. The finish colour and low-frequency grain remain.
+    '  float haze = smoothstep(0.45, 0.62, roughness) * (1.0 - uAntiqueStrength) * 0.42;',
+    '  vec3 satin = metalF0 * (0.32 + 0.30 * max(normal.y, 0.0) + 0.22 * nDotL);',
+    '  satin *= 0.97 + 0.06 * antiqueNoise(antiquePoint * 160.0);',
+    '  metalSurface = mix(metalSurface, satin, haze);',
+    '  float diffuse = max(dot(normal, lightDirection), 0.0);',
+    '  float fill = max(dot(normal, normalize(vec3(-0.52, 0.26, 0.48))), 0.0);',
+    '  float sky = normal.y * 0.5 + 0.5;',
+    '  vec3 ordinarySurface = inputColor * (mix(vec3(0.72), vec3(0.98), sky) + 0.38 * diffuse + 0.12 * fill);',
+    '  vec3 shaded = mix(ordinarySurface, metalSurface, metalness);',
+    '  gl_FragColor = vec4(linearToSrgb(acesToneMap(shaded)), 1.0);',
+    '}',
+  ].join('\n');
+
+  const program = gl.createProgram();
+  gl.attachShader(program, compileShader(gl, gl.VERTEX_SHADER, vertexSource));
+  gl.attachShader(program, compileShader(gl, gl.FRAGMENT_SHADER, fragmentSource));
+  gl.linkProgram(program);
+  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+    fail('WebGL 程序链接失败：' + gl.getProgramInfoLog(program));
+  }
+  return program;
+}
+
+function createAntiqueTexture(gl, onReady) {
+  const size = 256;
+  const pixels = new Uint8Array(size * size * 4);
+  pixels.fill(255);
+  let state = 0x6d2b79f5;
+  const random = () => {
+    state ^= state << 13;
+    state ^= state >>> 17;
+    state ^= state << 5;
+    return (state >>> 0) / 4294967296;
+  };
+
+  // Sparse, irregular dark oxidation points. Keep both axes short so the
+  // result reads as tiny pits instead of scratches once projected on curves.
+  for (let spot = 0; spot < 300; spot += 1) {
+    const centerX = Math.floor(random() * size);
+    const centerY = Math.floor(random() * size);
+    const radiusX = 0.45 + random() * 0.85;
+    const radiusY = 0.45 + random() * 0.85;
+    const darkness = Math.floor(8 + random() * 42);
+    const extentX = Math.ceil(radiusX + 1);
+    const extentY = Math.ceil(radiusY + 1);
+    for (let y = -extentY; y <= extentY; y += 1) {
+      for (let x = -extentX; x <= extentX; x += 1) {
+        const distance = (x * x) / (radiusX * radiusX) + (y * y) / (radiusY * radiusY);
+        const brokenEdge = 0.72 + random() * 0.48;
+        if (distance > brokenEdge) continue;
+        const pixelX = (centerX + x + size) % size;
+        const pixelY = (centerY + y + size) % size;
+        const offset = (pixelY * size + pixelX) * 4;
+        const value = Math.min(pixels[offset], darkness + Math.floor(distance * 45));
+        pixels[offset] = value;
+        pixels[offset + 1] = value;
+        pixels[offset + 2] = value;
+      }
+    }
+  }
+
+  const texture = gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D, texture);
+  gl.pixelStorei(gl.UNPACK_ALIGNMENT, 1);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, size, size, 0, gl.RGBA, gl.UNSIGNED_BYTE, pixels);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.REPEAT);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.bindTexture(gl.TEXTURE_2D, null);
+
+  const image = new Image();
+  image.decoding = 'async';
+  image.addEventListener('load', () => {
+    gl.bindTexture(gl.TEXTURE_2D, texture);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, image);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.bindTexture(gl.TEXTURE_2D, null);
+    if (typeof onReady === 'function') onReady();
+  }, { once: true });
+  image.src = './antique-metal-reference.jpg?v=20260910-antique-texture-3';
+  return texture;
+}
+
+// Decode Radiance scanlines once; squared encoding keeps HDR highlights on
+// baseline WebGL devices without requiring floating-point texture extensions.
+async function loadStudioTexture(gl, texture) {
+  const response = await fetch(new URL('./studio-small-09.bin', import.meta.url));
+  if (!response.ok) throw new Error('Studio environment unavailable');
+  const bytes = new Uint8Array(await response.arrayBuffer());
+  let cursor = 0;
+  const line = () => {
+    let text = '';
+    while (cursor < bytes.length) {
+      const byte = bytes[cursor++];
+      if (byte === 10) break;
+      text += String.fromCharCode(byte);
+    }
+    return text.trim();
+  };
+  while (line() !== '' && cursor < bytes.length) {}
+  const dimensions = /^-Y (\d+) \+X (\d+)$/.exec(line());
+  if (!dimensions) throw new Error('Unsupported HDR orientation');
+  const height = Number(dimensions[1]);
+  const width = Number(dimensions[2]);
+  if (width !== 1024 || height !== 512) throw new Error('Unexpected studio texture dimensions');
+  const pixels = new Uint8Array(width * height * 4);
+  const scan = new Uint8Array(width * 4);
+  for (let y = 0; y < height; y++) {
+    if (bytes[cursor++] !== 2 || bytes[cursor++] !== 2) throw new Error('Invalid HDR scanline');
+    if ((bytes[cursor++] * 256 + bytes[cursor++]) !== width) throw new Error('Invalid HDR width');
+    for (let channel = 0; channel < 4; channel++) {
+      let x = 0;
+      while (x < width) {
+        const count = bytes[cursor++];
+        if (!count || cursor >= bytes.length) throw new Error('Truncated HDR');
+        const length = count > 128 ? count - 128 : count;
+        if (x + length > width || cursor + (count > 128 ? 1 : length) > bytes.length) throw new Error('Invalid HDR run');
+        if (count > 128) {
+          const value = bytes[cursor++];
+          for (let i = 0; i < count - 128; i++) scan[channel * width + x++] = value;
+        } else {
+          for (let i = 0; i < count; i++) scan[channel * width + x++] = bytes[cursor++];
+        }
+      }
+    }
+    for (let x = 0; x < width; x++) {
+      const scale = Math.pow(2, scan[3 * width + x] - 136);
+      for (let c = 0; c < 3; c++) pixels[(y * width + x) * 4 + c] = Math.round(255 * Math.sqrt(Math.min(scan[c * width + x] * scale / 32, 1)));
+      pixels[(y * width + x) * 4 + 3] = 255;
+    }
+  }
+  // A guttered mip atlas is filtered explicitly in the shader, never from
+  // derivatives of atan/fract. Average decoded radiance, not encoded bytes.
+  const atlasWidth = 1026;
+  const atlasHeight = 1040;
+  const atlas = new Uint8Array(atlasWidth * atlasHeight * 4);
+  let levelPixels = pixels;
+  let levelWidth = width;
+  let levelHeight = height;
+  let top = 0;
+  for (let level = 0; level <= 8; level++) {
+    for (let y = -1; y <= levelHeight; y++) {
+      const sourceY = Math.max(0, Math.min(levelHeight - 1, y));
+      for (let x = -1; x <= levelWidth; x++) {
+        const sourceX = (x + levelWidth) % levelWidth;
+        const source = (sourceY * levelWidth + sourceX) * 4;
+        atlas.set(levelPixels.subarray(source, source + 4), ((top + y + 1) * atlasWidth + x + 1) * 4);
+      }
+    }
+    top += levelHeight + 2;
+    if (level === 8) break;
+    const nextWidth = levelWidth / 2;
+    const nextHeight = levelHeight / 2;
+    const next = new Uint8Array(nextWidth * nextHeight * 4);
+    for (let y = 0; y < nextHeight; y++) {
+      for (let x = 0; x < nextWidth; x++) {
+        const target = (y * nextWidth + x) * 4;
+        for (let c = 0; c < 3; c++) {
+          let radiance = 0;
+          for (let dy = 0; dy < 2; dy++) for (let dx = 0; dx < 2; dx++) {
+            const value = levelPixels[((y * 2 + dy) * levelWidth + x * 2 + dx) * 4 + c];
+            radiance += value * value;
+          }
+          next[target + c] = Math.round(Math.sqrt(radiance * 0.25));
+        }
+        next[target + 3] = 255;
+      }
+    }
+    levelPixels = next;
+    levelWidth = nextWidth;
+    levelHeight = nextHeight;
+  }
+  gl.bindTexture(gl.TEXTURE_2D, texture);
+  gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, atlasWidth, atlasHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, atlas);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+}
+
+export class ModelViewer3D {
+  constructor(canvas, options = {}) {
+    if (!canvas) fail('缺少三维查看画布。');
+    this.canvas = canvas;
+    this.options = options;
+    this.zoomWindow = options.zoomWindow;
+    this.background = options.background || CREO_MODEL_BACKGROUND;
+    this.visible = false;
+    this.enabled = false;
+    this.geometry = null;
+    this.mode = 'pan';
+    this.yaw = -Math.PI / 4;
+    this.pitch = Math.PI / 7;
+    this.distance = 10;
+    this.panX = 0;
+    this.panY = 0;
+    this.fieldOfView = Math.PI / 4;
+    this.drag = null;
+    this.zoomStart = null;
+    this.touchPointers = new Map();
+    this.pinch = null;
+    this.metalFinish = {
+      color: [0.82, 0.58, 0.24],
+      roughness: 0.105,
+      reflectionStrength: 1.28,
+      metalBodyTint: 0.055,
+      antiqueStrength: 0,
+      patinaColor: [0.04, 0.03, 0.02],
+      antiqueAtlasOffset: 0,
+      antiqueTextureScale: 1.35,
+      antiquePitStrength: 0.82,
+    };
+    this.needsDraw = true;
+    this.importWorker = null;
+    this.importReject = null;
+    this.importTimer = null;
+
+    this.gl = canvas.getContext('webgl', {
+      antialias: true,
+      alpha: false,
+      preserveDrawingBuffer: true,
+    });
+    if (!this.gl) fail('当前浏览器或显卡不支持 WebGL。');
+
+    this.program = createProgram(this.gl);
+    this.positionBuffer = this.gl.createBuffer();
+    this.normalBuffer = this.gl.createBuffer();
+    this.colorBuffer = this.gl.createBuffer();
+    this.metalnessBuffer = this.gl.createBuffer();
+    this.antiqueTexture = createAntiqueTexture(this.gl, () => this.requestDraw());
+    this.studioTexture = this.gl.createTexture();
+    this.studioReady = 0;
+    this.gl.bindTexture(this.gl.TEXTURE_2D, this.studioTexture);
+    this.gl.texImage2D(this.gl.TEXTURE_2D, 0, this.gl.RGBA, 1, 1, 0, this.gl.RGBA, this.gl.UNSIGNED_BYTE, new Uint8Array([128, 128, 128, 255]));
+    loadStudioTexture(this.gl, this.studioTexture).then(() => { this.studioReady = 1; this.requestDraw(); }).catch(() => {});
+    this.locations = {
+      position: this.gl.getAttribLocation(this.program, 'aPosition'),
+      normal: this.gl.getAttribLocation(this.program, 'aNormal'),
+      color: this.gl.getAttribLocation(this.program, 'aColor'),
+      metalness: this.gl.getAttribLocation(this.program, 'aMetalness'),
+      projection: this.gl.getUniformLocation(this.program, 'uProjection'),
+      view: this.gl.getUniformLocation(this.program, 'uView'),
+      model: this.gl.getUniformLocation(this.program, 'uModel'),
+      normalMatrix: this.gl.getUniformLocation(this.program, 'uNormalMatrix'),
+      metalColor: this.gl.getUniformLocation(this.program, 'uMetalColor'),
+      roughness: this.gl.getUniformLocation(this.program, 'uRoughness'),
+      reflectionStrength: this.gl.getUniformLocation(this.program, 'uReflectionStrength'),
+      metalBodyTint: this.gl.getUniformLocation(this.program, 'uMetalBodyTint'),
+      antiqueStrength: this.gl.getUniformLocation(this.program, 'uAntiqueStrength'),
+      patinaColor: this.gl.getUniformLocation(this.program, 'uPatinaColor'),
+      modelRadius: this.gl.getUniformLocation(this.program, 'uModelRadius'),
+      antiqueTexture: this.gl.getUniformLocation(this.program, 'uAntiqueTexture'),
+      antiqueAtlasOffset: this.gl.getUniformLocation(this.program, 'uAntiqueAtlasOffset'),
+      antiqueTextureScale: this.gl.getUniformLocation(this.program, 'uAntiqueTextureScale'),
+      antiquePitStrength: this.gl.getUniformLocation(this.program, 'uAntiquePitStrength'),
+      studioTexture: this.gl.getUniformLocation(this.program, 'uStudioTexture'),
+      studioReady: this.gl.getUniformLocation(this.program, 'uStudioReady'),
+    };
+    this.bindEvents();
+    this.resizeObserver = new ResizeObserver(() => this.resize());
+    this.resizeObserver.observe(canvas.parentElement);
+    this.animationFrame = requestAnimationFrame(() => this.loop());
+  }
+
+  bindEvents() {
+    this.canvas.addEventListener('contextmenu', (event) => event.preventDefault());
+    this.canvas.addEventListener('wheel', (event) => this.onWheel(event), { passive: false });
+    this.canvas.addEventListener('pointerdown', (event) => this.onPointerDown(event));
+    this.canvas.addEventListener('pointermove', (event) => this.onPointerMove(event));
+    this.canvas.addEventListener('pointerup', (event) => this.onPointerUp(event));
+    this.canvas.addEventListener('pointercancel', (event) => this.onPointerUp(event));
+    this.canvas.addEventListener('dblclick', () => this.fit());
+  }
+
+  setVisible(visible) {
+    this.visible = Boolean(visible);
+    this.canvas.hidden = !this.visible;
+    if (this.visible) {
+      this.resize();
+      this.requestDraw();
+    }
+  }
+
+  setEnabled(enabled) {
+    this.enabled = Boolean(enabled);
+    this.updateCursor();
+  }
+
+  setInteractionMode(mode) {
+    this.mode = mode === 'zoom-window' ? 'zoom-window' : 'pan';
+    this.hideZoomWindow();
+    this.updateCursor();
+  }
+
+  updateCursor() {
+    this.canvas.style.cursor = !this.enabled
+      ? 'default'
+      : this.mode === 'zoom-window'
+        ? 'crosshair'
+        : 'grab';
+  }
+
+  setBackground(color) {
+    this.background = color;
+    this.requestDraw();
+  }
+
+  setMetalFinish(finish = {}) {
+    const color = Array.isArray(finish.color) ? finish.color.slice(0, 3).map(Number) : this.metalFinish.color;
+    const patinaColor = Array.isArray(finish.patinaColor)
+      ? finish.patinaColor.slice(0, 3).map(Number)
+      : [0.04, 0.03, 0.02];
+    this.metalFinish = {
+      color: color.length === 3 && color.every(Number.isFinite) ? color.map((value) => clamp(value, 0, 1)) : this.metalFinish.color,
+      roughness: clamp(Number(finish.roughness) || this.metalFinish.roughness, 0.06, 0.62),
+      reflectionStrength: clamp(Number(finish.reflectionStrength) || this.metalFinish.reflectionStrength, 0.25, 1.6),
+      metalBodyTint: clamp(Number(finish.metalBodyTint) || 0.055, 0.02, 0.2),
+      antiqueStrength: clamp(Number(finish.antiqueStrength) || 0, 0, 1),
+      antiqueAtlasOffset: clamp(Number(finish.antiqueAtlasOffset) || 0, 0, 0.5),
+      antiqueTextureScale: clamp(Number(finish.antiqueTextureScale) || 1.35, 0.5, 6),
+      antiquePitStrength: clamp(Number(finish.antiquePitStrength) || 0.82, 0, 1),
+      patinaColor: patinaColor.length === 3 && patinaColor.every(Number.isFinite)
+        ? patinaColor.map((value) => clamp(value, 0, 1))
+        : [0.04, 0.03, 0.02],
+    };
+    this.requestDraw();
+  }
+
+  clear() {
+    this.geometry = null;
+    this.cancelImport();
+    this.requestDraw();
+  }
+
+  setGeometry(geometry) {
+    const gl = this.gl;
+    this.geometry = geometry;
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.positionBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, geometry.positions, gl.STATIC_DRAW);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.normalBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, geometry.normals, gl.STATIC_DRAW);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.colorBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, geometry.colors, gl.STATIC_DRAW);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.metalnessBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, geometry.metalness, gl.STATIC_DRAW);
+    this.yaw = -Math.PI / 4;
+    this.pitch = Math.PI / 7;
+    this.fit();
+    return {
+      format: geometry.format,
+      triangles: geometry.triangles,
+      dimensions: geometry.dimensions,
+    };
+  }
+
+  loadStl(buffer) {
+    return this.setGeometry(parseStl(buffer));
+  }
+
+  loadOcctResult(result, format) {
+    return this.setGeometry(geometryFromOcctResult(result, format));
+  }
+
+  importOcct(buffer, format, workerUrl, parameters = {}) {
+    this.cancelImport();
+    const bytes = new Uint8Array(buffer);
+    return new Promise((resolve, reject) => {
+      const worker = new Worker(workerUrl);
+      this.importWorker = worker;
+      this.importReject = reject;
+      this.importTimer = setTimeout(() => {
+        const timeoutReject = this.importReject;
+        this.finishImportWorker();
+        timeoutReject?.(new Error('三维模型解析超时。'));
+      }, parameters.timeoutMs || 120000);
+      worker.onmessage = (event) => {
+        this.finishImportWorker();
+        if (event.data?.type === 'error') {
+          reject(new Error(event.data.message || '三维模型解析失败。'));
+          return;
+        }
+        try {
+          resolve(this.loadOcctResult(event.data?.result ?? event.data, format.toUpperCase()));
+        } catch (error) {
+          reject(error);
+        }
+      };
+      worker.onerror = (event) => {
+        this.finishImportWorker();
+        reject(new Error(event.message || 'OpenCascade Worker 运行失败。'));
+      };
+      worker.postMessage({
+        format,
+        buffer: bytes,
+        params: {
+          linearUnit: 'millimeter',
+          linearDeflectionType: 'bounding_box_ratio',
+          linearDeflection: parameters.linearDeflection || 0.0005,
+          // Refine display tessellation for reflective curved parts without
+          // modifying the source solid. Keep cost bounded for assemblies.
+          angularDeflection: parameters.angularDeflection || 0.08,
+        },
+      }, [bytes.buffer]);
+    });
+  }
+
+  finishImportWorker() {
+    clearTimeout(this.importTimer);
+    this.importTimer = null;
+    this.importWorker?.terminate();
+    this.importWorker = null;
+    this.importReject = null;
+  }
+
+  cancelImport() {
+    if (!this.importWorker) return;
+    const reject = this.importReject;
+    this.finishImportWorker();
+    if (reject) reject(new DOMException('模型解析已取消。', 'AbortError'));
+  }
+
+  fit() {
+    if (!this.geometry) return;
+    this.distance = this.geometry.radius / Math.tan(this.fieldOfView / 2) * 1.25;
+    this.panX = 0;
+    this.panY = 0;
+    this.requestDraw();
+  }
+
+  onWheel(event) {
+    if (!this.enabled || !this.geometry) return;
+    event.preventDefault();
+    this.zoomBy(Math.exp(-event.deltaY * 0.0012));
+  }
+
+  zoomBy(factor) {
+    if (!this.enabled || !this.geometry) return;
+    this.distance = clamp(
+      this.distance / Math.max(factor, 0.01),
+      this.geometry.radius * 0.15,
+      this.geometry.radius * 100,
+    );
+    this.requestDraw();
+  }
+
+  eventPoint(event) {
+    const bounds = this.canvas.getBoundingClientRect();
+    return { x: event.clientX - bounds.left, y: event.clientY - bounds.top };
+  }
+
+  onPointerDown(event) {
+    if (!this.enabled || !this.geometry) return;
+    event.preventDefault();
+    this.canvas.setPointerCapture(event.pointerId);
+    const point = this.eventPoint(event);
+    if (this.mode === 'zoom-window') {
+      this.zoomStart = point;
+      this.showZoomWindow(point, point);
+      return;
+    }
+
+    if (event.pointerType === 'touch') {
+      this.touchPointers.set(event.pointerId, point);
+      if (this.touchPointers.size >= 2) {
+        const pointers = [...this.touchPointers.entries()].slice(0, 2);
+        this.pinch = {
+          ids: [pointers[0][0], pointers[1][0]],
+          distance: Math.hypot(
+            pointers[1][1].x - pointers[0][1].x,
+            pointers[1][1].y - pointers[0][1].y,
+          ),
+          cameraDistance: this.distance,
+        };
+        this.drag = null;
+      } else {
+        this.drag = { pointerId: event.pointerId, ...point, mode: 'orbit' };
+      }
+      return;
+    }
+
+    this.drag = {
+      pointerId: event.pointerId,
+      ...point,
+      mode: event.shiftKey || event.button === 1 || event.button === 2 ? 'translate' : 'orbit',
+    };
+    this.canvas.style.cursor = 'grabbing';
+  }
+
+  onPointerMove(event) {
+    if (!this.enabled || !this.geometry) return;
+    const point = this.eventPoint(event);
+    if (this.zoomStart) {
+      this.showZoomWindow(this.zoomStart, point);
+      return;
+    }
+
+    if (event.pointerType === 'touch' && this.touchPointers.has(event.pointerId)) {
+      event.preventDefault();
+      this.touchPointers.set(event.pointerId, point);
+      if (this.pinch) {
+        const first = this.touchPointers.get(this.pinch.ids[0]);
+        const second = this.touchPointers.get(this.pinch.ids[1]);
+        if (!first || !second) return;
+        const distance = Math.hypot(second.x - first.x, second.y - first.y);
+        const factor = this.pinch.distance > 0 ? distance / this.pinch.distance : 1;
+        this.distance = clamp(
+          this.pinch.cameraDistance / Math.max(factor, 0.01),
+          this.geometry.radius * 0.15,
+          this.geometry.radius * 100,
+        );
+        this.requestDraw();
+        return;
+      }
+    }
+
+    if (!this.drag || this.drag.pointerId !== event.pointerId) return;
+    const deltaX = point.x - this.drag.x;
+    const deltaY = point.y - this.drag.y;
+    this.drag.x = point.x;
+    this.drag.y = point.y;
+    if (this.drag.mode === 'orbit') {
+      this.yaw += deltaX * 0.008;
+      this.pitch = clamp(this.pitch + deltaY * 0.008, -Math.PI / 2, Math.PI / 2);
+    } else {
+      const scale = 2 * this.distance * Math.tan(this.fieldOfView / 2) /
+        Math.max(this.canvas.clientHeight, 1);
+      this.panX += deltaX * scale;
+      this.panY -= deltaY * scale;
+    }
+    this.requestDraw();
+  }
+
+  onPointerUp(event) {
+    if (this.zoomStart) {
+      const end = this.eventPoint(event);
+      this.zoomToWindow(this.zoomStart, end);
+      this.zoomStart = null;
+      this.hideZoomWindow();
+      this.options.onInteractionModeChange?.('pan');
+      return;
+    }
+
+    if (event.pointerType === 'touch') {
+      this.touchPointers.delete(event.pointerId);
+      this.pinch = null;
+      const remaining = this.touchPointers.entries().next().value;
+      this.drag = remaining
+        ? { pointerId: remaining[0], ...remaining[1], mode: 'orbit' }
+        : null;
+    } else {
+      this.drag = null;
+    }
+    this.updateCursor();
+  }
+
+  showZoomWindow(start, end) {
+    if (!this.zoomWindow) return;
+    this.zoomWindow.style.left = Math.min(start.x, end.x) + 'px';
+    this.zoomWindow.style.top = Math.min(start.y, end.y) + 'px';
+    this.zoomWindow.style.width = Math.abs(end.x - start.x) + 'px';
+    this.zoomWindow.style.height = Math.abs(end.y - start.y) + 'px';
+    this.zoomWindow.style.display = 'block';
+  }
+
+  hideZoomWindow() {
+    if (this.zoomWindow) this.zoomWindow.style.display = 'none';
+    this.zoomStart = null;
+  }
+
+  zoomToWindow(start, end) {
+    const width = Math.abs(end.x - start.x);
+    const height = Math.abs(end.y - start.y);
+    if (width < 8 || height < 8) return;
+    const centerX = (start.x + end.x) / 2;
+    const centerY = (start.y + end.y) / 2;
+    const worldPerPixel = 2 * this.distance * Math.tan(this.fieldOfView / 2) /
+      Math.max(this.canvas.clientHeight, 1);
+    this.panX -= (centerX - this.canvas.clientWidth / 2) * worldPerPixel;
+    this.panY += (centerY - this.canvas.clientHeight / 2) * worldPerPixel;
+    const factor = Math.max(
+      width / Math.max(this.canvas.clientWidth, 1),
+      height / Math.max(this.canvas.clientHeight, 1),
+    );
+    this.distance = clamp(
+      this.distance * factor / 0.9,
+      this.geometry.radius * 0.15,
+      this.geometry.radius * 100,
+    );
+    this.requestDraw();
+  }
+
+  resize() {
+    if (!this.visible) return;
+    const ratio = Math.min(devicePixelRatio || 1, 2);
+    const width = Math.max(1, Math.round(this.canvas.clientWidth * ratio));
+    const height = Math.max(1, Math.round(this.canvas.clientHeight * ratio));
+    if (this.canvas.width !== width || this.canvas.height !== height) {
+      this.canvas.width = width;
+      this.canvas.height = height;
+      this.requestDraw();
+    }
+  }
+
+  requestDraw() {
+    this.needsDraw = true;
+  }
+
+  loop() {
+    if (this.visible && this.needsDraw) {
+      this.draw();
+      this.needsDraw = false;
+    }
+    this.animationFrame = requestAnimationFrame(() => this.loop());
+  }
+
+  draw() {
+    const gl = this.gl;
+    const background = hexToRgb(this.background);
+    gl.viewport(0, 0, this.canvas.width, this.canvas.height);
+    gl.clearColor(background[0], background[1], background[2], 1);
+    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+    if (!this.geometry) return;
+
+    gl.enable(gl.DEPTH_TEST);
+    gl.depthFunc(gl.LEQUAL);
+    gl.useProgram(this.program);
+    const aspect = this.canvas.width / Math.max(this.canvas.height, 1);
+    const near = Math.max(this.geometry.radius * 0.001, 0.001);
+    const far = Math.max(this.distance + this.geometry.radius * 20, near + 10);
+    const projection = mat4Perspective(this.fieldOfView, aspect, near, far);
+    const view = mat4Translation(this.panX, this.panY, -this.distance);
+    const model = mat4Multiply(mat4RotationX(this.pitch), mat4RotationY(this.yaw));
+    const normalMatrix = new Float32Array([
+      model[0], model[1], model[2],
+      model[4], model[5], model[6],
+      model[8], model[9], model[10],
+    ]);
+
+    gl.uniformMatrix4fv(this.locations.projection, false, projection);
+    gl.uniformMatrix4fv(this.locations.view, false, view);
+    gl.uniformMatrix4fv(this.locations.model, false, model);
+    gl.uniformMatrix3fv(this.locations.normalMatrix, false, normalMatrix);
+    gl.uniform3fv(this.locations.metalColor, this.metalFinish.color);
+    gl.uniform1f(this.locations.roughness, this.metalFinish.roughness);
+    gl.uniform1f(this.locations.reflectionStrength, this.metalFinish.reflectionStrength);
+    gl.uniform1f(this.locations.metalBodyTint, this.metalFinish.metalBodyTint);
+    gl.uniform1f(this.locations.antiqueStrength, this.metalFinish.antiqueStrength);
+    gl.uniform3fv(this.locations.patinaColor, this.metalFinish.patinaColor);
+    gl.uniform1f(this.locations.modelRadius, this.geometry.radius);
+    gl.activeTexture(gl.TEXTURE0);
+    gl.bindTexture(gl.TEXTURE_2D, this.antiqueTexture);
+    gl.uniform1i(this.locations.antiqueTexture, 0);
+    gl.uniform1f(this.locations.antiqueAtlasOffset, this.metalFinish.antiqueAtlasOffset);
+    gl.uniform1f(this.locations.antiqueTextureScale, this.metalFinish.antiqueTextureScale);
+    gl.uniform1f(this.locations.antiquePitStrength, this.metalFinish.antiquePitStrength);
+    gl.activeTexture(gl.TEXTURE1);
+    gl.bindTexture(gl.TEXTURE_2D, this.studioTexture);
+    gl.uniform1i(this.locations.studioTexture, 1);
+    gl.uniform1f(this.locations.studioReady, this.studioReady);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.positionBuffer);
+    gl.enableVertexAttribArray(this.locations.position);
+    gl.vertexAttribPointer(this.locations.position, 3, gl.FLOAT, false, 0, 0);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.normalBuffer);
+    gl.enableVertexAttribArray(this.locations.normal);
+    gl.vertexAttribPointer(this.locations.normal, 3, gl.FLOAT, false, 0, 0);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.colorBuffer);
+    gl.enableVertexAttribArray(this.locations.color);
+    gl.vertexAttribPointer(this.locations.color, 3, gl.FLOAT, false, 0, 0);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.metalnessBuffer);
+    gl.enableVertexAttribArray(this.locations.metalness);
+    gl.vertexAttribPointer(this.locations.metalness, 1, gl.FLOAT, false, 0, 0);
+    gl.drawArrays(gl.TRIANGLES, 0, this.geometry.positions.length / 3);
+  }
+
+  destroy() {
+    this.cancelImport();
+    cancelAnimationFrame(this.animationFrame);
+    this.resizeObserver.disconnect();
+    this.gl.deleteBuffer(this.positionBuffer);
+    this.gl.deleteBuffer(this.normalBuffer);
+    this.gl.deleteBuffer(this.colorBuffer);
+    this.gl.deleteBuffer(this.metalnessBuffer);
+    this.gl.deleteProgram(this.program);
+    this.gl.deleteTexture(this.studioTexture);
+  }
+}

@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>بيانات الرسم | قسم الصيانة</title>
+
+<style>
+:root{
+    --green:#075f49;
+    --green2:#0b7a5d;
+    --light:#edf7f4;
+    --bg:#f1f6f4;
+    --card:#ffffff;
+    --text:#17332c;
+    --muted:#6b7773;
+    --border:#dbe7e3;
+    --danger:#a51d1d;
+    --shadow:0 8px 28px rgba(20,70,55,.08);
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,var(--green),var(--green2));
+    color:#fff;
+    padding:22px 15px;
+}
+
+.header-inner{
+    max-width:1250px;
+    margin:auto;
+}
+
+.header-title{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.header-title h1{
+    margin:0;
+    font-size:25px;
+}
+
+.header-title span{
+    opacity:.9;
+    font-size:13px;
+}
+
+.nav{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:18px;
+}
+
+.nav a{
+    background:#fff;
+    color:var(--green);
+    text-decoration:none;
+    padding:10px 14px;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+/* MAIN */
+
+.container{
+    max-width:1250px;
+    margin:20px auto;
+    padding:0 14px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:20px;
+    margin-bottom:18px;
+    box-shadow:var(--shadow);
+}
+
+.card h2{
+    margin-top:0;
+}
+
+.muted{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* STATUS */
+
+.status{
+    padding:14px;
+    border-radius:14px;
+    background:var(--light);
+    color:var(--green);
+    margin-top:12px;
+    font-weight:bold;
+}
+
+.status.error{
+    background:#fff0f0;
+    color:var(--danger);
+}
+
+/* STATISTICS */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-top:18px;
+}
+
+.stat{
+    background:#edf7f4;
+    border:1px solid #dcece7;
+    border-radius:17px;
+    padding:18px;
+    text-align:center;
+}
+
+.stat-icon{
+    font-size:25px;
+    margin-bottom:5px;
+}
+
+.stat-title{
+    color:var(--muted);
+    font-size:13px;
+}
+
+.stat-value{
+    display:block;
+    color:var(--green);
+    font-size:27px;
+    font-weight:bold;
+    margin-top:6px;
+}
+
+/* FILE INFORMATION */
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.info-box{
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:15px;
+    background:#fff;
+}
+
+.info-box strong{
+    display:block;
+    color:var(--green);
+    margin-bottom:7px;
+}
+
+.info-box span{
+    color:var(--muted);
+    font-size:13px;
+    direction:ltr;
+    display:block;
+}
+
+/* TABS */
+
+.tabs{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-bottom:15px;
+}
+
+.tab{
+    border:0;
+    border-radius:12px;
+    padding:11px 15px;
+    background:#e6f2ee;
+    color:var(--green);
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.tab.active{
+    background:var(--green);
+    color:#fff;
+}
+
+/* CONTENT */
+
+.panel{
+    display:none;
+}
+
+.panel.active{
+    display:block;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.search-box input{
+    flex:1;
+    border:1px solid var(--border);
+    border-radius:13px;
+    padding:13px;
+    font:inherit;
+    outline:none;
+}
+
+.search-box input:focus{
+    border-color:var(--green2);
+    box-shadow:0 0 0 3px rgba(11,122,93,.1);
+}
+
+.btn{
+    border:0;
+    border-radius:13px;
+    padding:12px 17px;
+    cursor:pointer;
+    font:inherit;
+    font-weight:bold;
+}
+
+.btn-green{
+    background:var(--green);
+    color:#fff;
+}
+
+.btn-light{
+    background:#e6f2ee;
+    color:var(--green);
+}
+
+/* FEEDER LIST */
+
+.feeder-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    max-height:600px;
+    overflow:auto;
+}
+
+.feeder{
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:13px;
+    background:#fff;
+}
+
+.feeder-name{
+    color:var(--green);
+    font-size:16px;
+    font-weight:bold;
+    direction:ltr;
+    text-align:right;
+}
+
+.feeder-type{
+    color:var(--muted);
+    font-size:11px;
+    margin-top:6px;
+}
+
+/* TEXT LIST */
+
+.text-list{
+    max-height:600px;
+    overflow:auto;
+    border:1px solid var(--border);
+    border-radius:14px;
+}
+
+.text-row{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    padding:10px 13px;
+    border-bottom:1px solid var(--border);
+}
+
+.text-row:last-child{
+    border-bottom:0;
+}
+
+.text-value{
+    direction:ltr;
+    text-align:left;
+    font-family:monospace;
+}
+
+.text-count{
+    color:var(--muted);
+    font-size:12px;
+}
+
+/* JSON */
+
+.json-box{
+    background:#101817;
+    color:#dff8ef;
+    padding:16px;
+    border-radius:15px;
+    overflow:auto;
+    max-height:650px;
+    direction:ltr;
+    text-align:left;
+    font:12px/1.6 monospace;
+    white-space:pre-wrap;
+}
+
+/* EMPTY */
+
+.empty{
+    padding:30px;
+    text-align:center;
+    color:var(--muted);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    color:var(--muted);
+    padding:20px;
+    font-size:12px;
+}
+
+/* MOBILE */
+
+@media(max-width:1000px){
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .feeder-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .info-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px){
+
+    .header-title h1{
+        font-size:20px;
+    }
+
+    .container{
+        padding:0 10px;
+    }
+
+    .card{
+        padding:15px;
+        border-radius:18px;
+    }
+
+    .stats{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .feeder-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .search-box{
+        display:block;
+    }
+
+    .search-box input{
+        width:100%;
+        margin-bottom:8px;
+    }
+
+    .btn{
+        width:100%;
+    }
+}
+
+@media(max-width:430px){
+
+    .feeder-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stat-value{
+        font-size:23px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="header-inner">
+
+<div class="header-title">
+
+<div>
+<h1>🧰 بيانات الرسم</h1>
+<span>تحليل واستخراج البيانات من ملف DWG</span>
+</div>
+
+<div>قسم الصيانة</div>
+
+</div>
+
+<div class="nav">
+
+<a href="index.html">الرئيسية</a>
+
+<a href="equipment.html">
+⚡ مواقع المعدات
+</a>
+
+<a href="meters.html">
+🔢 مواقع العدادات
+</a>
+
+<a href="feeders.html">
+🔌 مواقع المغذيات
+</a>
+
+<a href="dwg-inspector.html">
+🧰 بيانات الرسم
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<main class="container">
+
+<!-- STATUS -->
+
+<section class="card">
+
+<h2>📐 فحص ملف DWG</h2>
+
+<p class="muted">
+تم استخراج البيانات مباشرة من ملف
+FINAL DISPATCH - UPDATE.dwg
+</p>
+
+<div id="status" class="status">
+جاري تحميل بيانات الرسم...
+</div>
+
+</section>
+
+
+<!-- STATISTICS -->
+
+<section class="card">
+
+<h2>📊 إحصائيات الرسم</h2>
+
+<div class="stats">
+
+<div class="stat">
+<div class="stat-icon">🔌</div>
+<div class="stat-title">إجمالي المغذيات</div>
+<strong id="totalFeeders" class="stat-value">0</strong>
+</div>
+
+<div class="stat">
+<div class="stat-icon">📝</div>
+<div class="stat-title">عناصر النص</div>
+<strong id="textEntities" class="stat-value">0</strong>
+</div>
+
+<div class="stat">
+<div class="stat-icon">🔷</div>
+<div class="stat-title">عناصر DXF</div>
+<strong id="dxfEntities" class="stat-value">0</strong>
+</div>
+
+<div class="stat">
+<div class="stat-icon">📄</div>
+<div class="stat-title">حجم DWG</div>
+<strong id="dwgSize" class="stat-value">-</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FEEDER TYPES -->
+
+<section class="card">
+
+<h2>🔌 تصنيف المغذيات</h2>
+
+<div class="stats">
+
+<div class="stat">
+<div class="stat-icon">🔹</div>
+<div class="stat-title">F-...</div>
+<strong id="countF" class="stat-value">0</strong>
+</div>
+
+<div class="stat">
+<div class="stat-icon">🔹</div>
+<div class="stat-title">FDR#...</div>
+<strong id="countFDR" class="stat-value">0</strong>
+</div>
+
+<div class="stat">
+<div class="stat-icon">🔹</div>
+<div class="stat-title">XXX.F-...</div>
+<strong id="countPrefix" class="stat-value">0</strong>
+</div>
+
+<div class="stat">
+<div class="stat-icon">📋</div>
+<div class="stat-title">الكل</div>
+<strong id="countAll" class="stat-value">0</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FILE INFORMATION -->
+
+<section class="card">
+
+<h2>📁 معلومات المصدر</h2>
+
+<div class="info-grid">
+
+<div class="info-box">
+<strong>ملف المصدر</strong>
+<span>FINAL DISPATCH - UPDATE.dwg</span>
+</div>
+
+<div class="info-box">
+<strong>ملف التحويل</strong>
+<span>DXF</span>
+</div>
+
+<div class="info-box">
+<strong>عدد النصوص المستخرجة</strong>
+<span id="infoText">-</span>
+</div>
+
+<div class="info-box">
+<strong>عدد عناصر DXF</strong>
+<span id="infoDxf">-</span>
+</div>
+
+<div class="info-box">
+<strong>عدد المغذيات</strong>
+<span id="infoFeeders">-</span>
+</div>
+
+<div class="info-box">
+<strong>آخر تحديث</strong>
+<span id="generatedAt">-</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DATA -->
+
+<section class="card">
+
+<h2>🔎 استعراض البيانات</h2>
+
+<div class="tabs">
+
+<button class="tab active" onclick="openTab('feedersPanel',this)">
+🔌 المغذيات
+</button>
+
+<button class="tab" onclick="openTab('textsPanel',this)">
+📝 النصوص
+</button>
+
+<button class="tab" onclick="openTab('manifestPanel',this)">
+📋 معلومات قاعدة البيانات
+</button>
+
+</div>
+
+
+<!-- FEEDERS -->
+
+<div id="feedersPanel" class="panel active">
+
+<div class="search-box">
+
+<input
+id="feederSearch"
+type="search"
+placeholder="ابحث عن مغذي مثل F-8.13 أو FDR#2.20..."
+autocomplete="off"
+>
+
+<button
+class="btn btn-light"
+onclick="clearFeederSearch()"
+>
+مسح
+</button>
+
+</div>
+
+<div id="feederResultCount" class="muted">
+جاري تحميل المغذيات...
+</div>
+
+<br>
+
+<div id="feederList" class="feeder-grid">
+<div class="empty">
+جاري تحميل البيانات...
+</div>
+</div>
+
+</div>
+
+
+<!-- TEXTS -->
+
+<div id="textsPanel" class="panel">
+
+<div class="search-box">
+
+<input
+id="textSearch"
+type="search"
+placeholder="ابحث داخل النصوص المستخرجة..."
+autocomplete="off"
+>
+
+<button
+class="btn btn-light"
+onclick="clearTextSearch()"
+>
+مسح
+</button>
+
+</div>
+
+<div id="textResultCount" class="muted">
+جاري تحميل النصوص...
+</div>
+
+<br>
+
+<div id="textList" class="text-list">
+<div class="empty">
+جاري تحميل النصوص...
+</div>
+</div>
+
+</div>
+
+
+<!-- MANIFEST -->
+
+<div id="manifestPanel" class="panel">
+
+<pre id="manifestOutput" class="json-box">
+جاري تحميل البيانات...
+</pre>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+قسم الصيانة — بيانات الرسم الكهربائي
+</footer>
+
+
+<script>
+
+let manifest = null;
+let feeders = [];
+let texts = [];
+
+
+/* تحميل JSON */
+
+async function getJSON(file){
+
+    const response = await fetch(
+        "data/feeders/" + file + "?v=" + Date.now(),
+        {
+            cache:"no-store"
+        }
+    );
+
+    if(!response.ok){
+
+        throw new Error(
+            "تعذر تحميل " + file +
+            " (" + response.status + ")"
+        );
+
+    }
+
+    return await response.json();
+}
+
+
+/* بداية التحميل */
+
+async function init(){
+
+    const status =
+        document.getElementById("status");
+
+    try{
+
+        manifest =
+            await getJSON("manifest.json");
+
+        feeders =
+            await getJSON("feeders.json");
+
+
+        /* تحميل النصوص إذا كانت موجودة */
+
+        try{
+
+            const rawTexts =
+                await getJSON("all_text_entities.json");
+
+            if(Array.isArray(rawTexts)){
+
+                texts = rawTexts;
+
+            }
+            else if(
+                rawTexts &&
+                Array.isArray(rawTexts.entities)
+            ){
+
+                texts = rawTexts.entities;
+
+            }
+
+        }
+        catch(e){
+
+            console.warn(
+                "all_text_entities.json غير متوفر"
+            );
+
+        }
+
+
+        updateStatistics();
+
+        renderFeeders();
+
+        renderTexts();
+
+        document.getElementById(
+            "manifestOutput"
+        ).textContent =
+            JSON.stringify(
+                manifest,
+                null,
+                2
+            );
+
+
+        status.className =
+            "status";
+
+        status.textContent =
+            "✅ تم تحميل بيانات الرسم بنجاح.";
+
+    }
+    catch(error){
+
+        console.error(error);
+
+        status.className =
+            "status error";
+
+        status.textContent =
+            "❌ حدث خطأ أثناء تحميل بيانات الرسم: "
+            + error.message;
+
+    }
+
+}
+
+
+/* الإحصائيات */
+
+function updateStatistics(){
+
+    const categories =
+        manifest.categories || {};
+
+    const totalFeeders =
+        Number(
+            manifest.totalFeeders ||
+            feeders.length ||
+            0
+        );
+
+    const textEntities =
+        Number(
+            manifest.textEntities ||
+            0
+        );
+
+    const dxfEntities =
+        Number(
+            manifest.dxfEntities ||
+            0
+        );
+
+    document.getElementById(
+        "totalFeeders"
+    ).textContent =
+        totalFeeders;
+
+
+    document.getElementById(
+        "textEntities"
+    ).textContent =
+        textEntities.toLocaleString();
+
+
+    document.getElementById(
+        "dxfEntities"
+    ).textContent =
+        dxfEntities.toLocaleString();
+
+
+    document.getElementById(
+        "dwgSize"
+    ).textContent =
+        formatBytes(
+            manifest.dwgBytes || 0
+        );
+
+
+    document.getElementById(
+        "countF"
+    ).textContent =
+        Number(categories.F || 0);
+
+
+    document.getElementById(
+        "countFDR"
+    ).textContent =
+        Number(categories.FDR || 0);
+
+
+    document.getElementById(
+        "countPrefix"
+    ).textContent =
+        Number(categories["PREFIX.F"] || 0);
+
+
+    document.getElementById(
+        "countAll"
+    ).textContent =
+        totalFeeders;
+
+
+    document.getElementById(
+        "infoText"
+    ).textContent =
+        textEntities.toLocaleString();
+
+
+    document.getElementById(
+        "infoDxf"
+    ).textContent =
+        dxfEntities.toLocaleString();
+
+
+    document.getElementById(
+        "infoFeeders"
+    ).textContent =
+        totalFeeders;
+
+
+    document.getElementById(
+        "generatedAt"
+    ).textContent =
+        formatDate(
+            manifest.generatedAt
+        );
+
+}
+
+
+/* المغذيات */
+
+function renderFeeders(){
+
+    const query =
+        document.getElementById(
+            "feederSearch"
+        ).value
+        .trim()
+        .toUpperCase();
+
+
+    let results =
+        feeders.filter(item => {
+
+            const name =
+                String(
+                    item.name || ""
+                );
+
+            return !query ||
+                name
+                .toUpperCase()
+                .includes(query);
+
+        });
+
+
+    results.sort(
+        (a,b) =>
+            String(a.name || "")
+            .localeCompare(
+                String(b.name || ""),
+                undefined,
+                {
+                    numeric:true,
+                    sensitivity:"base"
+                }
+            )
+    );
+
+
+    document.getElementById(
+        "feederResultCount"
+    ).textContent =
+        results.length.toLocaleString()
+        + " مغذي";
+
+
+    const container =
+        document.getElementById(
+            "feederList"
+        );
+
+
+    if(!results.length){
+
+        container.innerHTML =
+            '<div class="empty">لا توجد نتائج.</div>';
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+        results.map(item => {
+
+            const name =
+                escapeHTML(
+                    item.name || ""
+                );
+
+
+            const occurrences =
+                Number(
+                    item.occurrences || 0
+                );
+
+
+            const layers =
+                Array.isArray(item.layers)
+                    ? item.layers.join(", ")
+                    : "";
+
+
+            return `
+                <div class="feeder">
+
+                    <div class="feeder-name">
+                        ${name}
+                    </div>
+
+                    <div class="feeder-type">
+                        مرات الظهور:
+                        ${occurrences}
+                    </div>
+
+                    ${
+                        layers
+                        ?
+                        `<div class="feeder-type">
+                            Layer:
+                            ${escapeHTML(layers)}
+                        </div>`
+                        :
+                        ""
+                    }
+
+                </div>
+            `;
+
+        }).join("");
+
+}
+
+
+/* النصوص */
+
+function renderTexts(){
+
+    const query =
+        document.getElementById(
+            "textSearch"
+        ).value
+        .trim()
+        .toUpperCase();
+
+
+    let values = [];
+
+
+    texts.forEach(item => {
+
+        let value = "";
+
+        if(typeof item === "string"){
+
+            value = item;
+
+        }
+        else if(item){
+
+            value =
+                item.text ||
+                item.value ||
+                item.content ||
+                item.name ||
+                "";
+
+        }
+
+
+        value =
+            String(value).trim();
+
+
+        if(value){
+
+            values.push(value);
+
+        }
+
+    });
+
+
+    /* إزالة التكرار */
+
+    const unique =
+        [...new Set(values)];
+
+
+    let results =
+        unique.filter(value =>
+            !query ||
+            value
+            .toUpperCase()
+            .includes(query)
+        );
+
+
+    results.sort(
+        (a,b) =>
+            a.localeCompare(
+                b,
+                undefined,
+                {
+                    numeric:true,
+                    sensitivity:"base"
+                }
+            )
+    );
+
+
+    document.getElementById(
+        "textResultCount"
+    ).textContent =
+        results.length.toLocaleString()
+        + " نص";
+
+
+    const container =
+        document.getElementById(
+            "textList"
+        );
+
+
+    if(!results.length){
+
+        container.innerHTML =
+            '<div class="empty">لا توجد نتائج.</div>';
+
+        return;
+
+    }
+
+
+    /*
+       نعرض أول 5000 نتيجة فقط
+       حتى لا تصبح الصفحة ثقيلة
+    */
+
+    const visible =
+        results.slice(0,5000);
+
+
+    container.innerHTML =
+        visible.map((value,index) => {
+
+            return `
+                <div class="text-row">
+
+                    <span class="text-value">
+                        ${escapeHTML(value)}
+                    </span>
+
+                    <span class="text-count">
+                        #${index + 1}
+                    </span>
+
+                </div>
+            `;
+
+        }).join("");
+
+
+    if(results.length > 5000){
+
+        container.innerHTML += `
+            <div class="empty">
+                يتم عرض أول 5,000 نتيجة فقط
+                من أصل
+                ${results.length.toLocaleString()}
+            </div>
+        `;
+
+    }
+
+}
+
+
+/* التبويبات */
+
+function openTab(id,button){
+
+    document
+        .querySelectorAll(".panel")
+        .forEach(panel =>
+            panel.classList.remove("active")
+        );
+
+
+    document
+        .querySelectorAll(".tab")
+        .forEach(tab =>
+            tab.classList.remove("active")
+        );
+
+
+    document
+        .getElementById(id)
+        .classList.add("active");
+
+
+    button.classList.add("active");
+
+}
+
+
+/* البحث */
+
+document
+    .getElementById("feederSearch")
+    .addEventListener(
+        "input",
+        renderFeeders
+    );
+
+
+document
+    .getElementById("textSearch")
+    .addEventListener(
+        "input",
+        renderTexts
+    );
+
+
+function clearFeederSearch(){
+
+    document.getElementById(
+        "feederSearch"
+    ).value = "";
+
+    renderFeeders();
+
+}
+
+
+function clearTextSearch(){
+
+    document.getElementById(
+        "textSearch"
+    ).value = "";
+
+    renderTexts();
+
+}
+
+
+/* أدوات */
+
+function escapeHTML(value){
+
+    return String(value ?? "")
+        .replace(
+            /[&<>"']/g,
+            char => ({
+                "&":"&amp;",
+                "<":"&lt;",
+                ">":"&gt;",
+                '"':"&quot;",
+                "'":"&#039;"
+            }[char])
+        );
+
+}
+
+
+function formatBytes(bytes){
+
+    const value =
+        Number(bytes || 0);
+
+    if(!value){
+
+        return "-";
+
+    }
+
+    const units =
+        ["B","KB","MB","GB"];
+
+    let size = value;
+    let index = 0;
+
+    while(
+        size >= 1024 &&
+        index < units.length - 1
+    ){
+
+        size /= 1024;
+        index++;
+
+    }
+
+    return size.toFixed(2)
+        + " "
+        + units[index];
+
+}
+
+
+function formatDate(value){
+
+    if(!value){
+
+        return "-";
+
+    }
+
+    try{
+
+        return new Date(value)
+            .toLocaleString(
+                "ar-SA"
+            );
+
+    }
+    catch(e){
+
+        return value;
+
+    }
+
+}
+
+
+/* تشغيل */
+
+init();
+
+</script>
+
+</body>
+</html>

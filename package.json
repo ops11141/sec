@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build:feeders": "node tools/build-feeders.mjs"
+  },
+  "dependencies": {
+    "dxf-parser": "^1.1.2"
+  }
+}

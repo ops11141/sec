@@ -1,0 +1,14262 @@
+[
+  {
+    "text": "\\W0.925;SMR",
+    "count": 425
+  },
+  {
+    "text": "\\W0.909091;SMR",
+    "count": 340
+  },
+  {
+    "text": "\\W0.945946;SMR",
+    "count": 162
+  },
+  {
+    "text": "\\W0.947368;SMART",
+    "count": 51
+  },
+  {
+    "text": "\\W1.09375;ACTIVE 23.01.2024",
+    "count": 41
+  },
+  {
+    "text": "\\W0.909091;ACTIVE 26/05/2024",
+    "count": 38
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 14/01/2024",
+    "count": 34
+  },
+  {
+    "text": "\\W0.945946;Active 18.02.2024",
+    "count": 34
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 19/12/2023",
+    "count": 28
+  },
+  {
+    "text": "4W RMU",
+    "count": 28
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 25/03/2024",
+    "count": 23
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 31/01/2024",
+    "count": 23
+  },
+  {
+    "text": "PMT-0",
+    "count": 23
+  },
+  {
+    "text": "D.F-03",
+    "count": 20
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 14.08.2024",
+    "count": 19
+  },
+  {
+    "text": "F-2.17",
+    "count": 19
+  },
+  {
+    "text": "F-7.28",
+    "count": 19
+  },
+  {
+    "text": "ACTIVE 02.10.2023",
+    "count": 18
+  },
+  {
+    "text": "G C.B2500Amp",
+    "count": 18
+  },
+  {
+    "text": "PMT-00",
+    "count": 18
+  },
+  {
+    "text": "\\W0.945946;Active 14.9.2023",
+    "count": 17
+  },
+  {
+    "text": "F-5.26",
+    "count": 17
+  },
+  {
+    "text": "F-5.27",
+    "count": 17
+  },
+  {
+    "text": "F-5.30",
+    "count": 17
+  },
+  {
+    "text": "F-7.04",
+    "count": 17
+  },
+  {
+    "text": "F-7.29",
+    "count": 17
+  },
+  {
+    "text": "QAI.F-05",
+    "count": 17
+  },
+  {
+    "text": "QAI.F-11",
+    "count": 17
+  },
+  {
+    "text": "\\W0.82;SMART ABS",
+    "count": 16
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 19/10/2023",
+    "count": 16
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 29/01/2024",
+    "count": 16
+  },
+  {
+    "text": "\\W0.945946;Active 6.9.2023",
+    "count": 16
+  },
+  {
+    "text": "\\W1.09375;ACTIVE 08.18.2024",
+    "count": 16
+  },
+  {
+    "text": "\\W1.09375;ACTIVE 21.02.2024",
+    "count": 16
+  },
+  {
+    "text": "F-2.10",
+    "count": 16
+  },
+  {
+    "text": "F-2.12",
+    "count": 16
+  },
+  {
+    "text": "F-5.23",
+    "count": 16
+  },
+  {
+    "text": "F-7.20",
+    "count": 16
+  },
+  {
+    "text": "F-7.22",
+    "count": 16
+  },
+  {
+    "text": "F-7.31",
+    "count": 16
+  },
+  {
+    "text": "\\W0.82;SMART",
+    "count": 15
+  },
+  {
+    "text": "BSP.F-15",
+    "count": 15
+  },
+  {
+    "text": "F-5.15",
+    "count": 15
+  },
+  {
+    "text": "F-5.17",
+    "count": 15
+  },
+  {
+    "text": "F-5.28",
+    "count": 15
+  },
+  {
+    "text": "F-7.07",
+    "count": 15
+  },
+  {
+    "text": "F-7.18",
+    "count": 15
+  },
+  {
+    "text": "F-7.32",
+    "count": 15
+  },
+  {
+    "text": "\\W0.82;ABS",
+    "count": 14
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 2/4/2024",
+    "count": 14
+  },
+  {
+    "text": "\\W0.945946;Active 20.03.2024",
+    "count": 14
+  },
+  {
+    "text": "F-1.26",
+    "count": 14
+  },
+  {
+    "text": "F-2.11",
+    "count": 14
+  },
+  {
+    "text": "F-5.05",
+    "count": 14
+  },
+  {
+    "text": "F-5.29",
+    "count": 14
+  },
+  {
+    "text": "F-7.08",
+    "count": 14
+  },
+  {
+    "text": "F-7.34",
+    "count": 14
+  },
+  {
+    "text": "GMT-15",
+    "count": 14
+  },
+  {
+    "text": "\\W0.854701;RMU",
+    "count": 13
+  },
+  {
+    "text": "\\W0.945946;Active",
+    "count": 13
+  },
+  {
+    "text": "\\W0.945946;ACTIVE",
+    "count": 13
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 07/11/2023",
+    "count": 13
+  },
+  {
+    "text": "\\W0.945946;Active 10/09/2023",
+    "count": 13
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 27/03/2024",
+    "count": 13
+  },
+  {
+    "text": "F-1.17",
+    "count": 13
+  },
+  {
+    "text": "F-2.15",
+    "count": 13
+  },
+  {
+    "text": "F-2.16",
+    "count": 13
+  },
+  {
+    "text": "F-2.19",
+    "count": 13
+  },
+  {
+    "text": "F-5.02",
+    "count": 13
+  },
+  {
+    "text": "F-5.14",
+    "count": 13
+  },
+  {
+    "text": "F-7.05",
+    "count": 13
+  },
+  {
+    "text": "F-7.21",
+    "count": 13
+  },
+  {
+    "text": "F-7.23",
+    "count": 13
+  },
+  {
+    "text": "F-8.10",
+    "count": 13
+  },
+  {
+    "text": "GMT-13",
+    "count": 13
+  },
+  {
+    "text": "QAI.F-06",
+    "count": 13
+  },
+  {
+    "text": "\\W0.945946;Active 07.09.2023",
+    "count": 12
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 14/11/2023",
+    "count": 12
+  },
+  {
+    "text": "B-359",
+    "count": 12
+  },
+  {
+    "text": "F-1.10",
+    "count": 12
+  },
+  {
+    "text": "F-1.15",
+    "count": 12
+  },
+  {
+    "text": "F-2.20",
+    "count": 12
+  },
+  {
+    "text": "F-5.08",
+    "count": 12
+  },
+  {
+    "text": "F-5.13",
+    "count": 12
+  },
+  {
+    "text": "F-5.24",
+    "count": 12
+  },
+  {
+    "text": "F-7.06",
+    "count": 12
+  },
+  {
+    "text": "F-7.09",
+    "count": 12
+  },
+  {
+    "text": "F-7.11",
+    "count": 12
+  },
+  {
+    "text": "F-7.14",
+    "count": 12
+  },
+  {
+    "text": "F-7.26",
+    "count": 12
+  },
+  {
+    "text": "F-8.08",
+    "count": 12
+  },
+  {
+    "text": "FDR#2.20",
+    "count": 12
+  },
+  {
+    "text": "GMT-14",
+    "count": 12
+  },
+  {
+    "text": "\\W0.86;RMU",
+    "count": 11
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 22/01/2024",
+    "count": 11
+  },
+  {
+    "text": "4W-RMU",
+    "count": 11
+  },
+  {
+    "text": "ACTIVE 07/01/2024",
+    "count": 11
+  },
+  {
+    "text": "F-1.07",
+    "count": 11
+  },
+  {
+    "text": "F-1.22",
+    "count": 11
+  },
+  {
+    "text": "F-2.09",
+    "count": 11
+  },
+  {
+    "text": "F-4.07",
+    "count": 11
+  },
+  {
+    "text": "F-5.06",
+    "count": 11
+  },
+  {
+    "text": "F-5.07",
+    "count": 11
+  },
+  {
+    "text": "F-5.21",
+    "count": 11
+  },
+  {
+    "text": "F-5.22",
+    "count": 11
+  },
+  {
+    "text": "F-5.25",
+    "count": 11
+  },
+  {
+    "text": "F-7.01",
+    "count": 11
+  },
+  {
+    "text": "F-7.03",
+    "count": 11
+  },
+  {
+    "text": "F-7.13",
+    "count": 11
+  },
+  {
+    "text": "F-8.20",
+    "count": 11
+  },
+  {
+    "text": "FDR#2.07",
+    "count": 11
+  },
+  {
+    "text": "FDR#2.10",
+    "count": 11
+  },
+  {
+    "text": "FDR#2.16",
+    "count": 11
+  },
+  {
+    "text": "QAI.F-01",
+    "count": 11
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 12/9/2023",
+    "count": 10
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 19/11/2023",
+    "count": 10
+  },
+  {
+    "text": "05C20",
+    "count": 10
+  },
+  {
+    "text": "134L3",
+    "count": 10
+  },
+  {
+    "text": "303L1",
+    "count": 10
+  },
+  {
+    "text": "BSP.F-03",
+    "count": 10
+  },
+  {
+    "text": "D.F-10",
+    "count": 10
+  },
+  {
+    "text": "D.F-18",
+    "count": 10
+  },
+  {
+    "text": "F-4.21",
+    "count": 10
+  },
+  {
+    "text": "F-4.23",
+    "count": 10
+  },
+  {
+    "text": "F-5.11",
+    "count": 10
+  },
+  {
+    "text": "F-5.16",
+    "count": 10
+  },
+  {
+    "text": "F-7.12",
+    "count": 10
+  },
+  {
+    "text": "F-7.16",
+    "count": 10
+  },
+  {
+    "text": "F-7.17",
+    "count": 10
+  },
+  {
+    "text": "F-7.19",
+    "count": 10
+  },
+  {
+    "text": "F-7.30",
+    "count": 10
+  },
+  {
+    "text": "F-7.33",
+    "count": 10
+  },
+  {
+    "text": "F-8.03",
+    "count": 10
+  },
+  {
+    "text": "F-8.12",
+    "count": 10
+  },
+  {
+    "text": "F-8.16",
+    "count": 10
+  },
+  {
+    "text": "F-8.28",
+    "count": 10
+  },
+  {
+    "text": "F-8.29",
+    "count": 10
+  },
+  {
+    "text": "FDR#2.19",
+    "count": 10
+  },
+  {
+    "text": "GMT-16",
+    "count": 10
+  },
+  {
+    "text": "GMT-23",
+    "count": 10
+  },
+  {
+    "text": "QBSP-24",
+    "count": 10
+  },
+  {
+    "text": "T601",
+    "count": 10
+  },
+  {
+    "text": "\\W0.945946;Active 8.11.2023",
+    "count": 9
+  },
+  {
+    "text": "\\W0.95;TO COSTUMER",
+    "count": 9
+  },
+  {
+    "text": "85B06",
+    "count": 9
+  },
+  {
+    "text": "ACTIVE 12.09.2023",
+    "count": 9
+  },
+  {
+    "text": "D.F-12",
+    "count": 9
+  },
+  {
+    "text": "F-1.2",
+    "count": 9
+  },
+  {
+    "text": "F-1.23",
+    "count": 9
+  },
+  {
+    "text": "F-2.02",
+    "count": 9
+  },
+  {
+    "text": "F-2.04",
+    "count": 9
+  },
+  {
+    "text": "F-2.18",
+    "count": 9
+  },
+  {
+    "text": "F-4.16",
+    "count": 9
+  },
+  {
+    "text": "F-4.20",
+    "count": 9
+  },
+  {
+    "text": "F-4.22",
+    "count": 9
+  },
+  {
+    "text": "F-5.01",
+    "count": 9
+  },
+  {
+    "text": "F-5.04",
+    "count": 9
+  },
+  {
+    "text": "F-6.27",
+    "count": 9
+  },
+  {
+    "text": "F-7.24",
+    "count": 9
+  },
+  {
+    "text": "F-7.25",
+    "count": 9
+  },
+  {
+    "text": "F-8.01",
+    "count": 9
+  },
+  {
+    "text": "F-8.05",
+    "count": 9
+  },
+  {
+    "text": "F-8.09",
+    "count": 9
+  },
+  {
+    "text": "F-8.11",
+    "count": 9
+  },
+  {
+    "text": "F-8.14",
+    "count": 9
+  },
+  {
+    "text": "F-8.22",
+    "count": 9
+  },
+  {
+    "text": "F-8.31",
+    "count": 9
+  },
+  {
+    "text": "GMT-12",
+    "count": 9
+  },
+  {
+    "text": "GMT-6",
+    "count": 9
+  },
+  {
+    "text": "U.F-02",
+    "count": 9
+  },
+  {
+    "text": "U.F-24",
+    "count": 9
+  },
+  {
+    "text": "UNI.F-24",
+    "count": 9
+  },
+  {
+    "text": "VCE2a",
+    "count": 9
+  },
+  {
+    "text": "\\W0.88;SMART",
+    "count": 8
+  },
+  {
+    "text": "\\W0.925;S.T.L.",
+    "count": 8
+  },
+  {
+    "text": "\\W0.945946;Active 16.11.2023",
+    "count": 8
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 19/01/2024",
+    "count": 8
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 23/01/2024",
+    "count": 8
+  },
+  {
+    "text": "05B39",
+    "count": 8
+  },
+  {
+    "text": "05C21",
+    "count": 8
+  },
+  {
+    "text": "18A34",
+    "count": 8
+  },
+  {
+    "text": "27B03",
+    "count": 8
+  },
+  {
+    "text": "27B05",
+    "count": 8
+  },
+  {
+    "text": "27B17",
+    "count": 8
+  },
+  {
+    "text": "64D13",
+    "count": 8
+  },
+  {
+    "text": "72D06",
+    "count": 8
+  },
+  {
+    "text": "A304",
+    "count": 8
+  },
+  {
+    "text": "A305",
+    "count": 8
+  },
+  {
+    "text": "B-315",
+    "count": 8
+  },
+  {
+    "text": "BSP F-06",
+    "count": 8
+  },
+  {
+    "text": "D.F-01",
+    "count": 8
+  },
+  {
+    "text": "D.F-05",
+    "count": 8
+  },
+  {
+    "text": "D.F-09",
+    "count": 8
+  },
+  {
+    "text": "D.F-13",
+    "count": 8
+  },
+  {
+    "text": "D.F-17",
+    "count": 8
+  },
+  {
+    "text": "F-1.05",
+    "count": 8
+  },
+  {
+    "text": "F-1.09",
+    "count": 8
+  },
+  {
+    "text": "F-2.06",
+    "count": 8
+  },
+  {
+    "text": "F-2.14",
+    "count": 8
+  },
+  {
+    "text": "F-3.2",
+    "count": 8
+  },
+  {
+    "text": "F-4.02",
+    "count": 8
+  },
+  {
+    "text": "F-4.13",
+    "count": 8
+  },
+  {
+    "text": "F-6.13",
+    "count": 8
+  },
+  {
+    "text": "F-6.31",
+    "count": 8
+  },
+  {
+    "text": "F-7.02",
+    "count": 8
+  },
+  {
+    "text": "F-7.15",
+    "count": 8
+  },
+  {
+    "text": "F-7.27",
+    "count": 8
+  },
+  {
+    "text": "F-8.02",
+    "count": 8
+  },
+  {
+    "text": "F-8.13",
+    "count": 8
+  },
+  {
+    "text": "F-8.15",
+    "count": 8
+  },
+  {
+    "text": "F-8.19",
+    "count": 8
+  },
+  {
+    "text": "F-8.21",
+    "count": 8
+  },
+  {
+    "text": "F-8.27",
+    "count": 8
+  },
+  {
+    "text": "F-8.32",
+    "count": 8
+  },
+  {
+    "text": "GMT-11",
+    "count": 8
+  },
+  {
+    "text": "GMT-20",
+    "count": 8
+  },
+  {
+    "text": "PMT-1",
+    "count": 8
+  },
+  {
+    "text": "Q.BSP-18",
+    "count": 8
+  },
+  {
+    "text": "QAI.F-04",
+    "count": 8
+  },
+  {
+    "text": "QBSP-22",
+    "count": 8
+  },
+  {
+    "text": "U.F-33",
+    "count": 8
+  },
+  {
+    "text": "\\W0.245275;NOT ENERGIZE FEEDER",
+    "count": 7
+  },
+  {
+    "text": "\\W0.86;4WAY RMU",
+    "count": 7
+  },
+  {
+    "text": "\\W0.9;F-6.29",
+    "count": 7
+  },
+  {
+    "text": "\\W0.909091;JUMPER DISCONNECTED FOR REMOVAL",
+    "count": 7
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 06/02/2024",
+    "count": 7
+  },
+  {
+    "text": "\\W0.945946;Active 09/11/23",
+    "count": 7
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 15/3/2024",
+    "count": 7
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 21/03/2024",
+    "count": 7
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 9/8/2023",
+    "count": 7
+  },
+  {
+    "text": "05B21",
+    "count": 7
+  },
+  {
+    "text": "05B33",
+    "count": 7
+  },
+  {
+    "text": "05K26",
+    "count": 7
+  },
+  {
+    "text": "05M16",
+    "count": 7
+  },
+  {
+    "text": "05O18",
+    "count": 7
+  },
+  {
+    "text": "131L5",
+    "count": 7
+  },
+  {
+    "text": "18A27",
+    "count": 7
+  },
+  {
+    "text": "20C40",
+    "count": 7
+  },
+  {
+    "text": "ACTIVE 03/02/2024",
+    "count": 7
+  },
+  {
+    "text": "B-314",
+    "count": 7
+  },
+  {
+    "text": "B-317",
+    "count": 7
+  },
+  {
+    "text": "BSP F-05",
+    "count": 7
+  },
+  {
+    "text": "BSP F-07",
+    "count": 7
+  },
+  {
+    "text": "BSP F-22",
+    "count": 7
+  },
+  {
+    "text": "D.F-19",
+    "count": 7
+  },
+  {
+    "text": "F-1.12",
+    "count": 7
+  },
+  {
+    "text": "F-1.16",
+    "count": 7
+  },
+  {
+    "text": "F-1.21",
+    "count": 7
+  },
+  {
+    "text": "F-1.3",
+    "count": 7
+  },
+  {
+    "text": "F-2.01",
+    "count": 7
+  },
+  {
+    "text": "F-2.03",
+    "count": 7
+  },
+  {
+    "text": "F-2.7",
+    "count": 7
+  },
+  {
+    "text": "F-5.03",
+    "count": 7
+  },
+  {
+    "text": "F-5.12",
+    "count": 7
+  },
+  {
+    "text": "F-6.07",
+    "count": 7
+  },
+  {
+    "text": "F-6.35",
+    "count": 7
+  },
+  {
+    "text": "F-7.10",
+    "count": 7
+  },
+  {
+    "text": "F-8.04",
+    "count": 7
+  },
+  {
+    "text": "F-8.17",
+    "count": 7
+  },
+  {
+    "text": "F-8.23",
+    "count": 7
+  },
+  {
+    "text": "F-8.24",
+    "count": 7
+  },
+  {
+    "text": "F-8.25",
+    "count": 7
+  },
+  {
+    "text": "F-8.26",
+    "count": 7
+  },
+  {
+    "text": "F-8.33",
+    "count": 7
+  },
+  {
+    "text": "F-8.34",
+    "count": 7
+  },
+  {
+    "text": "GMT-18",
+    "count": 7
+  },
+  {
+    "text": "GMT-19",
+    "count": 7
+  },
+  {
+    "text": "PMT-18",
+    "count": 7
+  },
+  {
+    "text": "PMT-23",
+    "count": 7
+  },
+  {
+    "text": "PMT-38",
+    "count": 7
+  },
+  {
+    "text": "TR1",
+    "count": 7
+  },
+  {
+    "text": "U.F-01",
+    "count": 7
+  },
+  {
+    "text": "\\W0.9;F-6.19",
+    "count": 6
+  },
+  {
+    "text": "\\W0.9;F-6.33",
+    "count": 6
+  },
+  {
+    "text": "\\W0.945946;18.09.2023",
+    "count": 6
+  },
+  {
+    "text": "\\W0.945946;19.09.2023",
+    "count": 6
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 11/09/2023",
+    "count": 6
+  },
+  {
+    "text": "\\W0.945946;All SMR RMU ACTIVE",
+    "count": 6
+  },
+  {
+    "text": "0.48/13.8KV",
+    "count": 6
+  },
+  {
+    "text": "05B10",
+    "count": 6
+  },
+  {
+    "text": "05B24",
+    "count": 6
+  },
+  {
+    "text": "05B28",
+    "count": 6
+  },
+  {
+    "text": "05B41",
+    "count": 6
+  },
+  {
+    "text": "05D17",
+    "count": 6
+  },
+  {
+    "text": "05K36",
+    "count": 6
+  },
+  {
+    "text": "05L18",
+    "count": 6
+  },
+  {
+    "text": "05P11",
+    "count": 6
+  },
+  {
+    "text": "10B09",
+    "count": 6
+  },
+  {
+    "text": "10B64",
+    "count": 6
+  },
+  {
+    "text": "20A43",
+    "count": 6
+  },
+  {
+    "text": "20A45",
+    "count": 6
+  },
+  {
+    "text": "26A29",
+    "count": 6
+  },
+  {
+    "text": "27A26",
+    "count": 6
+  },
+  {
+    "text": "30B27",
+    "count": 6
+  },
+  {
+    "text": "3W RMU",
+    "count": 6
+  },
+  {
+    "text": "47A56",
+    "count": 6
+  },
+  {
+    "text": "72A17",
+    "count": 6
+  },
+  {
+    "text": "72B14",
+    "count": 6
+  },
+  {
+    "text": "B-323",
+    "count": 6
+  },
+  {
+    "text": "B-335",
+    "count": 6
+  },
+  {
+    "text": "B-342",
+    "count": 6
+  },
+  {
+    "text": "BSP F-08",
+    "count": 6
+  },
+  {
+    "text": "BSP F-12",
+    "count": 6
+  },
+  {
+    "text": "D.F-02",
+    "count": 6
+  },
+  {
+    "text": "D.F-20",
+    "count": 6
+  },
+  {
+    "text": "F-1.04",
+    "count": 6
+  },
+  {
+    "text": "F-1.11",
+    "count": 6
+  },
+  {
+    "text": "F-1.14",
+    "count": 6
+  },
+  {
+    "text": "F-1.18",
+    "count": 6
+  },
+  {
+    "text": "F-1.24",
+    "count": 6
+  },
+  {
+    "text": "F-1.8",
+    "count": 6
+  },
+  {
+    "text": "F-2",
+    "count": 6
+  },
+  {
+    "text": "F-2.08",
+    "count": 6
+  },
+  {
+    "text": "F-2.13",
+    "count": 6
+  },
+  {
+    "text": "F-2.8",
+    "count": 6
+  },
+  {
+    "text": "F-4.04",
+    "count": 6
+  },
+  {
+    "text": "F-4.15",
+    "count": 6
+  },
+  {
+    "text": "F-4.17",
+    "count": 6
+  },
+  {
+    "text": "F-4.18",
+    "count": 6
+  },
+  {
+    "text": "F-6.06",
+    "count": 6
+  },
+  {
+    "text": "F-6.12",
+    "count": 6
+  },
+  {
+    "text": "F-6.14",
+    "count": 6
+  },
+  {
+    "text": "F-6.17",
+    "count": 6
+  },
+  {
+    "text": "F-6.25",
+    "count": 6
+  },
+  {
+    "text": "F-6.28",
+    "count": 6
+  },
+  {
+    "text": "F-6.37",
+    "count": 6
+  },
+  {
+    "text": "F-8.07",
+    "count": 6
+  },
+  {
+    "text": "F-8.18",
+    "count": 6
+  },
+  {
+    "text": "FDR#2.13",
+    "count": 6
+  },
+  {
+    "text": "G3",
+    "count": 6
+  },
+  {
+    "text": "GMT-8",
+    "count": 6
+  },
+  {
+    "text": "GMT-9",
+    "count": 6
+  },
+  {
+    "text": "Model:ADR241S",
+    "count": 6
+  },
+  {
+    "text": "PMT-35",
+    "count": 6
+  },
+  {
+    "text": "Q.PP-9",
+    "count": 6
+  },
+  {
+    "text": "QBSP F-10",
+    "count": 6
+  },
+  {
+    "text": "T301",
+    "count": 6
+  },
+  {
+    "text": "T302",
+    "count": 6
+  },
+  {
+    "text": "T602",
+    "count": 6
+  },
+  {
+    "text": "UNI.F-01",
+    "count": 6
+  },
+  {
+    "text": "UNI.F-33",
+    "count": 6
+  },
+  {
+    "text": "VCE6a",
+    "count": 6
+  },
+  {
+    "text": "\\W0.86;SMR",
+    "count": 5
+  },
+  {
+    "text": "\\W0.88;ACTIVE 07.09.2023",
+    "count": 5
+  },
+  {
+    "text": "\\W0.88;GMT-13",
+    "count": 5
+  },
+  {
+    "text": "\\W0.9;F-6.09",
+    "count": 5
+  },
+  {
+    "text": "\\W0.9;F-6.10",
+    "count": 5
+  },
+  {
+    "text": "\\W0.9;F-6.12",
+    "count": 5
+  },
+  {
+    "text": "\\W0.9;F-6.15",
+    "count": 5
+  },
+  {
+    "text": "\\W0.9;F-6.21",
+    "count": 5
+  },
+  {
+    "text": "\\W0.9;F-6.30",
+    "count": 5
+  },
+  {
+    "text": "\\W0.9;F-6.37",
+    "count": 5
+  },
+  {
+    "text": "\\W0.909091;NEED INTERRUPTION TO CLOSE",
+    "count": 5
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 15/11/2023",
+    "count": 5
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 17/08/2024",
+    "count": 5
+  },
+  {
+    "text": "\\W0.945946;Active 18/6/2023",
+    "count": 5
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 21/05/2024",
+    "count": 5
+  },
+  {
+    "text": "\\W1.09375;ACTIVE 09.04.2024",
+    "count": 5
+  },
+  {
+    "text": "05A07",
+    "count": 5
+  },
+  {
+    "text": "05A42",
+    "count": 5
+  },
+  {
+    "text": "05B23",
+    "count": 5
+  },
+  {
+    "text": "05B29",
+    "count": 5
+  },
+  {
+    "text": "05B31",
+    "count": 5
+  },
+  {
+    "text": "05B36",
+    "count": 5
+  },
+  {
+    "text": "05C25",
+    "count": 5
+  },
+  {
+    "text": "05D22",
+    "count": 5
+  },
+  {
+    "text": "05G22",
+    "count": 5
+  },
+  {
+    "text": "05K25",
+    "count": 5
+  },
+  {
+    "text": "05K29",
+    "count": 5
+  },
+  {
+    "text": "05O19",
+    "count": 5
+  },
+  {
+    "text": "05O23",
+    "count": 5
+  },
+  {
+    "text": "05O24",
+    "count": 5
+  },
+  {
+    "text": "05P15",
+    "count": 5
+  },
+  {
+    "text": "10B58",
+    "count": 5
+  },
+  {
+    "text": "10C02",
+    "count": 5
+  },
+  {
+    "text": "10D01",
+    "count": 5
+  },
+  {
+    "text": "131L2",
+    "count": 5
+  },
+  {
+    "text": "18B25",
+    "count": 5
+  },
+  {
+    "text": "21A33",
+    "count": 5
+  },
+  {
+    "text": "21A41",
+    "count": 5
+  },
+  {
+    "text": "27A31",
+    "count": 5
+  },
+  {
+    "text": "27A34",
+    "count": 5
+  },
+  {
+    "text": "27B14",
+    "count": 5
+  },
+  {
+    "text": "30A53",
+    "count": 5
+  },
+  {
+    "text": "30A64",
+    "count": 5
+  },
+  {
+    "text": "46B17",
+    "count": 5
+  },
+  {
+    "text": "72A02",
+    "count": 5
+  },
+  {
+    "text": "72A14",
+    "count": 5
+  },
+  {
+    "text": "72B09",
+    "count": 5
+  },
+  {
+    "text": "72C19",
+    "count": 5
+  },
+  {
+    "text": "B-319",
+    "count": 5
+  },
+  {
+    "text": "B-332",
+    "count": 5
+  },
+  {
+    "text": "B-333",
+    "count": 5
+  },
+  {
+    "text": "B-336",
+    "count": 5
+  },
+  {
+    "text": "B-337",
+    "count": 5
+  },
+  {
+    "text": "B-358",
+    "count": 5
+  },
+  {
+    "text": "B-360",
+    "count": 5
+  },
+  {
+    "text": "B-361",
+    "count": 5
+  },
+  {
+    "text": "BSP F-09",
+    "count": 5
+  },
+  {
+    "text": "F-1",
+    "count": 5
+  },
+  {
+    "text": "F-1.1",
+    "count": 5
+  },
+  {
+    "text": "F-1.13",
+    "count": 5
+  },
+  {
+    "text": "F-1.6",
+    "count": 5
+  },
+  {
+    "text": "F-2.3",
+    "count": 5
+  },
+  {
+    "text": "F-3.09",
+    "count": 5
+  },
+  {
+    "text": "F-3.1",
+    "count": 5
+  },
+  {
+    "text": "F-4.01",
+    "count": 5
+  },
+  {
+    "text": "F-4.10",
+    "count": 5
+  },
+  {
+    "text": "F-4.24",
+    "count": 5
+  },
+  {
+    "text": "F-4.9",
+    "count": 5
+  },
+  {
+    "text": "F-6.03",
+    "count": 5
+  },
+  {
+    "text": "F-6.08",
+    "count": 5
+  },
+  {
+    "text": "F-6.11",
+    "count": 5
+  },
+  {
+    "text": "F-6.22",
+    "count": 5
+  },
+  {
+    "text": "F-6.26",
+    "count": 5
+  },
+  {
+    "text": "F-6.29",
+    "count": 5
+  },
+  {
+    "text": "F-6.38",
+    "count": 5
+  },
+  {
+    "text": "F-8.06",
+    "count": 5
+  },
+  {
+    "text": "F-8.30",
+    "count": 5
+  },
+  {
+    "text": "FDR#2.04",
+    "count": 5
+  },
+  {
+    "text": "FDR#2.14",
+    "count": 5
+  },
+  {
+    "text": "FDR#4.21",
+    "count": 5
+  },
+  {
+    "text": "FDR#4.23",
+    "count": 5
+  },
+  {
+    "text": "FDR#4.24",
+    "count": 5
+  },
+  {
+    "text": "FDR#7.09",
+    "count": 5
+  },
+  {
+    "text": "GMT-17",
+    "count": 5
+  },
+  {
+    "text": "GMT-22",
+    "count": 5
+  },
+  {
+    "text": "PMT-11",
+    "count": 5
+  },
+  {
+    "text": "PMT-16",
+    "count": 5
+  },
+  {
+    "text": "PMT-20",
+    "count": 5
+  },
+  {
+    "text": "PMT-26",
+    "count": 5
+  },
+  {
+    "text": "Q. BSP FEEDER#10",
+    "count": 5
+  },
+  {
+    "text": "Q.MOB.H04",
+    "count": 5
+  },
+  {
+    "text": "QAI. F-8",
+    "count": 5
+  },
+  {
+    "text": "QBSP F-13",
+    "count": 5
+  },
+  {
+    "text": "SADAWI-F02",
+    "count": 5
+  },
+  {
+    "text": "U.F-25",
+    "count": 5
+  },
+  {
+    "text": "\\W0.82;SMR",
+    "count": 4
+  },
+  {
+    "text": "\\W0.833333;Q.MOB.H04",
+    "count": 4
+  },
+  {
+    "text": "\\W0.854701;REMOVE TR FOR MANIT 20.06.22",
+    "count": 4
+  },
+  {
+    "text": "\\W0.857143;02870",
+    "count": 4
+  },
+  {
+    "text": "\\W0.857143;02920",
+    "count": 4
+  },
+  {
+    "text": "\\W0.857143;15025",
+    "count": 4
+  },
+  {
+    "text": "\\W0.857143;4WAY",
+    "count": 4
+  },
+  {
+    "text": "\\W0.857143;TO REDUCE LOAD AS PCC REQUSET",
+    "count": 4
+  },
+  {
+    "text": "\\W0.88;GMT-0",
+    "count": 4
+  },
+  {
+    "text": "\\W0.88;GMT-17",
+    "count": 4
+  },
+  {
+    "text": "\\W0.88;GMT-3",
+    "count": 4
+  },
+  {
+    "text": "\\W0.88;GMT-9",
+    "count": 4
+  },
+  {
+    "text": "\\W0.88;SMART ABS",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;4WAY RMU",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;F-6.06",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;F-6.08",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;F-6.14",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;F-6.20",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;F-6.22",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;F-6.23",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;F-6.24",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;F-6.25",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;F-6.36",
+    "count": 4
+  },
+  {
+    "text": "\\W0.9;F-6.38",
+    "count": 4
+  },
+  {
+    "text": "\\W0.916667;ACTIVE FAULT LOC. DISTANCE",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;12610",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;Active 03/09/2023",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 11/3/2024",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;Active 11/6/2023",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 16/8/2023",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;Active 19/6/2023",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 21.11.23",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 22/8/2023",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;Active 27/8/2023",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;Active 6/8/2023",
+    "count": 4
+  },
+  {
+    "text": "\\W0.945946;SMR RMU ACTIVE",
+    "count": 4
+  },
+  {
+    "text": "\\W1.09375;ACTIVE",
+    "count": 4
+  },
+  {
+    "text": "05A23",
+    "count": 4
+  },
+  {
+    "text": "05A39",
+    "count": 4
+  },
+  {
+    "text": "05B11",
+    "count": 4
+  },
+  {
+    "text": "05B26",
+    "count": 4
+  },
+  {
+    "text": "05B49",
+    "count": 4
+  },
+  {
+    "text": "05C18",
+    "count": 4
+  },
+  {
+    "text": "05C24",
+    "count": 4
+  },
+  {
+    "text": "05C26",
+    "count": 4
+  },
+  {
+    "text": "05G16",
+    "count": 4
+  },
+  {
+    "text": "05H13",
+    "count": 4
+  },
+  {
+    "text": "05I16",
+    "count": 4
+  },
+  {
+    "text": "05L22",
+    "count": 4
+  },
+  {
+    "text": "05M06",
+    "count": 4
+  },
+  {
+    "text": "05P18",
+    "count": 4
+  },
+  {
+    "text": "05P23",
+    "count": 4
+  },
+  {
+    "text": "10A13",
+    "count": 4
+  },
+  {
+    "text": "10A22",
+    "count": 4
+  },
+  {
+    "text": "10A27",
+    "count": 4
+  },
+  {
+    "text": "10A34",
+    "count": 4
+  },
+  {
+    "text": "10A38",
+    "count": 4
+  },
+  {
+    "text": "10A39",
+    "count": 4
+  },
+  {
+    "text": "10A45",
+    "count": 4
+  },
+  {
+    "text": "10A46",
+    "count": 4
+  },
+  {
+    "text": "10A47",
+    "count": 4
+  },
+  {
+    "text": "10B25",
+    "count": 4
+  },
+  {
+    "text": "10B65",
+    "count": 4
+  },
+  {
+    "text": "10B67",
+    "count": 4
+  },
+  {
+    "text": "10C57",
+    "count": 4
+  },
+  {
+    "text": "10C64",
+    "count": 4
+  },
+  {
+    "text": "10C65",
+    "count": 4
+  },
+  {
+    "text": "10D28",
+    "count": 4
+  },
+  {
+    "text": "13.8KV BUS#1",
+    "count": 4
+  },
+  {
+    "text": "13.8KV BUS#2",
+    "count": 4
+  },
+  {
+    "text": "136L1",
+    "count": 4
+  },
+  {
+    "text": "139L1",
+    "count": 4
+  },
+  {
+    "text": "18A30",
+    "count": 4
+  },
+  {
+    "text": "18A35",
+    "count": 4
+  },
+  {
+    "text": "192L8",
+    "count": 4
+  },
+  {
+    "text": "208L1",
+    "count": 4
+  },
+  {
+    "text": "20A11",
+    "count": 4
+  },
+  {
+    "text": "20A38",
+    "count": 4
+  },
+  {
+    "text": "20A47",
+    "count": 4
+  },
+  {
+    "text": "21A49",
+    "count": 4
+  },
+  {
+    "text": "222L4",
+    "count": 4
+  },
+  {
+    "text": "26A25",
+    "count": 4
+  },
+  {
+    "text": "27A30",
+    "count": 4
+  },
+  {
+    "text": "27B19",
+    "count": 4
+  },
+  {
+    "text": "27B29",
+    "count": 4
+  },
+  {
+    "text": "30A43",
+    "count": 4
+  },
+  {
+    "text": "30A60",
+    "count": 4
+  },
+  {
+    "text": "30A61",
+    "count": 4
+  },
+  {
+    "text": "30A63",
+    "count": 4
+  },
+  {
+    "text": "30B08",
+    "count": 4
+  },
+  {
+    "text": "30B09",
+    "count": 4
+  },
+  {
+    "text": "351L1",
+    "count": 4
+  },
+  {
+    "text": "46B21",
+    "count": 4
+  },
+  {
+    "text": "47A44",
+    "count": 4
+  },
+  {
+    "text": "47B33",
+    "count": 4
+  },
+  {
+    "text": "501L1",
+    "count": 4
+  },
+  {
+    "text": "508L19",
+    "count": 4
+  },
+  {
+    "text": "508L20",
+    "count": 4
+  },
+  {
+    "text": "530L1",
+    "count": 4
+  },
+  {
+    "text": "61A37",
+    "count": 4
+  },
+  {
+    "text": "646L1",
+    "count": 4
+  },
+  {
+    "text": "64A10",
+    "count": 4
+  },
+  {
+    "text": "64C07",
+    "count": 4
+  },
+  {
+    "text": "64D12",
+    "count": 4
+  },
+  {
+    "text": "72D05",
+    "count": 4
+  },
+  {
+    "text": "A301",
+    "count": 4
+  },
+  {
+    "text": "B-321",
+    "count": 4
+  },
+  {
+    "text": "B-339",
+    "count": 4
+  },
+  {
+    "text": "B-357",
+    "count": 4
+  },
+  {
+    "text": "BSP F-20",
+    "count": 4
+  },
+  {
+    "text": "BSP,F-17",
+    "count": 4
+  },
+  {
+    "text": "BSP.F-01",
+    "count": 4
+  },
+  {
+    "text": "D.F-04",
+    "count": 4
+  },
+  {
+    "text": "D.F-14",
+    "count": 4
+  },
+  {
+    "text": "F-07",
+    "count": 4
+  },
+  {
+    "text": "F-08",
+    "count": 4
+  },
+  {
+    "text": "F-1.20",
+    "count": 4
+  },
+  {
+    "text": "F-1.27",
+    "count": 4
+  },
+  {
+    "text": "F-11",
+    "count": 4
+  },
+  {
+    "text": "F-15",
+    "count": 4
+  },
+  {
+    "text": "F-16",
+    "count": 4
+  },
+  {
+    "text": "F-17",
+    "count": 4
+  },
+  {
+    "text": "F-2.05",
+    "count": 4
+  },
+  {
+    "text": "F-2.07",
+    "count": 4
+  },
+  {
+    "text": "F-2.1",
+    "count": 4
+  },
+  {
+    "text": "F-2.2",
+    "count": 4
+  },
+  {
+    "text": "F-27",
+    "count": 4
+  },
+  {
+    "text": "F-28",
+    "count": 4
+  },
+  {
+    "text": "F-29",
+    "count": 4
+  },
+  {
+    "text": "F-3.07",
+    "count": 4
+  },
+  {
+    "text": "F-3.10",
+    "count": 4
+  },
+  {
+    "text": "F-4.14",
+    "count": 4
+  },
+  {
+    "text": "F-4.19",
+    "count": 4
+  },
+  {
+    "text": "F-5.3",
+    "count": 4
+  },
+  {
+    "text": "F-6.04",
+    "count": 4
+  },
+  {
+    "text": "F-6.05",
+    "count": 4
+  },
+  {
+    "text": "F-6.09",
+    "count": 4
+  },
+  {
+    "text": "F-6.21",
+    "count": 4
+  },
+  {
+    "text": "F-6.23",
+    "count": 4
+  },
+  {
+    "text": "F1.24",
+    "count": 4
+  },
+  {
+    "text": "FDR#2.03",
+    "count": 4
+  },
+  {
+    "text": "FDR#2.06",
+    "count": 4
+  },
+  {
+    "text": "FDR#2.15",
+    "count": 4
+  },
+  {
+    "text": "FDR#4.22",
+    "count": 4
+  },
+  {
+    "text": "FDR#7.34",
+    "count": 4
+  },
+  {
+    "text": "GMT-08",
+    "count": 4
+  },
+  {
+    "text": "GMT-1",
+    "count": 4
+  },
+  {
+    "text": "GMT-10",
+    "count": 4
+  },
+  {
+    "text": "GMT-7",
+    "count": 4
+  },
+  {
+    "text": "PMT-10",
+    "count": 4
+  },
+  {
+    "text": "PMT-12",
+    "count": 4
+  },
+  {
+    "text": "PMT-15",
+    "count": 4
+  },
+  {
+    "text": "PMT-2",
+    "count": 4
+  },
+  {
+    "text": "PMT-21",
+    "count": 4
+  },
+  {
+    "text": "PMT-28",
+    "count": 4
+  },
+  {
+    "text": "PMT-29",
+    "count": 4
+  },
+  {
+    "text": "PMT-30",
+    "count": 4
+  },
+  {
+    "text": "PMT-52",
+    "count": 4
+  },
+  {
+    "text": "Q. BSP FEEDER#18",
+    "count": 4
+  },
+  {
+    "text": "Q.MOB.H03",
+    "count": 4
+  },
+  {
+    "text": "QAI F-07",
+    "count": 4
+  },
+  {
+    "text": "QAI.F-02",
+    "count": 4
+  },
+  {
+    "text": "QBSP-11",
+    "count": 4
+  },
+  {
+    "text": "QBSP24",
+    "count": 4
+  },
+  {
+    "text": "U.F-04",
+    "count": 4
+  },
+  {
+    "text": "U.F-10",
+    "count": 4
+  },
+  {
+    "text": "U.F-14",
+    "count": 4
+  },
+  {
+    "text": "U.F-19",
+    "count": 4
+  },
+  {
+    "text": "U.F-31",
+    "count": 4
+  },
+  {
+    "text": "\\W0.833333;26208",
+    "count": 3
+  },
+  {
+    "text": "\\W0.833333;Q.MOB.H05",
+    "count": 3
+  },
+  {
+    "text": "\\W0.833333;RMU-1066",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;05D25",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;08817",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;09514",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;20C36",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;24203",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;24209",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;24221",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;26208",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;28207",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;6.23",
+    "count": 3
+  },
+  {
+    "text": "\\W0.857143;F-1.20",
+    "count": 3
+  },
+  {
+    "text": "\\W0.88;05D17",
+    "count": 3
+  },
+  {
+    "text": "\\W0.88;096",
+    "count": 3
+  },
+  {
+    "text": "\\W0.88;135",
+    "count": 3
+  },
+  {
+    "text": "\\W0.88;136",
+    "count": 3
+  },
+  {
+    "text": "\\W0.88;GMT-16",
+    "count": 3
+  },
+  {
+    "text": "\\W0.88;GMT-23",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;16/05/2024 FCO FOUND OPEN, NO CUST.",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;16/05/2024 NO TRF &, NO CUST.",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;F-6.03",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;F-6.05",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;F-6.07",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;F-6.11",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;F-6.13",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;F-6.17",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;F-6.31",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;F-6.34",
+    "count": 3
+  },
+  {
+    "text": "\\W0.9;F-6.35",
+    "count": 3
+  },
+  {
+    "text": "\\W0.909091;560",
+    "count": 3
+  },
+  {
+    "text": "\\W0.909091;ABDALRAHMAN - NIGHT OPRATOR 0583348262",
+    "count": 3
+  },
+  {
+    "text": "\\W0.909091;ACTIVE 15/6/2023",
+    "count": 3
+  },
+  {
+    "text": "\\W0.909091;ACTIVE 27/3/2023",
+    "count": 3
+  },
+  {
+    "text": "\\W0.909091;DUE TO LOAD TRANSFER REQ. FROM PCC",
+    "count": 3
+  },
+  {
+    "text": "\\W0.909091;ENERG. ON 05.08.2026",
+    "count": 3
+  },
+  {
+    "text": "\\W0.909091;OSMAN ALI - MORNING OPRATOR 0583533114",
+    "count": 3
+  },
+  {
+    "text": "\\W0.916667;160L1",
+    "count": 3
+  },
+  {
+    "text": "\\W0.945946;14.09.2023",
+    "count": 3
+  },
+  {
+    "text": "\\W0.945946;16712",
+    "count": 3
+  },
+  {
+    "text": "\\W0.945946;28703",
+    "count": 3
+  },
+  {
+    "text": "\\W0.945946;Active 18.09.23",
+    "count": 3
+  },
+  {
+    "text": "\\W0.945946;Active 19/10/2023",
+    "count": 3
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 2/10/2023",
+    "count": 3
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 20/05/2024",
+    "count": 3
+  },
+  {
+    "text": "\\W0.945946;Active 25/6/2023",
+    "count": 3
+  },
+  {
+    "text": "\\W0.945946;SMR Active",
+    "count": 3
+  },
+  {
+    "text": "\\W0.947368;SMR",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;LPSS-4",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;LPSS-5",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;LPSS-6",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;LSS-4",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;PSS-1",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;PSS-3",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;PSS-4",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;PSS-5",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;PSS-6",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;PSS-7",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;PSS-8",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;PSS-9",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;RMU-1",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;RMU-2",
+    "count": 3
+  },
+  {
+    "text": "\\W0.953514;RMU-3",
+    "count": 3
+  },
+  {
+    "text": "\\W1.09375;SMR",
+    "count": 3
+  },
+  {
+    "text": "05A43",
+    "count": 3
+  },
+  {
+    "text": "05A44",
+    "count": 3
+  },
+  {
+    "text": "05B22",
+    "count": 3
+  },
+  {
+    "text": "05B45",
+    "count": 3
+  },
+  {
+    "text": "05B47",
+    "count": 3
+  },
+  {
+    "text": "05G15",
+    "count": 3
+  },
+  {
+    "text": "05K30",
+    "count": 3
+  },
+  {
+    "text": "05K35",
+    "count": 3
+  },
+  {
+    "text": "05P24",
+    "count": 3
+  },
+  {
+    "text": "10A02",
+    "count": 3
+  },
+  {
+    "text": "10A41",
+    "count": 3
+  },
+  {
+    "text": "10A44",
+    "count": 3
+  },
+  {
+    "text": "10C16",
+    "count": 3
+  },
+  {
+    "text": "113L2",
+    "count": 3
+  },
+  {
+    "text": "117L2",
+    "count": 3
+  },
+  {
+    "text": "133L2",
+    "count": 3
+  },
+  {
+    "text": "160L2",
+    "count": 3
+  },
+  {
+    "text": "180L2",
+    "count": 3
+  },
+  {
+    "text": "186L1",
+    "count": 3
+  },
+  {
+    "text": "18A37",
+    "count": 3
+  },
+  {
+    "text": "20B28",
+    "count": 3
+  },
+  {
+    "text": "20C44",
+    "count": 3
+  },
+  {
+    "text": "20C46",
+    "count": 3
+  },
+  {
+    "text": "21A31",
+    "count": 3
+  },
+  {
+    "text": "21A37",
+    "count": 3
+  },
+  {
+    "text": "27B15",
+    "count": 3
+  },
+  {
+    "text": "27B27",
+    "count": 3
+  },
+  {
+    "text": "30A30",
+    "count": 3
+  },
+  {
+    "text": "30B35",
+    "count": 3
+  },
+  {
+    "text": "30B36",
+    "count": 3
+  },
+  {
+    "text": "310L3",
+    "count": 3
+  },
+  {
+    "text": "398L1",
+    "count": 3
+  },
+  {
+    "text": "3W.RMU",
+    "count": 3
+  },
+  {
+    "text": "46A09",
+    "count": 3
+  },
+  {
+    "text": "46A21",
+    "count": 3
+  },
+  {
+    "text": "46A27",
+    "count": 3
+  },
+  {
+    "text": "46A30",
+    "count": 3
+  },
+  {
+    "text": "46A34",
+    "count": 3
+  },
+  {
+    "text": "46B19",
+    "count": 3
+  },
+  {
+    "text": "47A50",
+    "count": 3
+  },
+  {
+    "text": "47B29",
+    "count": 3
+  },
+  {
+    "text": "4W.RMU",
+    "count": 3
+  },
+  {
+    "text": "508C1",
+    "count": 3
+  },
+  {
+    "text": "508C2",
+    "count": 3
+  },
+  {
+    "text": "508L10",
+    "count": 3
+  },
+  {
+    "text": "508L11",
+    "count": 3
+  },
+  {
+    "text": "508L12",
+    "count": 3
+  },
+  {
+    "text": "508L21",
+    "count": 3
+  },
+  {
+    "text": "508L22",
+    "count": 3
+  },
+  {
+    "text": "508L23",
+    "count": 3
+  },
+  {
+    "text": "508L7",
+    "count": 3
+  },
+  {
+    "text": "508L8",
+    "count": 3
+  },
+  {
+    "text": "508L9",
+    "count": 3
+  },
+  {
+    "text": "510C1",
+    "count": 3
+  },
+  {
+    "text": "510L1",
+    "count": 3
+  },
+  {
+    "text": "510L3",
+    "count": 3
+  },
+  {
+    "text": "510L4",
+    "count": 3
+  },
+  {
+    "text": "515L1",
+    "count": 3
+  },
+  {
+    "text": "520C1",
+    "count": 3
+  },
+  {
+    "text": "520C2",
+    "count": 3
+  },
+  {
+    "text": "520L12",
+    "count": 3
+  },
+  {
+    "text": "520L13",
+    "count": 3
+  },
+  {
+    "text": "522L6",
+    "count": 3
+  },
+  {
+    "text": "528A1",
+    "count": 3
+  },
+  {
+    "text": "570L2",
+    "count": 3
+  },
+  {
+    "text": "57117 (CONTRACTED LOAD 2.4MWA)",
+    "count": 3
+  },
+  {
+    "text": "615L1",
+    "count": 3
+  },
+  {
+    "text": "617L2",
+    "count": 3
+  },
+  {
+    "text": "61A38",
+    "count": 3
+  },
+  {
+    "text": "61A44",
+    "count": 3
+  },
+  {
+    "text": "625L2",
+    "count": 3
+  },
+  {
+    "text": "626L1",
+    "count": 3
+  },
+  {
+    "text": "628L1",
+    "count": 3
+  },
+  {
+    "text": "643L1",
+    "count": 3
+  },
+  {
+    "text": "662L1",
+    "count": 3
+  },
+  {
+    "text": "72A08",
+    "count": 3
+  },
+  {
+    "text": "72A16",
+    "count": 3
+  },
+  {
+    "text": "72A20",
+    "count": 3
+  },
+  {
+    "text": "72A22",
+    "count": 3
+  },
+  {
+    "text": "72A28",
+    "count": 3
+  },
+  {
+    "text": "72AL4",
+    "count": 3
+  },
+  {
+    "text": "72B13",
+    "count": 3
+  },
+  {
+    "text": "72C11",
+    "count": 3
+  },
+  {
+    "text": "72C17",
+    "count": 3
+  },
+  {
+    "text": "72C18",
+    "count": 3
+  },
+  {
+    "text": "72CL1",
+    "count": 3
+  },
+  {
+    "text": "72CL3",
+    "count": 3
+  },
+  {
+    "text": "72D08",
+    "count": 3
+  },
+  {
+    "text": "72D12",
+    "count": 3
+  },
+  {
+    "text": "756L3",
+    "count": 3
+  },
+  {
+    "text": "771L1",
+    "count": 3
+  },
+  {
+    "text": "772L1",
+    "count": 3
+  },
+  {
+    "text": "772L2",
+    "count": 3
+  },
+  {
+    "text": "774L1",
+    "count": 3
+  },
+  {
+    "text": "776L1",
+    "count": 3
+  },
+  {
+    "text": "776L2",
+    "count": 3
+  },
+  {
+    "text": "781L1^J",
+    "count": 3
+  },
+  {
+    "text": "781L2",
+    "count": 3
+  },
+  {
+    "text": "782L2^J",
+    "count": 3
+  },
+  {
+    "text": "782L3",
+    "count": 3
+  },
+  {
+    "text": "782L4",
+    "count": 3
+  },
+  {
+    "text": "788L1^J",
+    "count": 3
+  },
+  {
+    "text": "788L2",
+    "count": 3
+  },
+  {
+    "text": "788L3^J",
+    "count": 3
+  },
+  {
+    "text": "788L4^J",
+    "count": 3
+  },
+  {
+    "text": "89A05",
+    "count": 3
+  },
+  {
+    "text": "ABS-1016",
+    "count": 3
+  },
+  {
+    "text": "ABS-928",
+    "count": 3
+  },
+  {
+    "text": "ATS 111",
+    "count": 3
+  },
+  {
+    "text": "ATS-111",
+    "count": 3
+  },
+  {
+    "text": "B-313",
+    "count": 3
+  },
+  {
+    "text": "B-316",
+    "count": 3
+  },
+  {
+    "text": "B-320",
+    "count": 3
+  },
+  {
+    "text": "B-343",
+    "count": 3
+  },
+  {
+    "text": "B-362",
+    "count": 3
+  },
+  {
+    "text": "BSP F-03",
+    "count": 3
+  },
+  {
+    "text": "BSP F-04",
+    "count": 3
+  },
+  {
+    "text": "BSP F-11",
+    "count": 3
+  },
+  {
+    "text": "BSP F-24",
+    "count": 3
+  },
+  {
+    "text": "BSP-20",
+    "count": 3
+  },
+  {
+    "text": "BSPF-08",
+    "count": 3
+  },
+  {
+    "text": "Bus-Bar 630 Amp. 13.8 KV. 60Hz",
+    "count": 3
+  },
+  {
+    "text": "D F-03",
+    "count": 3
+  },
+  {
+    "text": "D FDR#01",
+    "count": 3
+  },
+  {
+    "text": "D FDR#02",
+    "count": 3
+  },
+  {
+    "text": "D FDR#03",
+    "count": 3
+  },
+  {
+    "text": "D FDR#04",
+    "count": 3
+  },
+  {
+    "text": "D FDR#05",
+    "count": 3
+  },
+  {
+    "text": "D FDR#06",
+    "count": 3
+  },
+  {
+    "text": "D FDR#09",
+    "count": 3
+  },
+  {
+    "text": "D FDR#10",
+    "count": 3
+  },
+  {
+    "text": "D FDR#12",
+    "count": 3
+  },
+  {
+    "text": "D FDR#13",
+    "count": 3
+  },
+  {
+    "text": "D FDR#18",
+    "count": 3
+  },
+  {
+    "text": "D FDR#19",
+    "count": 3
+  },
+  {
+    "text": "D FDR#20",
+    "count": 3
+  },
+  {
+    "text": "D FDR#22",
+    "count": 3
+  },
+  {
+    "text": "D.F-16",
+    "count": 3
+  },
+  {
+    "text": "D.F-22",
+    "count": 3
+  },
+  {
+    "text": "DF-25",
+    "count": 3
+  },
+  {
+    "text": "F-04",
+    "count": 3
+  },
+  {
+    "text": "F-06",
+    "count": 3
+  },
+  {
+    "text": "F-1.25",
+    "count": 3
+  },
+  {
+    "text": "F-1.28",
+    "count": 3
+  },
+  {
+    "text": "F-13",
+    "count": 3
+  },
+  {
+    "text": "F-19",
+    "count": 3
+  },
+  {
+    "text": "F-2.4",
+    "count": 3
+  },
+  {
+    "text": "F-2.5",
+    "count": 3
+  },
+  {
+    "text": "F-2.6",
+    "count": 3
+  },
+  {
+    "text": "F-25",
+    "count": 3
+  },
+  {
+    "text": "F-3.8",
+    "count": 3
+  },
+  {
+    "text": "F-3.9",
+    "count": 3
+  },
+  {
+    "text": "F-31",
+    "count": 3
+  },
+  {
+    "text": "F-33",
+    "count": 3
+  },
+  {
+    "text": "F-34",
+    "count": 3
+  },
+  {
+    "text": "F-4.03",
+    "count": 3
+  },
+  {
+    "text": "F-4.09",
+    "count": 3
+  },
+  {
+    "text": "F-4.6",
+    "count": 3
+  },
+  {
+    "text": "F-5.09",
+    "count": 3
+  },
+  {
+    "text": "F-5.18",
+    "count": 3
+  },
+  {
+    "text": "F-6.10",
+    "count": 3
+  },
+  {
+    "text": "F-6.16",
+    "count": 3
+  },
+  {
+    "text": "F-6.18",
+    "count": 3
+  },
+  {
+    "text": "F-6.19",
+    "count": 3
+  },
+  {
+    "text": "F-6.20",
+    "count": 3
+  },
+  {
+    "text": "F-6.24",
+    "count": 3
+  },
+  {
+    "text": "F-6.30",
+    "count": 3
+  },
+  {
+    "text": "F-6.32",
+    "count": 3
+  },
+  {
+    "text": "F-6.33",
+    "count": 3
+  },
+  {
+    "text": "F-6.34",
+    "count": 3
+  },
+  {
+    "text": "F-6.36",
+    "count": 3
+  },
+  {
+    "text": "F-6.4",
+    "count": 3
+  },
+  {
+    "text": "F1",
+    "count": 3
+  },
+  {
+    "text": "F2",
+    "count": 3
+  },
+  {
+    "text": "FDR#2.02",
+    "count": 3
+  },
+  {
+    "text": "FDR#4.04",
+    "count": 3
+  },
+  {
+    "text": "FDR#4.09",
+    "count": 3
+  },
+  {
+    "text": "FDR#6.31",
+    "count": 3
+  },
+  {
+    "text": "FDR#7.05",
+    "count": 3
+  },
+  {
+    "text": "FDR#7.13",
+    "count": 3
+  },
+  {
+    "text": "FDR#7.24",
+    "count": 3
+  },
+  {
+    "text": "G1",
+    "count": 3
+  },
+  {
+    "text": "G2",
+    "count": 3
+  },
+  {
+    "text": "G4",
+    "count": 3
+  },
+  {
+    "text": "G6",
+    "count": 3
+  },
+  {
+    "text": "GMT-07",
+    "count": 3
+  },
+  {
+    "text": "GMT-21",
+    "count": 3
+  },
+  {
+    "text": "GMT-26",
+    "count": 3
+  },
+  {
+    "text": "GMT-28",
+    "count": 3
+  },
+  {
+    "text": "GMT-29",
+    "count": 3
+  },
+  {
+    "text": "GMT-30",
+    "count": 3
+  },
+  {
+    "text": "GMT-4",
+    "count": 3
+  },
+  {
+    "text": "H03",
+    "count": 3
+  },
+  {
+    "text": "H04",
+    "count": 3
+  },
+  {
+    "text": "H05",
+    "count": 3
+  },
+  {
+    "text": "H06",
+    "count": 3
+  },
+  {
+    "text": "LBSS-1",
+    "count": 3
+  },
+  {
+    "text": "LBSS-2",
+    "count": 3
+  },
+  {
+    "text": "LBSS-3",
+    "count": 3
+  },
+  {
+    "text": "LBSS-5",
+    "count": 3
+  },
+  {
+    "text": "N64047",
+    "count": 3
+  },
+  {
+    "text": "P-B1",
+    "count": 3
+  },
+  {
+    "text": "P-B2",
+    "count": 3
+  },
+  {
+    "text": "PMT-05",
+    "count": 3
+  },
+  {
+    "text": "PMT-13",
+    "count": 3
+  },
+  {
+    "text": "PMT-24",
+    "count": 3
+  },
+  {
+    "text": "PMT-34",
+    "count": 3
+  },
+  {
+    "text": "PMT-37",
+    "count": 3
+  },
+  {
+    "text": "PMT-39",
+    "count": 3
+  },
+  {
+    "text": "PMT-8",
+    "count": 3
+  },
+  {
+    "text": "PSS-10",
+    "count": 3
+  },
+  {
+    "text": "PSS-2",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#04",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#05",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#06",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#07",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#08",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#09",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#11",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#12",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#13",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#16",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#17",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#19",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#20",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#21",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#22",
+    "count": 3
+  },
+  {
+    "text": "Q. BSP FEEDER#24",
+    "count": 3
+  },
+  {
+    "text": "Q.F-10",
+    "count": 3
+  },
+  {
+    "text": "Q.MOB.H05",
+    "count": 3
+  },
+  {
+    "text": "QAI.F-03",
+    "count": 3
+  },
+  {
+    "text": "QAI.F-07",
+    "count": 3
+  },
+  {
+    "text": "QAISUMA FEEDER#07",
+    "count": 3
+  },
+  {
+    "text": "QAISUMA FEEDER#08",
+    "count": 3
+  },
+  {
+    "text": "QAISUMA FEEDER#09",
+    "count": 3
+  },
+  {
+    "text": "QAISUMA FEEDER#10",
+    "count": 3
+  },
+  {
+    "text": "QAISUMA FEEDER#11",
+    "count": 3
+  },
+  {
+    "text": "QBSP F-16",
+    "count": 3
+  },
+  {
+    "text": "QBSP-12",
+    "count": 3
+  },
+  {
+    "text": "QBSP-16",
+    "count": 3
+  },
+  {
+    "text": "RMU 4WAY",
+    "count": 3
+  },
+  {
+    "text": "RMU-02151",
+    "count": 3
+  },
+  {
+    "text": "RMU-1023",
+    "count": 3
+  },
+  {
+    "text": "RMU-408",
+    "count": 3
+  },
+  {
+    "text": "t57.1899;\\W0.9;F-6.18",
+    "count": 3
+  },
+  {
+    "text": "U.F-06",
+    "count": 3
+  },
+  {
+    "text": "U.F-12",
+    "count": 3
+  },
+  {
+    "text": "U.F-22",
+    "count": 3
+  },
+  {
+    "text": "U.F-34",
+    "count": 3
+  },
+  {
+    "text": "UF-24",
+    "count": 3
+  },
+  {
+    "text": "UNI.F-04",
+    "count": 3
+  },
+  {
+    "text": "UNI.F-14",
+    "count": 3
+  },
+  {
+    "text": "UNI.F-22",
+    "count": 3
+  },
+  {
+    "text": "UNI.F-34",
+    "count": 3
+  },
+  {
+    "text": "VR-282",
+    "count": 3
+  },
+  {
+    "text": "VR-469",
+    "count": 3
+  },
+  {
+    "text": "VR-510",
+    "count": 3
+  },
+  {
+    "text": "VR-610",
+    "count": 3
+  },
+  {
+    "text": "VR-611",
+    "count": 3
+  },
+  {
+    "text": "VR-756",
+    "count": 3
+  },
+  {
+    "text": "(540L2)",
+    "count": 2
+  },
+  {
+    "text": "\\W0.82;IN ZENON STUTS SHOW CLOSE IN SITE IN OPEN POSTN",
+    "count": 2
+  },
+  {
+    "text": "\\W0.833333;26416",
+    "count": 2
+  },
+  {
+    "text": "\\W0.833333;26706",
+    "count": 2
+  },
+  {
+    "text": "\\W0.837973;QAISUMA BSP GRID STATION",
+    "count": 2
+  },
+  {
+    "text": "\\W0.854701;BALADIYAH",
+    "count": 2
+  },
+  {
+    "text": "\\W0.854701;BY PASS",
+    "count": 2
+  },
+  {
+    "text": "\\W0.854701;JUMPER DISCONNECTED FOR REMOVAL",
+    "count": 2
+  },
+  {
+    "text": "\\W0.854701;REMOVE TR FOR MANIT",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143; TOFF GRD CUST. SHIFTED TO 05B21",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;03750",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;040",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;04128",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;04133",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;04237",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;05K32",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;08021",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;08023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;08127",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;08223",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;08614",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;08618",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;08720",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;09218",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;09712",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;10014",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;10709",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;11415",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;15015",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;15021",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;20760",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;21A37",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;23420",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;26416",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;26706",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;27709",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;27A15",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;27A31",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;27A38",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;293",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;30708",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;31132",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;35304",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;41511",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;42122",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;42123",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;6.14",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;6.22",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;6.24",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;6.25",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;6.36",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;6.38",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;85A19",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;970",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;ACTIVE 4/10/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;ALSUFAIRI",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;B#342",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;B#344",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;DEAD END",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;DONT USE ABS",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;F-6.21",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;F-8.25",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;JUMPER DISCONNECTED FOR FUTURE REMOVAL",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;OPEN",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;RISER",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;SMR EFI",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;TF STOLEN. T-OFF GRD",
+    "count": 2
+  },
+  {
+    "text": "\\W0.857143;THIS BRANCH IS DISCONNECTED FOR REMOVAL",
+    "count": 2
+  },
+  {
+    "text": "\\W0.86;010",
+    "count": 2
+  },
+  {
+    "text": "\\W0.870978;56612",
+    "count": 2
+  },
+  {
+    "text": "\\W0.870978;56624",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;120",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;129",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;27A16",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;497",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;531",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;822",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;ACTIVE 22/8/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;DED END",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;GMT-11",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;GMT-15",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;GMT-19",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;GMT-25",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;GMT-26",
+    "count": 2
+  },
+  {
+    "text": "\\W0.88;نقطة ضبط امن سامودة(مركز شرطة) NOT VIP",
+    "count": 2
+  },
+  {
+    "text": "\\W0.888889;DONT,T MAKE PARLLEL",
+    "count": 2
+  },
+  {
+    "text": "\\W0.888889;HAFAR WATER TREATMENT PLANT",
+    "count": 2
+  },
+  {
+    "text": "\\W0.888889;SC#08322005",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;CABLE INSIDE RMU1059. SW FDR & COVERED & NOT TERMINATED KEPT FOR FUTURE USE",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;F-02",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;F-6.01",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;F-6.02",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;F-6.04",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;F-6.16",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;F-6.26",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;F-6.27",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;F-6.28",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;F-6.32",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;F-6.4",
+    "count": 2
+  },
+  {
+    "text": "\\W0.9;GUY WIRE BROKEN AT E/1 141-06",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;037",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;1154",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;263",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;444",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;556",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;565",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;60828",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;61328",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;63103",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;ACTIVE 19/10/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;BAL T/F",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;CBL FLT",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;F-5.17",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;F-5.27",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;F#10",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;LOW GAS",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;Q-F-03",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;Q#06",
+    "count": 2
+  },
+  {
+    "text": "\\W0.909091;RISER",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;053L4",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;12034",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;148L1",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;153L1",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;154L3",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;160L4",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;160L6",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;161L1",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;165L2",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;165L4",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;167L1",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;167L3",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;169L3",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;169L7",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;206L1",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;206L2",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;206L3",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;206L4",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;BYPASS",
+    "count": 2
+  },
+  {
+    "text": "\\W0.916667;FCO",
+    "count": 2
+  },
+  {
+    "text": "\\W0.925;ACTIVE 12.09.2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.925;SMR ACTIVE",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;05A39",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;1500 KVA",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;15125",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;17.09.2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;42022",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 04/09/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;Active 11/7/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;Active 12/11/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 13/12/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;Active 21/6/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 22/08/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 26.11.23",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 26/9/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 30/11/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 4/9/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 6/9/2023",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;BUSBAR FOUND STOLEN IN NEW TF-18629",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;D.F-17",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;NON PIAMINT OPEN",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;OPEN",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;RISER DISCONNECTED FOR REMOVAL OF OHL NETWORK",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;ST.L.",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;T-OFF SPARE",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;T/F#",
+    "count": 2
+  },
+  {
+    "text": "\\W0.945946;WITHOUT",
+    "count": 2
+  },
+  {
+    "text": "\\W0.947368; PMT STOLEN",
+    "count": 2
+  },
+  {
+    "text": "\\W0.947368;20219",
+    "count": 2
+  },
+  {
+    "text": "\\W0.947368;4WAY",
+    "count": 2
+  },
+  {
+    "text": "\\W0.947368;ACTIVE",
+    "count": 2
+  },
+  {
+    "text": "\\W0.95;DEBEAH SUBSTATION",
+    "count": 2
+  },
+  {
+    "text": "\\W0.95;GRID STATION#4",
+    "count": 2
+  },
+  {
+    "text": "021L2",
+    "count": 2
+  },
+  {
+    "text": "049L1",
+    "count": 2
+  },
+  {
+    "text": "049L10",
+    "count": 2
+  },
+  {
+    "text": "049L2",
+    "count": 2
+  },
+  {
+    "text": "049L7",
+    "count": 2
+  },
+  {
+    "text": "049L8",
+    "count": 2
+  },
+  {
+    "text": "050L1",
+    "count": 2
+  },
+  {
+    "text": "050L2",
+    "count": 2
+  },
+  {
+    "text": "050L3",
+    "count": 2
+  },
+  {
+    "text": "050L4",
+    "count": 2
+  },
+  {
+    "text": "050L5",
+    "count": 2
+  },
+  {
+    "text": "051L3",
+    "count": 2
+  },
+  {
+    "text": "052L3",
+    "count": 2
+  },
+  {
+    "text": "052L5",
+    "count": 2
+  },
+  {
+    "text": "052L6",
+    "count": 2
+  },
+  {
+    "text": "053L1",
+    "count": 2
+  },
+  {
+    "text": "053L2",
+    "count": 2
+  },
+  {
+    "text": "053L3",
+    "count": 2
+  },
+  {
+    "text": "054L1",
+    "count": 2
+  },
+  {
+    "text": "054L2",
+    "count": 2
+  },
+  {
+    "text": "054L3",
+    "count": 2
+  },
+  {
+    "text": "054L4",
+    "count": 2
+  },
+  {
+    "text": "056L2",
+    "count": 2
+  },
+  {
+    "text": "057L1",
+    "count": 2
+  },
+  {
+    "text": "057L2",
+    "count": 2
+  },
+  {
+    "text": "057L3",
+    "count": 2
+  },
+  {
+    "text": "05A13",
+    "count": 2
+  },
+  {
+    "text": "05A20",
+    "count": 2
+  },
+  {
+    "text": "05A25",
+    "count": 2
+  },
+  {
+    "text": "05A34",
+    "count": 2
+  },
+  {
+    "text": "05A35",
+    "count": 2
+  },
+  {
+    "text": "05A37",
+    "count": 2
+  },
+  {
+    "text": "05A38",
+    "count": 2
+  },
+  {
+    "text": "05A40",
+    "count": 2
+  },
+  {
+    "text": "05B01",
+    "count": 2
+  },
+  {
+    "text": "05B15",
+    "count": 2
+  },
+  {
+    "text": "05B16",
+    "count": 2
+  },
+  {
+    "text": "05B18",
+    "count": 2
+  },
+  {
+    "text": "05B19",
+    "count": 2
+  },
+  {
+    "text": "05B25",
+    "count": 2
+  },
+  {
+    "text": "05B27",
+    "count": 2
+  },
+  {
+    "text": "05B30",
+    "count": 2
+  },
+  {
+    "text": "05B32",
+    "count": 2
+  },
+  {
+    "text": "05B34",
+    "count": 2
+  },
+  {
+    "text": "05B35",
+    "count": 2
+  },
+  {
+    "text": "05B38",
+    "count": 2
+  },
+  {
+    "text": "05B40",
+    "count": 2
+  },
+  {
+    "text": "05B43",
+    "count": 2
+  },
+  {
+    "text": "05B46",
+    "count": 2
+  },
+  {
+    "text": "05B50",
+    "count": 2
+  },
+  {
+    "text": "05B51",
+    "count": 2
+  },
+  {
+    "text": "05C09",
+    "count": 2
+  },
+  {
+    "text": "05C10",
+    "count": 2
+  },
+  {
+    "text": "05C14",
+    "count": 2
+  },
+  {
+    "text": "05C16",
+    "count": 2
+  },
+  {
+    "text": "05C17",
+    "count": 2
+  },
+  {
+    "text": "05C19",
+    "count": 2
+  },
+  {
+    "text": "05C23",
+    "count": 2
+  },
+  {
+    "text": "05C27",
+    "count": 2
+  },
+  {
+    "text": "05C28",
+    "count": 2
+  },
+  {
+    "text": "05C29",
+    "count": 2
+  },
+  {
+    "text": "05D18",
+    "count": 2
+  },
+  {
+    "text": "05D19",
+    "count": 2
+  },
+  {
+    "text": "05D20",
+    "count": 2
+  },
+  {
+    "text": "05D21",
+    "count": 2
+  },
+  {
+    "text": "05D23",
+    "count": 2
+  },
+  {
+    "text": "05D24",
+    "count": 2
+  },
+  {
+    "text": "05D25",
+    "count": 2
+  },
+  {
+    "text": "05E07",
+    "count": 2
+  },
+  {
+    "text": "05E08",
+    "count": 2
+  },
+  {
+    "text": "05E09",
+    "count": 2
+  },
+  {
+    "text": "05E11",
+    "count": 2
+  },
+  {
+    "text": "05E12",
+    "count": 2
+  },
+  {
+    "text": "05E13",
+    "count": 2
+  },
+  {
+    "text": "05E14",
+    "count": 2
+  },
+  {
+    "text": "05E15",
+    "count": 2
+  },
+  {
+    "text": "05E16",
+    "count": 2
+  },
+  {
+    "text": "05F02",
+    "count": 2
+  },
+  {
+    "text": "05F03",
+    "count": 2
+  },
+  {
+    "text": "05F05",
+    "count": 2
+  },
+  {
+    "text": "05F06",
+    "count": 2
+  },
+  {
+    "text": "05F07",
+    "count": 2
+  },
+  {
+    "text": "05FL1",
+    "count": 2
+  },
+  {
+    "text": "05G11",
+    "count": 2
+  },
+  {
+    "text": "05G12",
+    "count": 2
+  },
+  {
+    "text": "05G17",
+    "count": 2
+  },
+  {
+    "text": "05G18",
+    "count": 2
+  },
+  {
+    "text": "05G19",
+    "count": 2
+  },
+  {
+    "text": "05G20",
+    "count": 2
+  },
+  {
+    "text": "05G21",
+    "count": 2
+  },
+  {
+    "text": "05G24",
+    "count": 2
+  },
+  {
+    "text": "05G28",
+    "count": 2
+  },
+  {
+    "text": "05G30",
+    "count": 2
+  },
+  {
+    "text": "05H16",
+    "count": 2
+  },
+  {
+    "text": "05H17",
+    "count": 2
+  },
+  {
+    "text": "05H18",
+    "count": 2
+  },
+  {
+    "text": "05H20",
+    "count": 2
+  },
+  {
+    "text": "05H21",
+    "count": 2
+  },
+  {
+    "text": "05H22",
+    "count": 2
+  },
+  {
+    "text": "05H24",
+    "count": 2
+  },
+  {
+    "text": "05H26",
+    "count": 2
+  },
+  {
+    "text": "05H27",
+    "count": 2
+  },
+  {
+    "text": "05H29",
+    "count": 2
+  },
+  {
+    "text": "05I02",
+    "count": 2
+  },
+  {
+    "text": "05I03",
+    "count": 2
+  },
+  {
+    "text": "05I04",
+    "count": 2
+  },
+  {
+    "text": "05I05",
+    "count": 2
+  },
+  {
+    "text": "05I07",
+    "count": 2
+  },
+  {
+    "text": "05I08",
+    "count": 2
+  },
+  {
+    "text": "05I09",
+    "count": 2
+  },
+  {
+    "text": "05I10",
+    "count": 2
+  },
+  {
+    "text": "05I11",
+    "count": 2
+  },
+  {
+    "text": "05I13",
+    "count": 2
+  },
+  {
+    "text": "05I15",
+    "count": 2
+  },
+  {
+    "text": "05I17",
+    "count": 2
+  },
+  {
+    "text": "05I18",
+    "count": 2
+  },
+  {
+    "text": "05I20",
+    "count": 2
+  },
+  {
+    "text": "05I21",
+    "count": 2
+  },
+  {
+    "text": "05IL1",
+    "count": 2
+  },
+  {
+    "text": "05IL3",
+    "count": 2
+  },
+  {
+    "text": "05J01",
+    "count": 2
+  },
+  {
+    "text": "05J02",
+    "count": 2
+  },
+  {
+    "text": "05J03",
+    "count": 2
+  },
+  {
+    "text": "05J04",
+    "count": 2
+  },
+  {
+    "text": "05J05",
+    "count": 2
+  },
+  {
+    "text": "05J06",
+    "count": 2
+  },
+  {
+    "text": "05J07",
+    "count": 2
+  },
+  {
+    "text": "05J08",
+    "count": 2
+  },
+  {
+    "text": "05J09",
+    "count": 2
+  },
+  {
+    "text": "05J10",
+    "count": 2
+  },
+  {
+    "text": "05J11",
+    "count": 2
+  },
+  {
+    "text": "05J12",
+    "count": 2
+  },
+  {
+    "text": "05JL2",
+    "count": 2
+  },
+  {
+    "text": "05JL3",
+    "count": 2
+  },
+  {
+    "text": "05JL4",
+    "count": 2
+  },
+  {
+    "text": "05K27",
+    "count": 2
+  },
+  {
+    "text": "05K28",
+    "count": 2
+  },
+  {
+    "text": "05K31",
+    "count": 2
+  },
+  {
+    "text": "05K32",
+    "count": 2
+  },
+  {
+    "text": "05K34",
+    "count": 2
+  },
+  {
+    "text": "05L01",
+    "count": 2
+  },
+  {
+    "text": "05L02",
+    "count": 2
+  },
+  {
+    "text": "05L03",
+    "count": 2
+  },
+  {
+    "text": "05L04",
+    "count": 2
+  },
+  {
+    "text": "05L06",
+    "count": 2
+  },
+  {
+    "text": "05L08",
+    "count": 2
+  },
+  {
+    "text": "05L09",
+    "count": 2
+  },
+  {
+    "text": "05L11",
+    "count": 2
+  },
+  {
+    "text": "05L13",
+    "count": 2
+  },
+  {
+    "text": "05L14",
+    "count": 2
+  },
+  {
+    "text": "05L16",
+    "count": 2
+  },
+  {
+    "text": "05L17",
+    "count": 2
+  },
+  {
+    "text": "05L19",
+    "count": 2
+  },
+  {
+    "text": "05L20",
+    "count": 2
+  },
+  {
+    "text": "05L21",
+    "count": 2
+  },
+  {
+    "text": "05L24",
+    "count": 2
+  },
+  {
+    "text": "05LL1",
+    "count": 2
+  },
+  {
+    "text": "05LL2",
+    "count": 2
+  },
+  {
+    "text": "05LL3",
+    "count": 2
+  },
+  {
+    "text": "05LL4",
+    "count": 2
+  },
+  {
+    "text": "05M03",
+    "count": 2
+  },
+  {
+    "text": "05M05",
+    "count": 2
+  },
+  {
+    "text": "05M08",
+    "count": 2
+  },
+  {
+    "text": "05M10",
+    "count": 2
+  },
+  {
+    "text": "05M13",
+    "count": 2
+  },
+  {
+    "text": "05M14",
+    "count": 2
+  },
+  {
+    "text": "05M15",
+    "count": 2
+  },
+  {
+    "text": "05M17",
+    "count": 2
+  },
+  {
+    "text": "05M18",
+    "count": 2
+  },
+  {
+    "text": "05O02",
+    "count": 2
+  },
+  {
+    "text": "05O03",
+    "count": 2
+  },
+  {
+    "text": "05O04",
+    "count": 2
+  },
+  {
+    "text": "05O05",
+    "count": 2
+  },
+  {
+    "text": "05O10",
+    "count": 2
+  },
+  {
+    "text": "05O11",
+    "count": 2
+  },
+  {
+    "text": "05O13",
+    "count": 2
+  },
+  {
+    "text": "05O14",
+    "count": 2
+  },
+  {
+    "text": "05O15",
+    "count": 2
+  },
+  {
+    "text": "05O16",
+    "count": 2
+  },
+  {
+    "text": "05O17",
+    "count": 2
+  },
+  {
+    "text": "05O21",
+    "count": 2
+  },
+  {
+    "text": "05O22",
+    "count": 2
+  },
+  {
+    "text": "05O27",
+    "count": 2
+  },
+  {
+    "text": "05O31",
+    "count": 2
+  },
+  {
+    "text": "05OL1",
+    "count": 2
+  },
+  {
+    "text": "05P01",
+    "count": 2
+  },
+  {
+    "text": "05P02",
+    "count": 2
+  },
+  {
+    "text": "05P03",
+    "count": 2
+  },
+  {
+    "text": "05P05",
+    "count": 2
+  },
+  {
+    "text": "05P06",
+    "count": 2
+  },
+  {
+    "text": "05P07",
+    "count": 2
+  },
+  {
+    "text": "05P09",
+    "count": 2
+  },
+  {
+    "text": "05P10",
+    "count": 2
+  },
+  {
+    "text": "05P13",
+    "count": 2
+  },
+  {
+    "text": "05P16",
+    "count": 2
+  },
+  {
+    "text": "05P17",
+    "count": 2
+  },
+  {
+    "text": "05P19",
+    "count": 2
+  },
+  {
+    "text": "05P20",
+    "count": 2
+  },
+  {
+    "text": "05P21",
+    "count": 2
+  },
+  {
+    "text": "05P22",
+    "count": 2
+  },
+  {
+    "text": "05P25",
+    "count": 2
+  },
+  {
+    "text": "05P26",
+    "count": 2
+  },
+  {
+    "text": "05Q01",
+    "count": 2
+  },
+  {
+    "text": "05Q02",
+    "count": 2
+  },
+  {
+    "text": "05Q05",
+    "count": 2
+  },
+  {
+    "text": "05Q06",
+    "count": 2
+  },
+  {
+    "text": "05Q07",
+    "count": 2
+  },
+  {
+    "text": "05Q08",
+    "count": 2
+  },
+  {
+    "text": "05Q09",
+    "count": 2
+  },
+  {
+    "text": "05Q12",
+    "count": 2
+  },
+  {
+    "text": "05Q13",
+    "count": 2
+  },
+  {
+    "text": "05Q15",
+    "count": 2
+  },
+  {
+    "text": "05QL1",
+    "count": 2
+  },
+  {
+    "text": "05QL2",
+    "count": 2
+  },
+  {
+    "text": "05R04",
+    "count": 2
+  },
+  {
+    "text": "05R05",
+    "count": 2
+  },
+  {
+    "text": "05R06",
+    "count": 2
+  },
+  {
+    "text": "060L1",
+    "count": 2
+  },
+  {
+    "text": "060L2",
+    "count": 2
+  },
+  {
+    "text": "060L3",
+    "count": 2
+  },
+  {
+    "text": "076L1",
+    "count": 2
+  },
+  {
+    "text": "076L3",
+    "count": 2
+  },
+  {
+    "text": "077L1",
+    "count": 2
+  },
+  {
+    "text": "077L2",
+    "count": 2
+  },
+  {
+    "text": "079L1",
+    "count": 2
+  },
+  {
+    "text": "079L2",
+    "count": 2
+  },
+  {
+    "text": "079L3",
+    "count": 2
+  },
+  {
+    "text": "079L4",
+    "count": 2
+  },
+  {
+    "text": "079l7",
+    "count": 2
+  },
+  {
+    "text": "080L3",
+    "count": 2
+  },
+  {
+    "text": "080L4",
+    "count": 2
+  },
+  {
+    "text": "080L6",
+    "count": 2
+  },
+  {
+    "text": "080L7",
+    "count": 2
+  },
+  {
+    "text": "080L8",
+    "count": 2
+  },
+  {
+    "text": "081L1",
+    "count": 2
+  },
+  {
+    "text": "082L1",
+    "count": 2
+  },
+  {
+    "text": "082L2",
+    "count": 2
+  },
+  {
+    "text": "082L3",
+    "count": 2
+  },
+  {
+    "text": "083L1",
+    "count": 2
+  },
+  {
+    "text": "083L2",
+    "count": 2
+  },
+  {
+    "text": "083L3",
+    "count": 2
+  },
+  {
+    "text": "084L2",
+    "count": 2
+  },
+  {
+    "text": "084L3",
+    "count": 2
+  },
+  {
+    "text": "085A13",
+    "count": 2
+  },
+  {
+    "text": "085B06",
+    "count": 2
+  },
+  {
+    "text": "087L2",
+    "count": 2
+  },
+  {
+    "text": "087L3",
+    "count": 2
+  },
+  {
+    "text": "088L2",
+    "count": 2
+  },
+  {
+    "text": "091L1",
+    "count": 2
+  },
+  {
+    "text": "091L2",
+    "count": 2
+  },
+  {
+    "text": "091L3",
+    "count": 2
+  },
+  {
+    "text": "091L4",
+    "count": 2
+  },
+  {
+    "text": "091L5",
+    "count": 2
+  },
+  {
+    "text": "092L1",
+    "count": 2
+  },
+  {
+    "text": "092L2",
+    "count": 2
+  },
+  {
+    "text": "092L3",
+    "count": 2
+  },
+  {
+    "text": "093L1",
+    "count": 2
+  },
+  {
+    "text": "093L2",
+    "count": 2
+  },
+  {
+    "text": "093L3",
+    "count": 2
+  },
+  {
+    "text": "093L4",
+    "count": 2
+  },
+  {
+    "text": "094L1",
+    "count": 2
+  },
+  {
+    "text": "094L2",
+    "count": 2
+  },
+  {
+    "text": "095L1",
+    "count": 2
+  },
+  {
+    "text": "095L2",
+    "count": 2
+  },
+  {
+    "text": "095L3",
+    "count": 2
+  },
+  {
+    "text": "095L4",
+    "count": 2
+  },
+  {
+    "text": "097L1",
+    "count": 2
+  },
+  {
+    "text": "097L2",
+    "count": 2
+  },
+  {
+    "text": "099L1",
+    "count": 2
+  },
+  {
+    "text": "099L2",
+    "count": 2
+  },
+  {
+    "text": "099L3",
+    "count": 2
+  },
+  {
+    "text": "099L4",
+    "count": 2
+  },
+  {
+    "text": "09A01",
+    "count": 2
+  },
+  {
+    "text": "09A04",
+    "count": 2
+  },
+  {
+    "text": "09A25",
+    "count": 2
+  },
+  {
+    "text": "09A27",
+    "count": 2
+  },
+  {
+    "text": "09A28",
+    "count": 2
+  },
+  {
+    "text": "09A29",
+    "count": 2
+  },
+  {
+    "text": "09A30",
+    "count": 2
+  },
+  {
+    "text": "09A31",
+    "count": 2
+  },
+  {
+    "text": "09A32",
+    "count": 2
+  },
+  {
+    "text": "101L1",
+    "count": 2
+  },
+  {
+    "text": "101L2",
+    "count": 2
+  },
+  {
+    "text": "103L1",
+    "count": 2
+  },
+  {
+    "text": "104L1",
+    "count": 2
+  },
+  {
+    "text": "104L3",
+    "count": 2
+  },
+  {
+    "text": "104L4",
+    "count": 2
+  },
+  {
+    "text": "105L1",
+    "count": 2
+  },
+  {
+    "text": "106L1",
+    "count": 2
+  },
+  {
+    "text": "106L2",
+    "count": 2
+  },
+  {
+    "text": "107L1",
+    "count": 2
+  },
+  {
+    "text": "109L1",
+    "count": 2
+  },
+  {
+    "text": "109L5",
+    "count": 2
+  },
+  {
+    "text": "10A01",
+    "count": 2
+  },
+  {
+    "text": "10A19",
+    "count": 2
+  },
+  {
+    "text": "10A40",
+    "count": 2
+  },
+  {
+    "text": "10A48",
+    "count": 2
+  },
+  {
+    "text": "10A51",
+    "count": 2
+  },
+  {
+    "text": "10A53",
+    "count": 2
+  },
+  {
+    "text": "10B23",
+    "count": 2
+  },
+  {
+    "text": "10B56",
+    "count": 2
+  },
+  {
+    "text": "10B59",
+    "count": 2
+  },
+  {
+    "text": "10B60",
+    "count": 2
+  },
+  {
+    "text": "10B61",
+    "count": 2
+  },
+  {
+    "text": "10B62",
+    "count": 2
+  },
+  {
+    "text": "10B63",
+    "count": 2
+  },
+  {
+    "text": "10B66",
+    "count": 2
+  },
+  {
+    "text": "10B68",
+    "count": 2
+  },
+  {
+    "text": "10C03",
+    "count": 2
+  },
+  {
+    "text": "10C04",
+    "count": 2
+  },
+  {
+    "text": "10C41",
+    "count": 2
+  },
+  {
+    "text": "10C43",
+    "count": 2
+  },
+  {
+    "text": "10C49",
+    "count": 2
+  },
+  {
+    "text": "10C53",
+    "count": 2
+  },
+  {
+    "text": "10C55",
+    "count": 2
+  },
+  {
+    "text": "10C59",
+    "count": 2
+  },
+  {
+    "text": "10C60",
+    "count": 2
+  },
+  {
+    "text": "10C61",
+    "count": 2
+  },
+  {
+    "text": "10C62",
+    "count": 2
+  },
+  {
+    "text": "10C63",
+    "count": 2
+  },
+  {
+    "text": "10C67",
+    "count": 2
+  },
+  {
+    "text": "10D02",
+    "count": 2
+  },
+  {
+    "text": "10D09",
+    "count": 2
+  },
+  {
+    "text": "10D29",
+    "count": 2
+  },
+  {
+    "text": "10D33",
+    "count": 2
+  },
+  {
+    "text": "10D34",
+    "count": 2
+  },
+  {
+    "text": "10D35",
+    "count": 2
+  },
+  {
+    "text": "10D36",
+    "count": 2
+  },
+  {
+    "text": "110L1",
+    "count": 2
+  },
+  {
+    "text": "110L2",
+    "count": 2
+  },
+  {
+    "text": "110L3",
+    "count": 2
+  },
+  {
+    "text": "110L4",
+    "count": 2
+  },
+  {
+    "text": "110L5",
+    "count": 2
+  },
+  {
+    "text": "112L1",
+    "count": 2
+  },
+  {
+    "text": "112L2",
+    "count": 2
+  },
+  {
+    "text": "112L3",
+    "count": 2
+  },
+  {
+    "text": "112L4",
+    "count": 2
+  },
+  {
+    "text": "112L5",
+    "count": 2
+  },
+  {
+    "text": "112L6",
+    "count": 2
+  },
+  {
+    "text": "113L1",
+    "count": 2
+  },
+  {
+    "text": "113L4",
+    "count": 2
+  },
+  {
+    "text": "113L5",
+    "count": 2
+  },
+  {
+    "text": "114L1",
+    "count": 2
+  },
+  {
+    "text": "117L1",
+    "count": 2
+  },
+  {
+    "text": "117L4",
+    "count": 2
+  },
+  {
+    "text": "118L1",
+    "count": 2
+  },
+  {
+    "text": "118L3",
+    "count": 2
+  },
+  {
+    "text": "118L4",
+    "count": 2
+  },
+  {
+    "text": "118L5",
+    "count": 2
+  },
+  {
+    "text": "119L1",
+    "count": 2
+  },
+  {
+    "text": "119L2",
+    "count": 2
+  },
+  {
+    "text": "120L1",
+    "count": 2
+  },
+  {
+    "text": "120L2",
+    "count": 2
+  },
+  {
+    "text": "121L1",
+    "count": 2
+  },
+  {
+    "text": "121L2",
+    "count": 2
+  },
+  {
+    "text": "121L3",
+    "count": 2
+  },
+  {
+    "text": "121L4",
+    "count": 2
+  },
+  {
+    "text": "121L5",
+    "count": 2
+  },
+  {
+    "text": "121L6",
+    "count": 2
+  },
+  {
+    "text": "121L7",
+    "count": 2
+  },
+  {
+    "text": "122L1",
+    "count": 2
+  },
+  {
+    "text": "124L5",
+    "count": 2
+  },
+  {
+    "text": "124L6",
+    "count": 2
+  },
+  {
+    "text": "125L1",
+    "count": 2
+  },
+  {
+    "text": "125L2",
+    "count": 2
+  },
+  {
+    "text": "125L3",
+    "count": 2
+  },
+  {
+    "text": "126L2",
+    "count": 2
+  },
+  {
+    "text": "126L4",
+    "count": 2
+  },
+  {
+    "text": "127L2",
+    "count": 2
+  },
+  {
+    "text": "128L1",
+    "count": 2
+  },
+  {
+    "text": "128L2",
+    "count": 2
+  },
+  {
+    "text": "13.8KV BUS#3",
+    "count": 2
+  },
+  {
+    "text": "13.8KV BUS#4",
+    "count": 2
+  },
+  {
+    "text": "130L1",
+    "count": 2
+  },
+  {
+    "text": "130L2",
+    "count": 2
+  },
+  {
+    "text": "130L3",
+    "count": 2
+  },
+  {
+    "text": "131L1",
+    "count": 2
+  },
+  {
+    "text": "131L3",
+    "count": 2
+  },
+  {
+    "text": "131L4",
+    "count": 2
+  },
+  {
+    "text": "132L3",
+    "count": 2
+  },
+  {
+    "text": "132L7",
+    "count": 2
+  },
+  {
+    "text": "134L1",
+    "count": 2
+  },
+  {
+    "text": "134L2",
+    "count": 2
+  },
+  {
+    "text": "134L4",
+    "count": 2
+  },
+  {
+    "text": "135L1",
+    "count": 2
+  },
+  {
+    "text": "136L2",
+    "count": 2
+  },
+  {
+    "text": "136L3",
+    "count": 2
+  },
+  {
+    "text": "136L4",
+    "count": 2
+  },
+  {
+    "text": "136L5",
+    "count": 2
+  },
+  {
+    "text": "137L1",
+    "count": 2
+  },
+  {
+    "text": "138L1",
+    "count": 2
+  },
+  {
+    "text": "140L1",
+    "count": 2
+  },
+  {
+    "text": "140L2",
+    "count": 2
+  },
+  {
+    "text": "141L3",
+    "count": 2
+  },
+  {
+    "text": "141L4",
+    "count": 2
+  },
+  {
+    "text": "141L5",
+    "count": 2
+  },
+  {
+    "text": "141L6",
+    "count": 2
+  },
+  {
+    "text": "141L7",
+    "count": 2
+  },
+  {
+    "text": "143L1",
+    "count": 2
+  },
+  {
+    "text": "143L2",
+    "count": 2
+  },
+  {
+    "text": "143L3",
+    "count": 2
+  },
+  {
+    "text": "143L4",
+    "count": 2
+  },
+  {
+    "text": "143L5",
+    "count": 2
+  },
+  {
+    "text": "143L6",
+    "count": 2
+  },
+  {
+    "text": "143L7",
+    "count": 2
+  },
+  {
+    "text": "144L1",
+    "count": 2
+  },
+  {
+    "text": "144L2",
+    "count": 2
+  },
+  {
+    "text": "144L3",
+    "count": 2
+  },
+  {
+    "text": "146L2",
+    "count": 2
+  },
+  {
+    "text": "146L3",
+    "count": 2
+  },
+  {
+    "text": "155L2",
+    "count": 2
+  },
+  {
+    "text": "156L2",
+    "count": 2
+  },
+  {
+    "text": "157L2",
+    "count": 2
+  },
+  {
+    "text": "157L3",
+    "count": 2
+  },
+  {
+    "text": "157L4",
+    "count": 2
+  },
+  {
+    "text": "161L4",
+    "count": 2
+  },
+  {
+    "text": "163L1",
+    "count": 2
+  },
+  {
+    "text": "163L2",
+    "count": 2
+  },
+  {
+    "text": "166L1",
+    "count": 2
+  },
+  {
+    "text": "166L2",
+    "count": 2
+  },
+  {
+    "text": "169L1",
+    "count": 2
+  },
+  {
+    "text": "169L2",
+    "count": 2
+  },
+  {
+    "text": "169L4",
+    "count": 2
+  },
+  {
+    "text": "169L5",
+    "count": 2
+  },
+  {
+    "text": "169L6",
+    "count": 2
+  },
+  {
+    "text": "170L1",
+    "count": 2
+  },
+  {
+    "text": "170L2",
+    "count": 2
+  },
+  {
+    "text": "170L3",
+    "count": 2
+  },
+  {
+    "text": "170L4",
+    "count": 2
+  },
+  {
+    "text": "170L5",
+    "count": 2
+  },
+  {
+    "text": "171L1",
+    "count": 2
+  },
+  {
+    "text": "171L2",
+    "count": 2
+  },
+  {
+    "text": "171L3",
+    "count": 2
+  },
+  {
+    "text": "171L4",
+    "count": 2
+  },
+  {
+    "text": "171L5",
+    "count": 2
+  },
+  {
+    "text": "171L7",
+    "count": 2
+  },
+  {
+    "text": "171L8",
+    "count": 2
+  },
+  {
+    "text": "171L9",
+    "count": 2
+  },
+  {
+    "text": "174L1",
+    "count": 2
+  },
+  {
+    "text": "174L2",
+    "count": 2
+  },
+  {
+    "text": "174L3",
+    "count": 2
+  },
+  {
+    "text": "174L5",
+    "count": 2
+  },
+  {
+    "text": "175L2",
+    "count": 2
+  },
+  {
+    "text": "175L3",
+    "count": 2
+  },
+  {
+    "text": "175L6",
+    "count": 2
+  },
+  {
+    "text": "176L2",
+    "count": 2
+  },
+  {
+    "text": "176L4",
+    "count": 2
+  },
+  {
+    "text": "177L1",
+    "count": 2
+  },
+  {
+    "text": "177L2",
+    "count": 2
+  },
+  {
+    "text": "178L1",
+    "count": 2
+  },
+  {
+    "text": "178L2",
+    "count": 2
+  },
+  {
+    "text": "178L3",
+    "count": 2
+  },
+  {
+    "text": "178L4",
+    "count": 2
+  },
+  {
+    "text": "178L5",
+    "count": 2
+  },
+  {
+    "text": "179L2",
+    "count": 2
+  },
+  {
+    "text": "180L3",
+    "count": 2
+  },
+  {
+    "text": "181L1",
+    "count": 2
+  },
+  {
+    "text": "181L2",
+    "count": 2
+  },
+  {
+    "text": "182L1",
+    "count": 2
+  },
+  {
+    "text": "182L2",
+    "count": 2
+  },
+  {
+    "text": "182L3",
+    "count": 2
+  },
+  {
+    "text": "184L2",
+    "count": 2
+  },
+  {
+    "text": "184L3",
+    "count": 2
+  },
+  {
+    "text": "186L2",
+    "count": 2
+  },
+  {
+    "text": "186L4",
+    "count": 2
+  },
+  {
+    "text": "186L5",
+    "count": 2
+  },
+  {
+    "text": "187L1",
+    "count": 2
+  },
+  {
+    "text": "187L2",
+    "count": 2
+  },
+  {
+    "text": "187L3",
+    "count": 2
+  },
+  {
+    "text": "187L4",
+    "count": 2
+  },
+  {
+    "text": "187L5",
+    "count": 2
+  },
+  {
+    "text": "188L1",
+    "count": 2
+  },
+  {
+    "text": "188L3",
+    "count": 2
+  },
+  {
+    "text": "189L2",
+    "count": 2
+  },
+  {
+    "text": "189L3",
+    "count": 2
+  },
+  {
+    "text": "189L4",
+    "count": 2
+  },
+  {
+    "text": "18A08",
+    "count": 2
+  },
+  {
+    "text": "18A09",
+    "count": 2
+  },
+  {
+    "text": "18A33",
+    "count": 2
+  },
+  {
+    "text": "18A36",
+    "count": 2
+  },
+  {
+    "text": "18B16",
+    "count": 2
+  },
+  {
+    "text": "18B19",
+    "count": 2
+  },
+  {
+    "text": "18B20",
+    "count": 2
+  },
+  {
+    "text": "18B21",
+    "count": 2
+  },
+  {
+    "text": "18B23",
+    "count": 2
+  },
+  {
+    "text": "18B24",
+    "count": 2
+  },
+  {
+    "text": "18B27",
+    "count": 2
+  },
+  {
+    "text": "190L2",
+    "count": 2
+  },
+  {
+    "text": "190L3",
+    "count": 2
+  },
+  {
+    "text": "191L1",
+    "count": 2
+  },
+  {
+    "text": "191L10",
+    "count": 2
+  },
+  {
+    "text": "191L2",
+    "count": 2
+  },
+  {
+    "text": "191L4",
+    "count": 2
+  },
+  {
+    "text": "191L5",
+    "count": 2
+  },
+  {
+    "text": "191L6",
+    "count": 2
+  },
+  {
+    "text": "191L7",
+    "count": 2
+  },
+  {
+    "text": "191L8",
+    "count": 2
+  },
+  {
+    "text": "191L9",
+    "count": 2
+  },
+  {
+    "text": "192L3",
+    "count": 2
+  },
+  {
+    "text": "192L4",
+    "count": 2
+  },
+  {
+    "text": "192L5",
+    "count": 2
+  },
+  {
+    "text": "192L6",
+    "count": 2
+  },
+  {
+    "text": "192L7",
+    "count": 2
+  },
+  {
+    "text": "196L1",
+    "count": 2
+  },
+  {
+    "text": "196L2",
+    "count": 2
+  },
+  {
+    "text": "197L1",
+    "count": 2
+  },
+  {
+    "text": "197L2",
+    "count": 2
+  },
+  {
+    "text": "198L2",
+    "count": 2
+  },
+  {
+    "text": "199L1",
+    "count": 2
+  },
+  {
+    "text": "202L1",
+    "count": 2
+  },
+  {
+    "text": "207L1",
+    "count": 2
+  },
+  {
+    "text": "207L3",
+    "count": 2
+  },
+  {
+    "text": "207L4",
+    "count": 2
+  },
+  {
+    "text": "207L5",
+    "count": 2
+  },
+  {
+    "text": "207L6",
+    "count": 2
+  },
+  {
+    "text": "207L7",
+    "count": 2
+  },
+  {
+    "text": "207L8",
+    "count": 2
+  },
+  {
+    "text": "208L2",
+    "count": 2
+  },
+  {
+    "text": "209L1",
+    "count": 2
+  },
+  {
+    "text": "20A12",
+    "count": 2
+  },
+  {
+    "text": "20A33",
+    "count": 2
+  },
+  {
+    "text": "20A35",
+    "count": 2
+  },
+  {
+    "text": "20A37",
+    "count": 2
+  },
+  {
+    "text": "20A40",
+    "count": 2
+  },
+  {
+    "text": "20A41",
+    "count": 2
+  },
+  {
+    "text": "20A42",
+    "count": 2
+  },
+  {
+    "text": "20A44",
+    "count": 2
+  },
+  {
+    "text": "20A46",
+    "count": 2
+  },
+  {
+    "text": "20B20",
+    "count": 2
+  },
+  {
+    "text": "20B22",
+    "count": 2
+  },
+  {
+    "text": "20B23",
+    "count": 2
+  },
+  {
+    "text": "20B24",
+    "count": 2
+  },
+  {
+    "text": "20B25",
+    "count": 2
+  },
+  {
+    "text": "20B26",
+    "count": 2
+  },
+  {
+    "text": "20B27",
+    "count": 2
+  },
+  {
+    "text": "20B29",
+    "count": 2
+  },
+  {
+    "text": "20B30",
+    "count": 2
+  },
+  {
+    "text": "20B31",
+    "count": 2
+  },
+  {
+    "text": "20B32",
+    "count": 2
+  },
+  {
+    "text": "20B33",
+    "count": 2
+  },
+  {
+    "text": "20B34",
+    "count": 2
+  },
+  {
+    "text": "20B35",
+    "count": 2
+  },
+  {
+    "text": "20C27",
+    "count": 2
+  },
+  {
+    "text": "20C31",
+    "count": 2
+  },
+  {
+    "text": "20C32",
+    "count": 2
+  },
+  {
+    "text": "20C33",
+    "count": 2
+  },
+  {
+    "text": "20C35",
+    "count": 2
+  },
+  {
+    "text": "20C36",
+    "count": 2
+  },
+  {
+    "text": "20C37",
+    "count": 2
+  },
+  {
+    "text": "20C38",
+    "count": 2
+  },
+  {
+    "text": "20C41",
+    "count": 2
+  },
+  {
+    "text": "20C42",
+    "count": 2
+  },
+  {
+    "text": "20C43",
+    "count": 2
+  },
+  {
+    "text": "20C45",
+    "count": 2
+  },
+  {
+    "text": "211L2",
+    "count": 2
+  },
+  {
+    "text": "212L1",
+    "count": 2
+  },
+  {
+    "text": "214L1",
+    "count": 2
+  },
+  {
+    "text": "21A28",
+    "count": 2
+  },
+  {
+    "text": "21A32",
+    "count": 2
+  },
+  {
+    "text": "21A34",
+    "count": 2
+  },
+  {
+    "text": "21A35",
+    "count": 2
+  },
+  {
+    "text": "21A38",
+    "count": 2
+  },
+  {
+    "text": "21A39",
+    "count": 2
+  },
+  {
+    "text": "21A40",
+    "count": 2
+  },
+  {
+    "text": "21A42",
+    "count": 2
+  },
+  {
+    "text": "21A44",
+    "count": 2
+  },
+  {
+    "text": "21A45",
+    "count": 2
+  },
+  {
+    "text": "21A46",
+    "count": 2
+  },
+  {
+    "text": "21A47",
+    "count": 2
+  },
+  {
+    "text": "21A50",
+    "count": 2
+  },
+  {
+    "text": "21A57",
+    "count": 2
+  },
+  {
+    "text": "222L1",
+    "count": 2
+  },
+  {
+    "text": "222L2",
+    "count": 2
+  },
+  {
+    "text": "223L1",
+    "count": 2
+  },
+  {
+    "text": "224L2",
+    "count": 2
+  },
+  {
+    "text": "224L3",
+    "count": 2
+  },
+  {
+    "text": "225L1",
+    "count": 2
+  },
+  {
+    "text": "225L2",
+    "count": 2
+  },
+  {
+    "text": "225L3",
+    "count": 2
+  },
+  {
+    "text": "227L1",
+    "count": 2
+  },
+  {
+    "text": "231L1",
+    "count": 2
+  },
+  {
+    "text": "234L1",
+    "count": 2
+  },
+  {
+    "text": "234L2",
+    "count": 2
+  },
+  {
+    "text": "234L3",
+    "count": 2
+  },
+  {
+    "text": "235L1",
+    "count": 2
+  },
+  {
+    "text": "235L2",
+    "count": 2
+  },
+  {
+    "text": "235L3",
+    "count": 2
+  },
+  {
+    "text": "235L4",
+    "count": 2
+  },
+  {
+    "text": "236L1",
+    "count": 2
+  },
+  {
+    "text": "236L2",
+    "count": 2
+  },
+  {
+    "text": "236L3",
+    "count": 2
+  },
+  {
+    "text": "236L4",
+    "count": 2
+  },
+  {
+    "text": "236L5",
+    "count": 2
+  },
+  {
+    "text": "236L6",
+    "count": 2
+  },
+  {
+    "text": "237L2",
+    "count": 2
+  },
+  {
+    "text": "238L2",
+    "count": 2
+  },
+  {
+    "text": "238L3",
+    "count": 2
+  },
+  {
+    "text": "238L4",
+    "count": 2
+  },
+  {
+    "text": "239L2",
+    "count": 2
+  },
+  {
+    "text": "239L3",
+    "count": 2
+  },
+  {
+    "text": "239L4",
+    "count": 2
+  },
+  {
+    "text": "240L1",
+    "count": 2
+  },
+  {
+    "text": "240L2",
+    "count": 2
+  },
+  {
+    "text": "240L3",
+    "count": 2
+  },
+  {
+    "text": "240L4",
+    "count": 2
+  },
+  {
+    "text": "245L2",
+    "count": 2
+  },
+  {
+    "text": "268L1",
+    "count": 2
+  },
+  {
+    "text": "26A21",
+    "count": 2
+  },
+  {
+    "text": "26A24",
+    "count": 2
+  },
+  {
+    "text": "26A26",
+    "count": 2
+  },
+  {
+    "text": "26A27",
+    "count": 2
+  },
+  {
+    "text": "26A28",
+    "count": 2
+  },
+  {
+    "text": "26A30",
+    "count": 2
+  },
+  {
+    "text": "26A31",
+    "count": 2
+  },
+  {
+    "text": "26A32",
+    "count": 2
+  },
+  {
+    "text": "26A33",
+    "count": 2
+  },
+  {
+    "text": "273L5",
+    "count": 2
+  },
+  {
+    "text": "274L1",
+    "count": 2
+  },
+  {
+    "text": "274L2",
+    "count": 2
+  },
+  {
+    "text": "274L3",
+    "count": 2
+  },
+  {
+    "text": "275L2",
+    "count": 2
+  },
+  {
+    "text": "276L5",
+    "count": 2
+  },
+  {
+    "text": "276L6",
+    "count": 2
+  },
+  {
+    "text": "277L1",
+    "count": 2
+  },
+  {
+    "text": "278L1",
+    "count": 2
+  },
+  {
+    "text": "278L2",
+    "count": 2
+  },
+  {
+    "text": "278L3",
+    "count": 2
+  },
+  {
+    "text": "279L1",
+    "count": 2
+  },
+  {
+    "text": "27A03",
+    "count": 2
+  },
+  {
+    "text": "27A04",
+    "count": 2
+  },
+  {
+    "text": "27A05",
+    "count": 2
+  },
+  {
+    "text": "27A09",
+    "count": 2
+  },
+  {
+    "text": "27A10",
+    "count": 2
+  },
+  {
+    "text": "27A11",
+    "count": 2
+  },
+  {
+    "text": "27A13",
+    "count": 2
+  },
+  {
+    "text": "27A15",
+    "count": 2
+  },
+  {
+    "text": "27A16",
+    "count": 2
+  },
+  {
+    "text": "27A17",
+    "count": 2
+  },
+  {
+    "text": "27A18",
+    "count": 2
+  },
+  {
+    "text": "27A20",
+    "count": 2
+  },
+  {
+    "text": "27A21",
+    "count": 2
+  },
+  {
+    "text": "27A22",
+    "count": 2
+  },
+  {
+    "text": "27A25",
+    "count": 2
+  },
+  {
+    "text": "27A28",
+    "count": 2
+  },
+  {
+    "text": "27A29",
+    "count": 2
+  },
+  {
+    "text": "27A32",
+    "count": 2
+  },
+  {
+    "text": "27A33",
+    "count": 2
+  },
+  {
+    "text": "27A35",
+    "count": 2
+  },
+  {
+    "text": "27A36",
+    "count": 2
+  },
+  {
+    "text": "27A37",
+    "count": 2
+  },
+  {
+    "text": "27A38",
+    "count": 2
+  },
+  {
+    "text": "27A39",
+    "count": 2
+  },
+  {
+    "text": "27A40",
+    "count": 2
+  },
+  {
+    "text": "27A42",
+    "count": 2
+  },
+  {
+    "text": "27A43",
+    "count": 2
+  },
+  {
+    "text": "27A44",
+    "count": 2
+  },
+  {
+    "text": "27A45",
+    "count": 2
+  },
+  {
+    "text": "27A47",
+    "count": 2
+  },
+  {
+    "text": "27AL3",
+    "count": 2
+  },
+  {
+    "text": "27B08",
+    "count": 2
+  },
+  {
+    "text": "27B13",
+    "count": 2
+  },
+  {
+    "text": "27B16",
+    "count": 2
+  },
+  {
+    "text": "27B18",
+    "count": 2
+  },
+  {
+    "text": "27B21",
+    "count": 2
+  },
+  {
+    "text": "27B26",
+    "count": 2
+  },
+  {
+    "text": "27B28",
+    "count": 2
+  },
+  {
+    "text": "280L1",
+    "count": 2
+  },
+  {
+    "text": "280L2",
+    "count": 2
+  },
+  {
+    "text": "280L3",
+    "count": 2
+  },
+  {
+    "text": "280L4",
+    "count": 2
+  },
+  {
+    "text": "281L1",
+    "count": 2
+  },
+  {
+    "text": "283L1",
+    "count": 2
+  },
+  {
+    "text": "284L2",
+    "count": 2
+  },
+  {
+    "text": "285L1",
+    "count": 2
+  },
+  {
+    "text": "285L2",
+    "count": 2
+  },
+  {
+    "text": "287L1",
+    "count": 2
+  },
+  {
+    "text": "295L1",
+    "count": 2
+  },
+  {
+    "text": "296L3",
+    "count": 2
+  },
+  {
+    "text": "297L1",
+    "count": 2
+  },
+  {
+    "text": "298L2",
+    "count": 2
+  },
+  {
+    "text": "299L1",
+    "count": 2
+  },
+  {
+    "text": "302L1",
+    "count": 2
+  },
+  {
+    "text": "305L1",
+    "count": 2
+  },
+  {
+    "text": "305L2",
+    "count": 2
+  },
+  {
+    "text": "305L3",
+    "count": 2
+  },
+  {
+    "text": "305L4",
+    "count": 2
+  },
+  {
+    "text": "306L1",
+    "count": 2
+  },
+  {
+    "text": "306L2",
+    "count": 2
+  },
+  {
+    "text": "30A05",
+    "count": 2
+  },
+  {
+    "text": "30A33",
+    "count": 2
+  },
+  {
+    "text": "30A38",
+    "count": 2
+  },
+  {
+    "text": "30A41",
+    "count": 2
+  },
+  {
+    "text": "30A42",
+    "count": 2
+  },
+  {
+    "text": "30A44",
+    "count": 2
+  },
+  {
+    "text": "30A45",
+    "count": 2
+  },
+  {
+    "text": "30A47",
+    "count": 2
+  },
+  {
+    "text": "30A50",
+    "count": 2
+  },
+  {
+    "text": "30A51",
+    "count": 2
+  },
+  {
+    "text": "30A54",
+    "count": 2
+  },
+  {
+    "text": "30A55",
+    "count": 2
+  },
+  {
+    "text": "30A56",
+    "count": 2
+  },
+  {
+    "text": "30A57",
+    "count": 2
+  },
+  {
+    "text": "30A58",
+    "count": 2
+  },
+  {
+    "text": "30A59",
+    "count": 2
+  },
+  {
+    "text": "30A62",
+    "count": 2
+  },
+  {
+    "text": "30A65",
+    "count": 2
+  },
+  {
+    "text": "30B12",
+    "count": 2
+  },
+  {
+    "text": "30B16",
+    "count": 2
+  },
+  {
+    "text": "30B17",
+    "count": 2
+  },
+  {
+    "text": "30B18",
+    "count": 2
+  },
+  {
+    "text": "30B19",
+    "count": 2
+  },
+  {
+    "text": "30B28",
+    "count": 2
+  },
+  {
+    "text": "30B29",
+    "count": 2
+  },
+  {
+    "text": "30B30",
+    "count": 2
+  },
+  {
+    "text": "30B31",
+    "count": 2
+  },
+  {
+    "text": "30B33",
+    "count": 2
+  },
+  {
+    "text": "30B34",
+    "count": 2
+  },
+  {
+    "text": "310L1",
+    "count": 2
+  },
+  {
+    "text": "310L2",
+    "count": 2
+  },
+  {
+    "text": "310L4",
+    "count": 2
+  },
+  {
+    "text": "311L1",
+    "count": 2
+  },
+  {
+    "text": "311L2",
+    "count": 2
+  },
+  {
+    "text": "311L3",
+    "count": 2
+  },
+  {
+    "text": "311L7",
+    "count": 2
+  },
+  {
+    "text": "314L1",
+    "count": 2
+  },
+  {
+    "text": "317L3",
+    "count": 2
+  },
+  {
+    "text": "395L1",
+    "count": 2
+  },
+  {
+    "text": "395L2",
+    "count": 2
+  },
+  {
+    "text": "395L3",
+    "count": 2
+  },
+  {
+    "text": "395L4",
+    "count": 2
+  },
+  {
+    "text": "396L3",
+    "count": 2
+  },
+  {
+    "text": "396L4",
+    "count": 2
+  },
+  {
+    "text": "399L10",
+    "count": 2
+  },
+  {
+    "text": "3WRMU-1051",
+    "count": 2
+  },
+  {
+    "text": "402C1",
+    "count": 2
+  },
+  {
+    "text": "402L1",
+    "count": 2
+  },
+  {
+    "text": "415L1",
+    "count": 2
+  },
+  {
+    "text": "415L2",
+    "count": 2
+  },
+  {
+    "text": "415L3",
+    "count": 2
+  },
+  {
+    "text": "420L1",
+    "count": 2
+  },
+  {
+    "text": "420L2",
+    "count": 2
+  },
+  {
+    "text": "420L3",
+    "count": 2
+  },
+  {
+    "text": "420L4",
+    "count": 2
+  },
+  {
+    "text": "421L1",
+    "count": 2
+  },
+  {
+    "text": "421L2",
+    "count": 2
+  },
+  {
+    "text": "46A19",
+    "count": 2
+  },
+  {
+    "text": "46A22",
+    "count": 2
+  },
+  {
+    "text": "46A24",
+    "count": 2
+  },
+  {
+    "text": "46A25",
+    "count": 2
+  },
+  {
+    "text": "46A28",
+    "count": 2
+  },
+  {
+    "text": "46A29",
+    "count": 2
+  },
+  {
+    "text": "46A31",
+    "count": 2
+  },
+  {
+    "text": "46A32",
+    "count": 2
+  },
+  {
+    "text": "46A33",
+    "count": 2
+  },
+  {
+    "text": "46B18",
+    "count": 2
+  },
+  {
+    "text": "46B22",
+    "count": 2
+  },
+  {
+    "text": "46B23",
+    "count": 2
+  },
+  {
+    "text": "46B24",
+    "count": 2
+  },
+  {
+    "text": "46B25",
+    "count": 2
+  },
+  {
+    "text": "46B26",
+    "count": 2
+  },
+  {
+    "text": "47A11",
+    "count": 2
+  },
+  {
+    "text": "47A40",
+    "count": 2
+  },
+  {
+    "text": "47A41",
+    "count": 2
+  },
+  {
+    "text": "47A45",
+    "count": 2
+  },
+  {
+    "text": "47A47",
+    "count": 2
+  },
+  {
+    "text": "47A48",
+    "count": 2
+  },
+  {
+    "text": "47A49",
+    "count": 2
+  },
+  {
+    "text": "47A51",
+    "count": 2
+  },
+  {
+    "text": "47A52",
+    "count": 2
+  },
+  {
+    "text": "47A53",
+    "count": 2
+  },
+  {
+    "text": "47A54",
+    "count": 2
+  },
+  {
+    "text": "47A55",
+    "count": 2
+  },
+  {
+    "text": "47A57",
+    "count": 2
+  },
+  {
+    "text": "47A58",
+    "count": 2
+  },
+  {
+    "text": "47B02",
+    "count": 2
+  },
+  {
+    "text": "47B12",
+    "count": 2
+  },
+  {
+    "text": "47B13",
+    "count": 2
+  },
+  {
+    "text": "47B25",
+    "count": 2
+  },
+  {
+    "text": "47B27",
+    "count": 2
+  },
+  {
+    "text": "47B28",
+    "count": 2
+  },
+  {
+    "text": "47B34",
+    "count": 2
+  },
+  {
+    "text": "47B35",
+    "count": 2
+  },
+  {
+    "text": "47BL2",
+    "count": 2
+  },
+  {
+    "text": "47BL4",
+    "count": 2
+  },
+  {
+    "text": "4WAY RMU",
+    "count": 2
+  },
+  {
+    "text": "501L2",
+    "count": 2
+  },
+  {
+    "text": "503L3",
+    "count": 2
+  },
+  {
+    "text": "503L4",
+    "count": 2
+  },
+  {
+    "text": "503L5",
+    "count": 2
+  },
+  {
+    "text": "508L1",
+    "count": 2
+  },
+  {
+    "text": "508L13",
+    "count": 2
+  },
+  {
+    "text": "508L14",
+    "count": 2
+  },
+  {
+    "text": "508L15",
+    "count": 2
+  },
+  {
+    "text": "508L16",
+    "count": 2
+  },
+  {
+    "text": "508L17",
+    "count": 2
+  },
+  {
+    "text": "508L2",
+    "count": 2
+  },
+  {
+    "text": "508L24",
+    "count": 2
+  },
+  {
+    "text": "508L25",
+    "count": 2
+  },
+  {
+    "text": "508L26",
+    "count": 2
+  },
+  {
+    "text": "508L3",
+    "count": 2
+  },
+  {
+    "text": "508L4",
+    "count": 2
+  },
+  {
+    "text": "508L5",
+    "count": 2
+  },
+  {
+    "text": "508L6",
+    "count": 2
+  },
+  {
+    "text": "510L2",
+    "count": 2
+  },
+  {
+    "text": "515L2",
+    "count": 2
+  },
+  {
+    "text": "515L3",
+    "count": 2
+  },
+  {
+    "text": "515L4",
+    "count": 2
+  },
+  {
+    "text": "515L5",
+    "count": 2
+  },
+  {
+    "text": "515L6",
+    "count": 2
+  },
+  {
+    "text": "515L7",
+    "count": 2
+  },
+  {
+    "text": "515L8",
+    "count": 2
+  },
+  {
+    "text": "520C3",
+    "count": 2
+  },
+  {
+    "text": "520C4",
+    "count": 2
+  },
+  {
+    "text": "520C5",
+    "count": 2
+  },
+  {
+    "text": "520L10",
+    "count": 2
+  },
+  {
+    "text": "520L11",
+    "count": 2
+  },
+  {
+    "text": "520L3",
+    "count": 2
+  },
+  {
+    "text": "520L5",
+    "count": 2
+  },
+  {
+    "text": "520L6",
+    "count": 2
+  },
+  {
+    "text": "520L8",
+    "count": 2
+  },
+  {
+    "text": "520L9",
+    "count": 2
+  },
+  {
+    "text": "521L1",
+    "count": 2
+  },
+  {
+    "text": "521L2",
+    "count": 2
+  },
+  {
+    "text": "521L3",
+    "count": 2
+  },
+  {
+    "text": "521L4",
+    "count": 2
+  },
+  {
+    "text": "522C1",
+    "count": 2
+  },
+  {
+    "text": "522L1",
+    "count": 2
+  },
+  {
+    "text": "522L2",
+    "count": 2
+  },
+  {
+    "text": "522L3",
+    "count": 2
+  },
+  {
+    "text": "522L4",
+    "count": 2
+  },
+  {
+    "text": "522L5",
+    "count": 2
+  },
+  {
+    "text": "522L7",
+    "count": 2
+  },
+  {
+    "text": "522L8",
+    "count": 2
+  },
+  {
+    "text": "522L9",
+    "count": 2
+  },
+  {
+    "text": "525A1",
+    "count": 2
+  },
+  {
+    "text": "525L1",
+    "count": 2
+  },
+  {
+    "text": "525L2",
+    "count": 2
+  },
+  {
+    "text": "525L3",
+    "count": 2
+  },
+  {
+    "text": "525L4",
+    "count": 2
+  },
+  {
+    "text": "526L1",
+    "count": 2
+  },
+  {
+    "text": "527L1",
+    "count": 2
+  },
+  {
+    "text": "530L2",
+    "count": 2
+  },
+  {
+    "text": "530L3",
+    "count": 2
+  },
+  {
+    "text": "530L4",
+    "count": 2
+  },
+  {
+    "text": "530L5",
+    "count": 2
+  },
+  {
+    "text": "530L6",
+    "count": 2
+  },
+  {
+    "text": "533C1",
+    "count": 2
+  },
+  {
+    "text": "535-L3",
+    "count": 2
+  },
+  {
+    "text": "535-L6",
+    "count": 2
+  },
+  {
+    "text": "535-L7",
+    "count": 2
+  },
+  {
+    "text": "535-R1",
+    "count": 2
+  },
+  {
+    "text": "535L1",
+    "count": 2
+  },
+  {
+    "text": "535L5",
+    "count": 2
+  },
+  {
+    "text": "540-L1",
+    "count": 2
+  },
+  {
+    "text": "540-L4",
+    "count": 2
+  },
+  {
+    "text": "540-L5",
+    "count": 2
+  },
+  {
+    "text": "544-R1",
+    "count": 2
+  },
+  {
+    "text": "545-L1",
+    "count": 2
+  },
+  {
+    "text": "545-L2",
+    "count": 2
+  },
+  {
+    "text": "545-L3",
+    "count": 2
+  },
+  {
+    "text": "545-L4",
+    "count": 2
+  },
+  {
+    "text": "545-L5",
+    "count": 2
+  },
+  {
+    "text": "546-L1",
+    "count": 2
+  },
+  {
+    "text": "546-L2",
+    "count": 2
+  },
+  {
+    "text": "552-L2",
+    "count": 2
+  },
+  {
+    "text": "552-L3",
+    "count": 2
+  },
+  {
+    "text": "559-L1",
+    "count": 2
+  },
+  {
+    "text": "559-L2",
+    "count": 2
+  },
+  {
+    "text": "559-L3",
+    "count": 2
+  },
+  {
+    "text": "559-L4",
+    "count": 2
+  },
+  {
+    "text": "561L1",
+    "count": 2
+  },
+  {
+    "text": "561L3",
+    "count": 2
+  },
+  {
+    "text": "566-L2",
+    "count": 2
+  },
+  {
+    "text": "566L3",
+    "count": 2
+  },
+  {
+    "text": "566L5",
+    "count": 2
+  },
+  {
+    "text": "566L6",
+    "count": 2
+  },
+  {
+    "text": "570C1",
+    "count": 2
+  },
+  {
+    "text": "570L1",
+    "count": 2
+  },
+  {
+    "text": "571L1",
+    "count": 2
+  },
+  {
+    "text": "580L2",
+    "count": 2
+  },
+  {
+    "text": "601L1",
+    "count": 2
+  },
+  {
+    "text": "604L1",
+    "count": 2
+  },
+  {
+    "text": "604L2",
+    "count": 2
+  },
+  {
+    "text": "604L3",
+    "count": 2
+  },
+  {
+    "text": "615L2",
+    "count": 2
+  },
+  {
+    "text": "615L3",
+    "count": 2
+  },
+  {
+    "text": "61A19",
+    "count": 2
+  },
+  {
+    "text": "61A28",
+    "count": 2
+  },
+  {
+    "text": "61A34",
+    "count": 2
+  },
+  {
+    "text": "61A36",
+    "count": 2
+  },
+  {
+    "text": "61A41",
+    "count": 2
+  },
+  {
+    "text": "61A42",
+    "count": 2
+  },
+  {
+    "text": "61A43",
+    "count": 2
+  },
+  {
+    "text": "620L1",
+    "count": 2
+  },
+  {
+    "text": "620L2",
+    "count": 2
+  },
+  {
+    "text": "621L1",
+    "count": 2
+  },
+  {
+    "text": "621L2",
+    "count": 2
+  },
+  {
+    "text": "622L1",
+    "count": 2
+  },
+  {
+    "text": "622L2",
+    "count": 2
+  },
+  {
+    "text": "622L3",
+    "count": 2
+  },
+  {
+    "text": "623L1",
+    "count": 2
+  },
+  {
+    "text": "623L2",
+    "count": 2
+  },
+  {
+    "text": "624L1",
+    "count": 2
+  },
+  {
+    "text": "624L2",
+    "count": 2
+  },
+  {
+    "text": "625L1",
+    "count": 2
+  },
+  {
+    "text": "629L1",
+    "count": 2
+  },
+  {
+    "text": "632L1",
+    "count": 2
+  },
+  {
+    "text": "632L2",
+    "count": 2
+  },
+  {
+    "text": "633L1",
+    "count": 2
+  },
+  {
+    "text": "633L2",
+    "count": 2
+  },
+  {
+    "text": "633L3",
+    "count": 2
+  },
+  {
+    "text": "633L4",
+    "count": 2
+  },
+  {
+    "text": "633L5",
+    "count": 2
+  },
+  {
+    "text": "636L1",
+    "count": 2
+  },
+  {
+    "text": "638L1",
+    "count": 2
+  },
+  {
+    "text": "639L1",
+    "count": 2
+  },
+  {
+    "text": "640L2",
+    "count": 2
+  },
+  {
+    "text": "642L3",
+    "count": 2
+  },
+  {
+    "text": "642L4",
+    "count": 2
+  },
+  {
+    "text": "642L5",
+    "count": 2
+  },
+  {
+    "text": "643L2",
+    "count": 2
+  },
+  {
+    "text": "644L2",
+    "count": 2
+  },
+  {
+    "text": "645L1",
+    "count": 2
+  },
+  {
+    "text": "646L2",
+    "count": 2
+  },
+  {
+    "text": "646L3",
+    "count": 2
+  },
+  {
+    "text": "646L5",
+    "count": 2
+  },
+  {
+    "text": "646L6",
+    "count": 2
+  },
+  {
+    "text": "647L1",
+    "count": 2
+  },
+  {
+    "text": "648L1",
+    "count": 2
+  },
+  {
+    "text": "64A02",
+    "count": 2
+  },
+  {
+    "text": "64A03",
+    "count": 2
+  },
+  {
+    "text": "64A04",
+    "count": 2
+  },
+  {
+    "text": "64A05",
+    "count": 2
+  },
+  {
+    "text": "64A06",
+    "count": 2
+  },
+  {
+    "text": "64A07",
+    "count": 2
+  },
+  {
+    "text": "64A08",
+    "count": 2
+  },
+  {
+    "text": "64A11",
+    "count": 2
+  },
+  {
+    "text": "64A12",
+    "count": 2
+  },
+  {
+    "text": "64A13",
+    "count": 2
+  },
+  {
+    "text": "64A14",
+    "count": 2
+  },
+  {
+    "text": "64A15",
+    "count": 2
+  },
+  {
+    "text": "64B01",
+    "count": 2
+  },
+  {
+    "text": "64B02",
+    "count": 2
+  },
+  {
+    "text": "64B03",
+    "count": 2
+  },
+  {
+    "text": "64B04",
+    "count": 2
+  },
+  {
+    "text": "64B05",
+    "count": 2
+  },
+  {
+    "text": "64B06",
+    "count": 2
+  },
+  {
+    "text": "64B07",
+    "count": 2
+  },
+  {
+    "text": "64B08",
+    "count": 2
+  },
+  {
+    "text": "64B09",
+    "count": 2
+  },
+  {
+    "text": "64BL1",
+    "count": 2
+  },
+  {
+    "text": "64C01",
+    "count": 2
+  },
+  {
+    "text": "64C02",
+    "count": 2
+  },
+  {
+    "text": "64C03",
+    "count": 2
+  },
+  {
+    "text": "64C09",
+    "count": 2
+  },
+  {
+    "text": "64CL1",
+    "count": 2
+  },
+  {
+    "text": "64D01",
+    "count": 2
+  },
+  {
+    "text": "64D02",
+    "count": 2
+  },
+  {
+    "text": "64D04",
+    "count": 2
+  },
+  {
+    "text": "64D06",
+    "count": 2
+  },
+  {
+    "text": "64D07",
+    "count": 2
+  },
+  {
+    "text": "64D09",
+    "count": 2
+  },
+  {
+    "text": "64D10",
+    "count": 2
+  },
+  {
+    "text": "64D14",
+    "count": 2
+  },
+  {
+    "text": "64D15",
+    "count": 2
+  },
+  {
+    "text": "64D17",
+    "count": 2
+  },
+  {
+    "text": "64D18",
+    "count": 2
+  },
+  {
+    "text": "64D19",
+    "count": 2
+  },
+  {
+    "text": "64D20",
+    "count": 2
+  },
+  {
+    "text": "64DL1",
+    "count": 2
+  },
+  {
+    "text": "64DL2",
+    "count": 2
+  },
+  {
+    "text": "650L1",
+    "count": 2
+  },
+  {
+    "text": "652L1",
+    "count": 2
+  },
+  {
+    "text": "652L2",
+    "count": 2
+  },
+  {
+    "text": "72A04",
+    "count": 2
+  },
+  {
+    "text": "72A05",
+    "count": 2
+  },
+  {
+    "text": "72A07",
+    "count": 2
+  },
+  {
+    "text": "72A10",
+    "count": 2
+  },
+  {
+    "text": "72A13",
+    "count": 2
+  },
+  {
+    "text": "72A15",
+    "count": 2
+  },
+  {
+    "text": "72A19",
+    "count": 2
+  },
+  {
+    "text": "72A23",
+    "count": 2
+  },
+  {
+    "text": "72A24",
+    "count": 2
+  },
+  {
+    "text": "72A25",
+    "count": 2
+  },
+  {
+    "text": "72A26",
+    "count": 2
+  },
+  {
+    "text": "72A27",
+    "count": 2
+  },
+  {
+    "text": "72A32",
+    "count": 2
+  },
+  {
+    "text": "72A33",
+    "count": 2
+  },
+  {
+    "text": "72A34",
+    "count": 2
+  },
+  {
+    "text": "72A35",
+    "count": 2
+  },
+  {
+    "text": "72A36",
+    "count": 2
+  },
+  {
+    "text": "72A37",
+    "count": 2
+  },
+  {
+    "text": "72A38",
+    "count": 2
+  },
+  {
+    "text": "72A40",
+    "count": 2
+  },
+  {
+    "text": "72A41",
+    "count": 2
+  },
+  {
+    "text": "72A42",
+    "count": 2
+  },
+  {
+    "text": "72A43",
+    "count": 2
+  },
+  {
+    "text": "72AL5",
+    "count": 2
+  },
+  {
+    "text": "72B01",
+    "count": 2
+  },
+  {
+    "text": "72B02",
+    "count": 2
+  },
+  {
+    "text": "72B03",
+    "count": 2
+  },
+  {
+    "text": "72B04",
+    "count": 2
+  },
+  {
+    "text": "72B05",
+    "count": 2
+  },
+  {
+    "text": "72B07",
+    "count": 2
+  },
+  {
+    "text": "72B08",
+    "count": 2
+  },
+  {
+    "text": "72B11",
+    "count": 2
+  },
+  {
+    "text": "72B16",
+    "count": 2
+  },
+  {
+    "text": "72B17",
+    "count": 2
+  },
+  {
+    "text": "72B19",
+    "count": 2
+  },
+  {
+    "text": "72B40",
+    "count": 2
+  },
+  {
+    "text": "72BL1",
+    "count": 2
+  },
+  {
+    "text": "72C01",
+    "count": 2
+  },
+  {
+    "text": "72C02",
+    "count": 2
+  },
+  {
+    "text": "72C03",
+    "count": 2
+  },
+  {
+    "text": "72C04",
+    "count": 2
+  },
+  {
+    "text": "72C05",
+    "count": 2
+  },
+  {
+    "text": "72C06",
+    "count": 2
+  },
+  {
+    "text": "72C07",
+    "count": 2
+  },
+  {
+    "text": "72C08",
+    "count": 2
+  },
+  {
+    "text": "72C09",
+    "count": 2
+  },
+  {
+    "text": "72C10",
+    "count": 2
+  },
+  {
+    "text": "72C12",
+    "count": 2
+  },
+  {
+    "text": "72C13",
+    "count": 2
+  },
+  {
+    "text": "72C14",
+    "count": 2
+  },
+  {
+    "text": "72C15",
+    "count": 2
+  },
+  {
+    "text": "72C20",
+    "count": 2
+  },
+  {
+    "text": "72CL2",
+    "count": 2
+  },
+  {
+    "text": "72D01",
+    "count": 2
+  },
+  {
+    "text": "72D02",
+    "count": 2
+  },
+  {
+    "text": "72D03",
+    "count": 2
+  },
+  {
+    "text": "72D04",
+    "count": 2
+  },
+  {
+    "text": "72D07",
+    "count": 2
+  },
+  {
+    "text": "72D09",
+    "count": 2
+  },
+  {
+    "text": "72D10",
+    "count": 2
+  },
+  {
+    "text": "72D11",
+    "count": 2
+  },
+  {
+    "text": "75113^J78x;75114",
+    "count": 2
+  },
+  {
+    "text": "754L1",
+    "count": 2
+  },
+  {
+    "text": "754L2",
+    "count": 2
+  },
+  {
+    "text": "754L3",
+    "count": 2
+  },
+  {
+    "text": "755L1",
+    "count": 2
+  },
+  {
+    "text": "756L1^J",
+    "count": 2
+  },
+  {
+    "text": "756L2",
+    "count": 2
+  },
+  {
+    "text": "756L5",
+    "count": 2
+  },
+  {
+    "text": "760L1",
+    "count": 2
+  },
+  {
+    "text": "85A01",
+    "count": 2
+  },
+  {
+    "text": "85A02",
+    "count": 2
+  },
+  {
+    "text": "85A03",
+    "count": 2
+  },
+  {
+    "text": "85A04",
+    "count": 2
+  },
+  {
+    "text": "85A05",
+    "count": 2
+  },
+  {
+    "text": "85A06",
+    "count": 2
+  },
+  {
+    "text": "85A07",
+    "count": 2
+  },
+  {
+    "text": "85A08",
+    "count": 2
+  },
+  {
+    "text": "85A10",
+    "count": 2
+  },
+  {
+    "text": "85A12",
+    "count": 2
+  },
+  {
+    "text": "85A15",
+    "count": 2
+  },
+  {
+    "text": "85A16",
+    "count": 2
+  },
+  {
+    "text": "85A17",
+    "count": 2
+  },
+  {
+    "text": "85A18",
+    "count": 2
+  },
+  {
+    "text": "85A19",
+    "count": 2
+  },
+  {
+    "text": "85A20",
+    "count": 2
+  },
+  {
+    "text": "85AL1",
+    "count": 2
+  },
+  {
+    "text": "85AL2",
+    "count": 2
+  },
+  {
+    "text": "85AL3",
+    "count": 2
+  },
+  {
+    "text": "85B01",
+    "count": 2
+  },
+  {
+    "text": "85B02",
+    "count": 2
+  },
+  {
+    "text": "85B03",
+    "count": 2
+  },
+  {
+    "text": "85B04",
+    "count": 2
+  },
+  {
+    "text": "85B05",
+    "count": 2
+  },
+  {
+    "text": "85B07",
+    "count": 2
+  },
+  {
+    "text": "85B08",
+    "count": 2
+  },
+  {
+    "text": "85B09",
+    "count": 2
+  },
+  {
+    "text": "85B10",
+    "count": 2
+  },
+  {
+    "text": "85B11",
+    "count": 2
+  },
+  {
+    "text": "85B12",
+    "count": 2
+  },
+  {
+    "text": "85BL1",
+    "count": 2
+  },
+  {
+    "text": "85BL2",
+    "count": 2
+  },
+  {
+    "text": "89A01",
+    "count": 2
+  },
+  {
+    "text": "89A02",
+    "count": 2
+  },
+  {
+    "text": "89A04",
+    "count": 2
+  },
+  {
+    "text": "89A06",
+    "count": 2
+  },
+  {
+    "text": "89A07",
+    "count": 2
+  },
+  {
+    "text": "89A08",
+    "count": 2
+  },
+  {
+    "text": "89B01",
+    "count": 2
+  },
+  {
+    "text": "89B02",
+    "count": 2
+  },
+  {
+    "text": "A302",
+    "count": 2
+  },
+  {
+    "text": "A303",
+    "count": 2
+  },
+  {
+    "text": "ABS 770",
+    "count": 2
+  },
+  {
+    "text": "B-310",
+    "count": 2
+  },
+  {
+    "text": "B-322",
+    "count": 2
+  },
+  {
+    "text": "B-334",
+    "count": 2
+  },
+  {
+    "text": "B-338",
+    "count": 2
+  },
+  {
+    "text": "B-340",
+    "count": 2
+  },
+  {
+    "text": "B-344",
+    "count": 2
+  },
+  {
+    "text": "B-351",
+    "count": 2
+  },
+  {
+    "text": "B-353",
+    "count": 2
+  },
+  {
+    "text": "B-355",
+    "count": 2
+  },
+  {
+    "text": "B/R-1",
+    "count": 2
+  },
+  {
+    "text": "B/R-2",
+    "count": 2
+  },
+  {
+    "text": "B301",
+    "count": 2
+  },
+  {
+    "text": "B302",
+    "count": 2
+  },
+  {
+    "text": "B315",
+    "count": 2
+  },
+  {
+    "text": "B332",
+    "count": 2
+  },
+  {
+    "text": "BME-2",
+    "count": 2
+  },
+  {
+    "text": "BME-3",
+    "count": 2
+  },
+  {
+    "text": "BSP F-01",
+    "count": 2
+  },
+  {
+    "text": "BSP F-02",
+    "count": 2
+  },
+  {
+    "text": "BSP F-10",
+    "count": 2
+  },
+  {
+    "text": "BSP F-13",
+    "count": 2
+  },
+  {
+    "text": "BSP F-14",
+    "count": 2
+  },
+  {
+    "text": "BSP F-15",
+    "count": 2
+  },
+  {
+    "text": "BSP F-16",
+    "count": 2
+  },
+  {
+    "text": "BSP F-17",
+    "count": 2
+  },
+  {
+    "text": "BSP F-18",
+    "count": 2
+  },
+  {
+    "text": "BSP F-19",
+    "count": 2
+  },
+  {
+    "text": "BSP F-21",
+    "count": 2
+  },
+  {
+    "text": "BSP-01",
+    "count": 2
+  },
+  {
+    "text": "BSP-19",
+    "count": 2
+  },
+  {
+    "text": "BSP.F-05",
+    "count": 2
+  },
+  {
+    "text": "BSP.F-07",
+    "count": 2
+  },
+  {
+    "text": "BSP.F-11",
+    "count": 2
+  },
+  {
+    "text": "BSP.F-19",
+    "count": 2
+  },
+  {
+    "text": "D F-01",
+    "count": 2
+  },
+  {
+    "text": "D F-04",
+    "count": 2
+  },
+  {
+    "text": "D F-06",
+    "count": 2
+  },
+  {
+    "text": "D F-09",
+    "count": 2
+  },
+  {
+    "text": "D FDR#14",
+    "count": 2
+  },
+  {
+    "text": "D FDR#16",
+    "count": 2
+  },
+  {
+    "text": "D FDR#17",
+    "count": 2
+  },
+  {
+    "text": "D.F-23",
+    "count": 2
+  },
+  {
+    "text": "D.F-24",
+    "count": 2
+  },
+  {
+    "text": "D301",
+    "count": 2
+  },
+  {
+    "text": "D302",
+    "count": 2
+  },
+  {
+    "text": "DF-24",
+    "count": 2
+  },
+  {
+    "text": "ENERGIZED DATE-26.01.2004 04.12.1424",
+    "count": 2
+  },
+  {
+    "text": "EOS 383",
+    "count": 2
+  },
+  {
+    "text": "F-01",
+    "count": 2
+  },
+  {
+    "text": "F-03",
+    "count": 2
+  },
+  {
+    "text": "F-05",
+    "count": 2
+  },
+  {
+    "text": "F-09",
+    "count": 2
+  },
+  {
+    "text": "F-1.01",
+    "count": 2
+  },
+  {
+    "text": "F-1.02",
+    "count": 2
+  },
+  {
+    "text": "F-1.03",
+    "count": 2
+  },
+  {
+    "text": "F-1.06",
+    "count": 2
+  },
+  {
+    "text": "F-10",
+    "count": 2
+  },
+  {
+    "text": "F-12",
+    "count": 2
+  },
+  {
+    "text": "F-14",
+    "count": 2
+  },
+  {
+    "text": "F-18",
+    "count": 2
+  },
+  {
+    "text": "F-18/QBSP",
+    "count": 2
+  },
+  {
+    "text": "F-20",
+    "count": 2
+  },
+  {
+    "text": "F-21",
+    "count": 2
+  },
+  {
+    "text": "F-22",
+    "count": 2
+  },
+  {
+    "text": "F-23",
+    "count": 2
+  },
+  {
+    "text": "F-24",
+    "count": 2
+  },
+  {
+    "text": "F-26",
+    "count": 2
+  },
+  {
+    "text": "F-3.01",
+    "count": 2
+  },
+  {
+    "text": "F-3.05",
+    "count": 2
+  },
+  {
+    "text": "F-3.06",
+    "count": 2
+  },
+  {
+    "text": "F-3.4",
+    "count": 2
+  },
+  {
+    "text": "F-3.5",
+    "count": 2
+  },
+  {
+    "text": "F-30",
+    "count": 2
+  },
+  {
+    "text": "F-32",
+    "count": 2
+  },
+  {
+    "text": "F-4 Q.BSP",
+    "count": 2
+  },
+  {
+    "text": "F-4.05",
+    "count": 2
+  },
+  {
+    "text": "F-4.08",
+    "count": 2
+  },
+  {
+    "text": "F-4.11",
+    "count": 2
+  },
+  {
+    "text": "F-4.12",
+    "count": 2
+  },
+  {
+    "text": "F-6.01",
+    "count": 2
+  },
+  {
+    "text": "F-6.02",
+    "count": 2
+  },
+  {
+    "text": "F-6.15",
+    "count": 2
+  },
+  {
+    "text": "F-7 Q.BSP",
+    "count": 2
+  },
+  {
+    "text": "F-8.1",
+    "count": 2
+  },
+  {
+    "text": "F-8.3",
+    "count": 2
+  },
+  {
+    "text": "F1.25",
+    "count": 2
+  },
+  {
+    "text": "F1.6",
+    "count": 2
+  },
+  {
+    "text": "FDR#1",
+    "count": 2
+  },
+  {
+    "text": "FDR#2",
+    "count": 2
+  },
+  {
+    "text": "FDR#2.01",
+    "count": 2
+  },
+  {
+    "text": "FDR#2.05",
+    "count": 2
+  },
+  {
+    "text": "FDR#2.09",
+    "count": 2
+  },
+  {
+    "text": "FDR#2.11",
+    "count": 2
+  },
+  {
+    "text": "FDR#2.12",
+    "count": 2
+  },
+  {
+    "text": "FDR#2.17",
+    "count": 2
+  },
+  {
+    "text": "FDR#2.18",
+    "count": 2
+  },
+  {
+    "text": "FDR#7.19",
+    "count": 2
+  },
+  {
+    "text": "FDR#7.25",
+    "count": 2
+  },
+  {
+    "text": "FDR#7.26",
+    "count": 2
+  },
+  {
+    "text": "FDR#7.28",
+    "count": 2
+  },
+  {
+    "text": "FDR#7.30",
+    "count": 2
+  },
+  {
+    "text": "FDR#8.14",
+    "count": 2
+  },
+  {
+    "text": "FDR#8.7",
+    "count": 2
+  },
+  {
+    "text": "GEN1",
+    "count": 2
+  },
+  {
+    "text": "GEN2",
+    "count": 2
+  },
+  {
+    "text": "GEN3",
+    "count": 2
+  },
+  {
+    "text": "GEN4",
+    "count": 2
+  },
+  {
+    "text": "GEN5",
+    "count": 2
+  },
+  {
+    "text": "GMT-00",
+    "count": 2
+  },
+  {
+    "text": "GMT-09",
+    "count": 2
+  },
+  {
+    "text": "GMT-24",
+    "count": 2
+  },
+  {
+    "text": "GMT-25",
+    "count": 2
+  },
+  {
+    "text": "GMT-36",
+    "count": 2
+  },
+  {
+    "text": "H2301",
+    "count": 2
+  },
+  {
+    "text": "J302",
+    "count": 2
+  },
+  {
+    "text": "J303",
+    "count": 2
+  },
+  {
+    "text": "KM382",
+    "count": 2
+  },
+  {
+    "text": "KM386",
+    "count": 2
+  },
+  {
+    "text": "MRMU#21A41",
+    "count": 2
+  },
+  {
+    "text": "MRMU#72D06",
+    "count": 2
+  },
+  {
+    "text": "N64042",
+    "count": 2
+  },
+  {
+    "text": "N64043",
+    "count": 2
+  },
+  {
+    "text": "N64044",
+    "count": 2
+  },
+  {
+    "text": "N64045",
+    "count": 2
+  },
+  {
+    "text": "N64046",
+    "count": 2
+  },
+  {
+    "text": "PMT-17",
+    "count": 2
+  },
+  {
+    "text": "PMT-22",
+    "count": 2
+  },
+  {
+    "text": "PMT-25",
+    "count": 2
+  },
+  {
+    "text": "PMT-27",
+    "count": 2
+  },
+  {
+    "text": "PMT-3",
+    "count": 2
+  },
+  {
+    "text": "PMT-31",
+    "count": 2
+  },
+  {
+    "text": "PMT-4",
+    "count": 2
+  },
+  {
+    "text": "PMT-42",
+    "count": 2
+  },
+  {
+    "text": "PMT-44",
+    "count": 2
+  },
+  {
+    "text": "PMT-9",
+    "count": 2
+  },
+  {
+    "text": "Q,BSP F-11",
+    "count": 2
+  },
+  {
+    "text": "Q,BSP,F-17",
+    "count": 2
+  },
+  {
+    "text": "Q.BSP F-22",
+    "count": 2
+  },
+  {
+    "text": "Q.MOB.H06",
+    "count": 2
+  },
+  {
+    "text": "Q.PP-11",
+    "count": 2
+  },
+  {
+    "text": "QAI-F-01",
+    "count": 2
+  },
+  {
+    "text": "QAI. FDR-2",
+    "count": 2
+  },
+  {
+    "text": "QAI.F-08",
+    "count": 2
+  },
+  {
+    "text": "QAI.F-09",
+    "count": 2
+  },
+  {
+    "text": "QBSP-04",
+    "count": 2
+  },
+  {
+    "text": "QBSP-06",
+    "count": 2
+  },
+  {
+    "text": "QBSP-18",
+    "count": 2
+  },
+  {
+    "text": "QBSP-21",
+    "count": 2
+  },
+  {
+    "text": "QBSP-F-22",
+    "count": 2
+  },
+  {
+    "text": "QPP F2",
+    "count": 2
+  },
+  {
+    "text": "QPP.F-02",
+    "count": 2
+  },
+  {
+    "text": "REDUCE LOAD FOR HFR1",
+    "count": 2
+  },
+  {
+    "text": "REDUCE LOAD FOR HFR2",
+    "count": 2
+  },
+  {
+    "text": "REDUCE LOAD FOR HFR4",
+    "count": 2
+  },
+  {
+    "text": "RISER DISCONNECTED & RMU REMOVED ON 19/10/2022",
+    "count": 2
+  },
+  {
+    "text": "RMU 401",
+    "count": 2
+  },
+  {
+    "text": "RMU-079",
+    "count": 2
+  },
+  {
+    "text": "RMU-1106",
+    "count": 2
+  },
+  {
+    "text": "RMU-1118",
+    "count": 2
+  },
+  {
+    "text": "RMU-13.8KV",
+    "count": 2
+  },
+  {
+    "text": "RMU-439",
+    "count": 2
+  },
+  {
+    "text": "SADAWI-F01",
+    "count": 2
+  },
+  {
+    "text": "SL 102L1",
+    "count": 2
+  },
+  {
+    "text": "T1",
+    "count": 2
+  },
+  {
+    "text": "t157.318;75114",
+    "count": 2
+  },
+  {
+    "text": "T2",
+    "count": 2
+  },
+  {
+    "text": "t309.829;F-8.23",
+    "count": 2
+  },
+  {
+    "text": "t362.942;BSP-13",
+    "count": 2
+  },
+  {
+    "text": "t469.169;BSP.F-02",
+    "count": 2
+  },
+  {
+    "text": "t469.169;BSP.F-14",
+    "count": 2
+  },
+  {
+    "text": "t69.1901;\\W0.945946;41521",
+    "count": 2
+  },
+  {
+    "text": "TO RMU N64035 AT LISAFAH F2 (QARYAT SIDE)",
+    "count": 2
+  },
+  {
+    "text": "U.F-13",
+    "count": 2
+  },
+  {
+    "text": "UNI.F-13",
+    "count": 2
+  },
+  {
+    "text": "UNI.F-31",
+    "count": 2
+  },
+  {
+    "text": "VR-057-1",
+    "count": 2
+  },
+  {
+    "text": "VR-241",
+    "count": 2
+  },
+  {
+    "text": "VR-242",
+    "count": 2
+  },
+  {
+    "text": "VR-283",
+    "count": 2
+  },
+  {
+    "text": "VR-446",
+    "count": 2
+  },
+  {
+    "text": "VR-468",
+    "count": 2
+  },
+  {
+    "text": "VR-470",
+    "count": 2
+  },
+  {
+    "text": "VR-471",
+    "count": 2
+  },
+  {
+    "text": "VR-511",
+    "count": 2
+  },
+  {
+    "text": "VR-550",
+    "count": 2
+  },
+  {
+    "text": "VR-562",
+    "count": 2
+  },
+  {
+    "text": "VR-563",
+    "count": 2
+  },
+  {
+    "text": "VR-564",
+    "count": 2
+  },
+  {
+    "text": "VR-571",
+    "count": 2
+  },
+  {
+    "text": "VR-600",
+    "count": 2
+  },
+  {
+    "text": "VR-608",
+    "count": 2
+  },
+  {
+    "text": "VR-612",
+    "count": 2
+  },
+  {
+    "text": "\\W0.245275;NOT ENERGIZE FEEDE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.8;189L1",
+    "count": 1
+  },
+  {
+    "text": "\\W0.818182; MRMU AT S/S-303",
+    "count": 1
+  },
+  {
+    "text": "\\W0.818182;HFR.UNIV F-1",
+    "count": 1
+  },
+  {
+    "text": "\\W0.818182;RISER DISCONNECTED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.818182;RMU 33403",
+    "count": 1
+  },
+  {
+    "text": "\\W0.818182;RMU NEED TO BE REPLACED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.82;REDUCE LOAD PCC REQ",
+    "count": 1
+  },
+  {
+    "text": "\\W0.833333; 61614",
+    "count": 1
+  },
+  {
+    "text": "\\W0.833333;518",
+    "count": 1
+  },
+  {
+    "text": "\\W0.833333;61607",
+    "count": 1
+  },
+  {
+    "text": "\\W0.833333;61609",
+    "count": 1
+  },
+  {
+    "text": "\\W0.833333;BULK CUST. BLOOD BANK",
+    "count": 1
+  },
+  {
+    "text": "\\W0.833333;GO TO RMU 61622 Q.MOB.H04",
+    "count": 1
+  },
+  {
+    "text": "\\W0.833333;PCC req. to reduce load of QBSP",
+    "count": 1
+  },
+  {
+    "text": "\\W0.833333;RMU 1185",
+    "count": 1
+  },
+  {
+    "text": "\\W0.837973;QAISUMA GRID STATION",
+    "count": 1
+  },
+  {
+    "text": "\\W0.837973;QAISUMA P/P GRID STATION",
+    "count": 1
+  },
+  {
+    "text": "\\W0.837973;QAISUMAH MOB SUB",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;1164",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;768",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;DEAD-END",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;GMT",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;JUMPER TOWARDS ABS-660 IS DISCONNECTED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;RMU 1119",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;RMU 1129",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;RMU 1155",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;SMART ABS",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;STOLEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;STOLEN 29.10.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;T-OFF CLOSE ENERG TF WITH OUT CUST.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;T-OFF IN POSITION DUE TO THEFT ATTEMPT AT TF",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;T-OFF TRIPPED ON 23.03.2023. T-OFF GROUNDED. NEED CLEARANCE FROM CUSTOMER.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.854701;TR.REMOVED BY MAINT 21.06.22",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143; F-6.03",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143; FDR#8.20 (TO N.O AT SRMU-02920)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143; TRF STOLEN T-OFF GRD OIL LEAK IN RMU",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;00749",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;05O23",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;06528",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;09716",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;1026",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;1041",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;1142",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;1145",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;1160",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;15627",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;26707",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;26710",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;31527",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;33609",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;33618",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;46B17",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;486",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;500",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;52521",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;6.08",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;6.20",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;6.37",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;673",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;679",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;891",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;ACTIVE 03.09.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;AT 24224",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;ATS 27B05",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;B-318 F7.05",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;B#341",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;B#359",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;B339 NOT CLOSE BY SCADA NEED POWER SERVECE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;CABLE FOUND DISCONNECTED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F-2.10",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F-4.6",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F-5.13",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F-6.01",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F-6.03",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F-6.32",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F-7.24",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F-7.25",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F-7.30",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F.7.26",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F2.6",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F4.19",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F7.19",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;F7.22",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;FEEDS SEC OFFICE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;HANDLE BROKEN INSIDE SW RISER",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;LOW SF6 GAS",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;NEED PHASING DONT MAKE PARALLEL",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;Q.BSP F-14",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;Q.BSP F-22",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;Q.BSP.6",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;QAI.F.1",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;QBSP F-10",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;QBSP F21",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;REMOVE CUST CBL & TF AT 26/09/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;RISER BSP F-08",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;RMU 002",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;RMU 1113",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;RMU 1124",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;RMU 1142",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;RMU 24203",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;RMU 677",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;RMU 904 F-7.21",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;RMU-873",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;SMR",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;SP",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;SPAR",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;SPARE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;SRMU 15749",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;SRMU-898",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;T-OFF ISOLATED FOR ST.LT 12439 & 3X70 CABLE REMOVED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;T-OFF ISOLATED FOR ST.LT 39908 & 3X70 CABLE REMOVED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;TF STOLEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;THESE BRANCHES ARE DISCONNECTED FOR REMOVAL",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;TO EOS 809 @F1.6",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;TO EOS-748 IN F-1.21",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;TO N.O AT 06808",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;TO N.O IN ATS @F1.6",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;TO RMU 1142 F-08 QBSP",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;TO RMU401, F4.18",
+    "count": 1
+  },
+  {
+    "text": "\\W0.857143;TOFF ISO. NEED CLEARANCE FROM CUST.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;03154",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;19/09/2022 ST.LT T-OFF SWITCHED OFF DUE TO BALADIYA METER DAMAGED BY ACCIDENT",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;343",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;EOS 358",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;GRD SW.1138 F1.27",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;NO VIP CUST",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;RISER CABLE FOUND DISCONNECTED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;RMU 010 4WAY",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;SMR EFI",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;STOLEN TF REPLACED ON 12/04/2025, TRF ENERGIZED ON 13/04/2025",
+    "count": 1
+  },
+  {
+    "text": "\\W0.86;SW.20447 N/L NOT WORKING & NEED TO FIX",
+    "count": 1
+  },
+  {
+    "text": "\\W0.877058;UNIVERSITY GRID STATION",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88; RMU 19528",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;06621",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;1031",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;1040",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;1043",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;1055",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;1107",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;1184 RMU 3-WAY",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;139",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;207",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;4 WAY",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;4-WAY",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;43114",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;43404",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;43416",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;43902",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;43916",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;4WRMU- 15920",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;ACTIVE 22/6/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;CBL FLT BET B336 & RMU-254 AND LOW READING BET RMU-254 & RMU-05B28",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;CONTROL PANEL NOT WORKING",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;CUST-1043",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;CUST-400",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-10",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-12",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-14",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-2",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-20",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-21",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-24",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-28",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-32",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-34",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-4",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-40",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-41",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-6",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;GMT-7",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;HAFAR UNIVERSITY GRID",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;IBN TAWALAH P/P",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;MILITARY",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;PMT-19",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;RMU 05M16",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;RMU 1026",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;RMU 1027",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;RMU 1166",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;RMU 21901",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;RMU- 1106",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;RMU&TF NOT EXISTING AT LOCATION",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;SMR RMU ACTIVE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;STOLEN TF.24219",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;TRF STOLEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;UNIVERSITY GRID",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;شركة اتحاد الاتصالات يوجد مولد - يعمل",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;شركة الاتصالات السعودية",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;مبنى الكيبل التلفزيوني NOT VIP",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;محافظة حفر الباطن NOT VIP",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;محطة إرسال الاذاعية",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;محطة إرسال حفرالباطن الإذاعية",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;مستشفى حفر الباطن المركزي بنك الدم CUST GEN WORKING",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;مطار القيصومة",
+    "count": 1
+  },
+  {
+    "text": "\\W0.88;نادي الباطن الرياضي (مشترك غير حساس",
+    "count": 1
+  },
+  {
+    "text": "\\W0.888889;33611",
+    "count": 1
+  },
+  {
+    "text": "\\W0.888889;CABLE ALREADY TERMINATED AT BRKR B323 & RMU SIDE NEED NATD CLEARANCE TO ENERGIZE BREAKER",
+    "count": 1
+  },
+  {
+    "text": "\\W0.888889;ENERGIZED ON 31.03.2024",
+    "count": 1
+  },
+  {
+    "text": "\\W0.888889;F-8.21",
+    "count": 1
+  },
+  {
+    "text": "\\W0.888889;RMU 4WAY",
+    "count": 1
+  },
+  {
+    "text": "\\W0.888889;SLBS",
+    "count": 1
+  },
+  {
+    "text": "\\W0.888889;U.F-22",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9; BREAKER TAKEN OUT & SHIFTED TO QAISUMAH BSP ON 18.05.2025",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9; F-7.12 (B332 IS GRD)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9; F-7.15 (B335 IS GRD)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9; NOT IN SERV (F-7.13 DIVERTED TO B313)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9; NOT IN SERV (F-7.14 DIVERTED TO B344)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;(DUE TO SUSPECED FAULT AT CUSTOMER SIDE BET. RMU-3 & LPSS-4)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;05K31",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;1144",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;14/10/2025 NO TRF &, NO CUST.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;18.02.2023 OPEN & RACKED OUT HT-229135 R/LOCK#316163",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;842",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;843",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;B -360",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;BLD TF DISC DUE TO OIL LEAK",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;BSP.22",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;CABLE ALREADY FOUND DISCONNECTED & REMOVED FROM BREAKER",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;CHECKED OK",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;CURRENTLY FEEDER F7.12 IS FEEDING FROM F7.29",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;DF-26",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;F-02 UNI.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;F-6.18",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;F-7.3",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;F.C.O REMOVED DONT CONN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;F#1.9",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;F#3.2 RISER",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;F#5.25",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;FALLEN COND. CUT",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;FOR REMOVAL ( NO TRFs EXISITNG IN THE OVERHEAD SECTION & NO CUST.)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;N/L NOT WORKING TOWRD RMU-23819",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;QBSP F-4",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;QBSP F17",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;RISER F-3.09",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;RMU 1058",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;RMU-05G16",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;SMR RMU NEED TO FIX. CROSS PHASE DONT CLOSE N.O",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;SPARE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;TO N.O IN RMU 1141 AT F-7.17",
+    "count": 1
+  },
+  {
+    "text": "\\W0.9;TO RMU 1141 7.17",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;\\LDISBILITY PERSON NEED INFORM /OPR&M/GEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;03.04.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;04.04.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;10.05.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;1119",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;1129",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;1174",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;2023/4/2",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;24.05.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;35803",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;4KV/230V SINGLE PHASE TF",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;504",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;553",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;567",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;60614",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;61535",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;61543",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;61545",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;63321",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;63322",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;63523",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;64226",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;67012",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;67020",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;ACTIVE 04/09/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;ARAMCO (Its not VIP)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;Bulk Supply Point",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;CABLE DISCONNT IN RMU-384SWEOS-826",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;CABLE FOUND CONNECTED IN SPARE SW. SIDE 22/1/2025",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;CPT",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;CURRENTLY FEEDING FROM F2 QBSP",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;F-1.17",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;F-4/Q.P/P",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;F-6.11",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;F-6.26",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;F-6.26 B351/HFR-6",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;F6.26",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;FUSE BLOWN (FAULT AT CUST SIDE)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;GO TO RISER QBSP F22",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;HANDLE BROKEN NEED MAINTENANCE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;LOW GAS 881",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;LOW GAS RMU NEED TO REPL.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;LV SIDE BREAKER OFF AND CABLE DISCONNECTED DUE TO FIRE COMPLAINT",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;NO TF 284L2 OPEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;NOT EXISITING AT LOCATION",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;PLEASE DO NOT USE THIS N.O FOR ANY LOAD TRANSFER",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;Q.BSP F-1",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;Q.BSP.F9",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;QAISUMA BSP POWER PLANT",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;RMU15122 F-2.12",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;SL 200L3 OPEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;SP",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;SPARKING DUE TO LOAD LOAD REDUCED TEMP. UNTLE MAINT.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;STOLEN IT WAS ISO. BEFORE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;T-OFF GRD & REMOVE CUST CBL AT 27/09/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;T-OFF GRD. THEFT ATTEMPT. NEED MAINT TO CHECK TF.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;TF 13.8KV/4KV 4MVA",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;TO AIRPORT FUEL STN (SINGLE PHASE)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;TO REDUCE LOAD FROM QBSP AS PCC REQU",
+    "count": 1
+  },
+  {
+    "text": "\\W0.909091;U.F-02",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667; BYPASS",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;05KL1",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;149L1",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;149L2",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;158L3",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;160L3",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;165L1",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;204L5",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;204L6",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;899",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;ABS 323 REMOVED & BYPASS AFTER TRUCK ACCIDENT 25.10.2022",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;Earth wire found disconnected.Need Maintenance.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;FCO 57004",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;LIGHTNING ARRESTOR BROKEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;NO TRF & NO CUST EXISITNG IN THIS LATERAL LINE 13.10.2025",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;R-884 OPEN AFTER TRIP CANT CLOSE NO PWR AT PANEL. RECLOSER BYPASSED ON 17.01.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.916667;STOLEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.921053;DF-13 RISER",
+    "count": 1
+  },
+  {
+    "text": "\\W0.921053;DISCONNECTED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.921053;F#2.18 RMU 31536",
+    "count": 1
+  },
+  {
+    "text": "\\W0.921053;F#4.06 RMU 31531",
+    "count": 1
+  },
+  {
+    "text": "\\W0.921053;LOW GAS",
+    "count": 1
+  },
+  {
+    "text": "\\W0.921053;NEON LAMP NOT WORKING",
+    "count": 1
+  },
+  {
+    "text": "\\W0.921053;RMU 57011 DF-06",
+    "count": 1
+  },
+  {
+    "text": "\\W0.921053;SCHOOL",
+    "count": 1
+  },
+  {
+    "text": "\\W0.921053;TOFF SPARE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.921053;U.F-02",
+    "count": 1
+  },
+  {
+    "text": "\\W0.925;01.06.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.925;03.06.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.925;08.06.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.925;10.08.2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.925;4WAY",
+    "count": 1
+  },
+  {
+    "text": "\\W0.933333;BREAKER/FEEDER: B315/F-03, THEBIYYAH-GS",
+    "count": 1
+  },
+  {
+    "text": "\\W0.933333;FAULT LOCATION: MARK CIRCLE IN SLD",
+    "count": 1
+  },
+  {
+    "text": "\\W0.933333;ISOLATION POINT: 1. ABS-076 2. ABS-573",
+    "count": 1
+  },
+  {
+    "text": "\\W0.933333;LOOSE CONN. NEED MAINT.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946; NEED MAINT. ONE SL FOUND OPEN.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946; RMU 52305",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946; SL OPEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946; T-OFF GRD DUE TO FAULT AT CUST SIDE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946; T-OFF GRD ON 23.08.2026 DUE TO NON-PAYMENT",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946; TO N.O AT RMU10210 @F6.24",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;(QARYAT SIDE)",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;\\LSMR RMU ACTIVE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;00432",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;02562",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;03164",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;04843",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;05024",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;05326",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;05P16",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;07032",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;09133",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;09A31",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;1000KVA",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;10216",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;10B57",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;1108",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;1172",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;13718",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;14305",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;14627",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;15710",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;16039",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;17/09/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;17928",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;18602",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;19027",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;19037",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;21507",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;22709",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;23431",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;23513",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;25308^J",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;25605",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;25808",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;26A34",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;27009",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;27B27",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;28429",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;30544",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;30A51",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;35229",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;39534",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;4-WAY",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;41711",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;46A35",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;4WAY RMU",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;50891",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;51015",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;52225",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;52254",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;52319 DF-16",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;57125",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;72A30",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;72B18",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ABS 117",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ABS STUCK DO NOT OPERATE NEEDS MAINTENANCE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;Active 01.01.2024",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 01/01/2024",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 03/09/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 08/11/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;Active 09/11/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;Active 11/09/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 13/7/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;Active 14.5.2024",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;Active 14.5.2025",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 14/5/2024",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;Active 15/03/2024",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ACTIVE 2.4.2024",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;Active 22/08/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;Active 24/8/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;Active 26/09/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;Active 28/8/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ACTIVE SMR RMU",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ALL N/L NOT WORKING",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ALL PMT NO CUST. NO NEED TO CALCULAT IN MICRO",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;ASCR MODE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;BALAD TF REMOVED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;BYPASSED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;CABLE FOUND CONNECTED",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;D.F-09",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;D.F-13",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;D.F-25",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;EFI OFF",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;EFI ON",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;F-2.16",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;F-4.20",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;F-4.21",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;F-5.01",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;F-5.23",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;FCO OPEN, LOCKED & TAGGED 24.12.2024. NEED CUST. CLEARANCE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;FUSE OPEN AS CUSTOMER REQ",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;GRD",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;INSULATOR BROKEN AT RISER TOWARDS PMT16404",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;It feeds school(Bulk LT). Cust side cable stolen reported on 22.12.2025",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;NEED CLEARNCE AFTER REPAIR CBL BY CUST.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;NEED TO CHECK PHASING",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;NO POWER HERE, NEED MAINT.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;NOT ENERGIZE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;OFFLINE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;PHASING NOT MATCHING",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;PMTs with no cust. line cond. fallen",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;PROBLEM EFI",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;QBSP-18",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;QP/P F-11",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;QP/P F-7",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;QPP.11",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;RMU 09A04",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;RMU 4WAY 35421",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;RMU-1018 4WAY",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;RMU-1109 4WAY",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;S.EFI",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;SCHOOL",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;SRMU IF YOU PUT ON REMOTE OPEN SW 01841",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;T-OFF GRD TF STOLEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;T-OFF OPEN & GRD AS CUST REQU.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;THIS TF NOT FOUND HERE",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;TOFF GRD THEFT ATTEMPT",
+    "count": 1
+  },
+  {
+    "text": "\\W0.945946;TOFF GRD TRF BUSBAR STOLEN",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;19912",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;4101191150",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;ACTIVE 22/8/2023",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;F 4.11 RMU 31539",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;F-7.06",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;F2.15 RMU 31534",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;F2.18 RMU1204",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;F2.18 RMU31537",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;FCO OPEN NO CUST",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;JUMPER DISC.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;NEED OPR TO CHECK TAGS AT RMU 19817",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;NEED TO FIX BY MAINT.",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;P.267",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;RISER",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;SLBS 1044 NEED MAINT",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;SMR ABS",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;SMR ABS P.266",
+    "count": 1
+  },
+  {
+    "text": "\\W0.947368;SPARK AT ABS 549",
+    "count": 1
+  },
+  {
+    "text": "\\W0.953514;21508",
+    "count": 1
+  },
+  {
+    "text": "\\W0.953514;OHL CROSSING HERE FROM ABS460 FDR 4.06",
+    "count": 1
+  },
+  {
+    "text": "\\W0.953514;TRIPPED IN 29/09/2026 NEED CARLANCE FROM CUSTOMER",
+    "count": 1
+  },
+  {
+    "text": "\\W1.02267;SMART ACTIVE 01.11.23",
+    "count": 1
+  },
+  {
+    "text": "\\W1.09375; STOLEN TF-02305-ALREADY REPL. TERM. 3X70 WAITING FOR CUST. CLEARANCE TO ENERGIZE TF",
+    "count": 1
+  },
+  {
+    "text": "\\W1.09375;ACTIVE 14.05.2024",
+    "count": 1
+  },
+  {
+    "text": "043L3",
+    "count": 1
+  },
+  {
+    "text": "045L1",
+    "count": 1
+  },
+  {
+    "text": "045L2",
+    "count": 1
+  },
+  {
+    "text": "049l3",
+    "count": 1
+  },
+  {
+    "text": "049L5",
+    "count": 1
+  },
+  {
+    "text": "049L6",
+    "count": 1
+  },
+  {
+    "text": "059L1",
+    "count": 1
+  },
+  {
+    "text": "05B52",
+    "count": 1
+  },
+  {
+    "text": "05C01",
+    "count": 1
+  },
+  {
+    "text": "05C02",
+    "count": 1
+  },
+  {
+    "text": "05C03",
+    "count": 1
+  },
+  {
+    "text": "05C05",
+    "count": 1
+  },
+  {
+    "text": "05C08",
+    "count": 1
+  },
+  {
+    "text": "05C11",
+    "count": 1
+  },
+  {
+    "text": "05C12",
+    "count": 1
+  },
+  {
+    "text": "05C15",
+    "count": 1
+  },
+  {
+    "text": "05C30",
+    "count": 1
+  },
+  {
+    "text": "05C31",
+    "count": 1
+  },
+  {
+    "text": "05D26",
+    "count": 1
+  },
+  {
+    "text": "05G07",
+    "count": 1
+  },
+  {
+    "text": "05G08",
+    "count": 1
+  },
+  {
+    "text": "05G09",
+    "count": 1
+  },
+  {
+    "text": "05G23",
+    "count": 1
+  },
+  {
+    "text": "05G25",
+    "count": 1
+  },
+  {
+    "text": "05G26",
+    "count": 1
+  },
+  {
+    "text": "05G29",
+    "count": 1
+  },
+  {
+    "text": "05H01",
+    "count": 1
+  },
+  {
+    "text": "05H02",
+    "count": 1
+  },
+  {
+    "text": "05H03",
+    "count": 1
+  },
+  {
+    "text": "05H04",
+    "count": 1
+  },
+  {
+    "text": "05H10",
+    "count": 1
+  },
+  {
+    "text": "05H11",
+    "count": 1
+  },
+  {
+    "text": "05H14",
+    "count": 1
+  },
+  {
+    "text": "05H23",
+    "count": 1
+  },
+  {
+    "text": "05H30",
+    "count": 1
+  },
+  {
+    "text": "05HL2",
+    "count": 1
+  },
+  {
+    "text": "05HL3",
+    "count": 1
+  },
+  {
+    "text": "05I28",
+    "count": 1
+  },
+  {
+    "text": "05K09",
+    "count": 1
+  },
+  {
+    "text": "05K10",
+    "count": 1
+  },
+  {
+    "text": "05K11",
+    "count": 1
+  },
+  {
+    "text": "05K12",
+    "count": 1
+  },
+  {
+    "text": "05K13",
+    "count": 1
+  },
+  {
+    "text": "05K14",
+    "count": 1
+  },
+  {
+    "text": "05K15",
+    "count": 1
+  },
+  {
+    "text": "05K16",
+    "count": 1
+  },
+  {
+    "text": "05K20",
+    "count": 1
+  },
+  {
+    "text": "05K33",
+    "count": 1
+  },
+  {
+    "text": "05M19",
+    "count": 1
+  },
+  {
+    "text": "05O26",
+    "count": 1
+  },
+  {
+    "text": "05O28",
+    "count": 1
+  },
+  {
+    "text": "05O29",
+    "count": 1
+  },
+  {
+    "text": "05O30",
+    "count": 1
+  },
+  {
+    "text": "05O34",
+    "count": 1
+  },
+  {
+    "text": "05O35",
+    "count": 1
+  },
+  {
+    "text": "05O36",
+    "count": 1
+  },
+  {
+    "text": "05O39",
+    "count": 1
+  },
+  {
+    "text": "05P28",
+    "count": 1
+  },
+  {
+    "text": "05P31",
+    "count": 1
+  },
+  {
+    "text": "05Q16",
+    "count": 1
+  },
+  {
+    "text": "05R01",
+    "count": 1
+  },
+  {
+    "text": "05R02",
+    "count": 1
+  },
+  {
+    "text": "05R03",
+    "count": 1
+  },
+  {
+    "text": "05R07",
+    "count": 1
+  },
+  {
+    "text": "05R08",
+    "count": 1
+  },
+  {
+    "text": "05R09",
+    "count": 1
+  },
+  {
+    "text": "05R10",
+    "count": 1
+  },
+  {
+    "text": "064L1",
+    "count": 1
+  },
+  {
+    "text": "064L2",
+    "count": 1
+  },
+  {
+    "text": "065L1",
+    "count": 1
+  },
+  {
+    "text": "070L1",
+    "count": 1
+  },
+  {
+    "text": "070L2",
+    "count": 1
+  },
+  {
+    "text": "070L3",
+    "count": 1
+  },
+  {
+    "text": "070L4",
+    "count": 1
+  },
+  {
+    "text": "070L5",
+    "count": 1
+  },
+  {
+    "text": "075L1",
+    "count": 1
+  },
+  {
+    "text": "076L2",
+    "count": 1
+  },
+  {
+    "text": "07814 F-6.29",
+    "count": 1
+  },
+  {
+    "text": "07920 F-6.29",
+    "count": 1
+  },
+  {
+    "text": "084L1",
+    "count": 1
+  },
+  {
+    "text": "102L1",
+    "count": 1
+  },
+  {
+    "text": "109L2",
+    "count": 1
+  },
+  {
+    "text": "109L3",
+    "count": 1
+  },
+  {
+    "text": "10B57",
+    "count": 1
+  },
+  {
+    "text": "113L3",
+    "count": 1
+  },
+  {
+    "text": "117L3",
+    "count": 1
+  },
+  {
+    "text": "122L2",
+    "count": 1
+  },
+  {
+    "text": "124L3",
+    "count": 1
+  },
+  {
+    "text": "124L4",
+    "count": 1
+  },
+  {
+    "text": "124L7",
+    "count": 1
+  },
+  {
+    "text": "124L8",
+    "count": 1
+  },
+  {
+    "text": "130L4",
+    "count": 1
+  },
+  {
+    "text": "145L1",
+    "count": 1
+  },
+  {
+    "text": "146L1",
+    "count": 1
+  },
+  {
+    "text": "149L2",
+    "count": 1
+  },
+  {
+    "text": "150L1",
+    "count": 1
+  },
+  {
+    "text": "154L1",
+    "count": 1
+  },
+  {
+    "text": "189L1",
+    "count": 1
+  },
+  {
+    "text": "18A21",
+    "count": 1
+  },
+  {
+    "text": "18A32",
+    "count": 1
+  },
+  {
+    "text": "190L23",
+    "count": 1
+  },
+  {
+    "text": "195L2",
+    "count": 1
+  },
+  {
+    "text": "198L1",
+    "count": 1
+  },
+  {
+    "text": "200L2",
+    "count": 1
+  },
+  {
+    "text": "200L3",
+    "count": 1
+  },
+  {
+    "text": "200L4",
+    "count": 1
+  },
+  {
+    "text": "20A48",
+    "count": 1
+  },
+  {
+    "text": "20AL8",
+    "count": 1
+  },
+  {
+    "text": "21A02",
+    "count": 1
+  },
+  {
+    "text": "21A03",
+    "count": 1
+  },
+  {
+    "text": "21A04",
+    "count": 1
+  },
+  {
+    "text": "21A05",
+    "count": 1
+  },
+  {
+    "text": "21A06",
+    "count": 1
+  },
+  {
+    "text": "21A07",
+    "count": 1
+  },
+  {
+    "text": "21A08",
+    "count": 1
+  },
+  {
+    "text": "21A09",
+    "count": 1
+  },
+  {
+    "text": "21A10",
+    "count": 1
+  },
+  {
+    "text": "21A11",
+    "count": 1
+  },
+  {
+    "text": "21A12",
+    "count": 1
+  },
+  {
+    "text": "21A13",
+    "count": 1
+  },
+  {
+    "text": "21A14",
+    "count": 1
+  },
+  {
+    "text": "21A15",
+    "count": 1
+  },
+  {
+    "text": "21A17",
+    "count": 1
+  },
+  {
+    "text": "21A18",
+    "count": 1
+  },
+  {
+    "text": "21A19",
+    "count": 1
+  },
+  {
+    "text": "21A20",
+    "count": 1
+  },
+  {
+    "text": "21A22",
+    "count": 1
+  },
+  {
+    "text": "21A23",
+    "count": 1
+  },
+  {
+    "text": "21A24",
+    "count": 1
+  },
+  {
+    "text": "21A25",
+    "count": 1
+  },
+  {
+    "text": "21A26",
+    "count": 1
+  },
+  {
+    "text": "21A27",
+    "count": 1
+  },
+  {
+    "text": "21A29",
+    "count": 1
+  },
+  {
+    "text": "21A30",
+    "count": 1
+  },
+  {
+    "text": "21A48",
+    "count": 1
+  },
+  {
+    "text": "21A51",
+    "count": 1
+  },
+  {
+    "text": "21A52",
+    "count": 1
+  },
+  {
+    "text": "21A53",
+    "count": 1
+  },
+  {
+    "text": "21A54",
+    "count": 1
+  },
+  {
+    "text": "21A55",
+    "count": 1
+  },
+  {
+    "text": "21A56",
+    "count": 1
+  },
+  {
+    "text": "21A58",
+    "count": 1
+  },
+  {
+    "text": "21A59",
+    "count": 1
+  },
+  {
+    "text": "21A60",
+    "count": 1
+  },
+  {
+    "text": "21AL2",
+    "count": 1
+  },
+  {
+    "text": "21AL3",
+    "count": 1
+  },
+  {
+    "text": "21AL4",
+    "count": 1
+  },
+  {
+    "text": "21AL5",
+    "count": 1
+  },
+  {
+    "text": "224L4",
+    "count": 1
+  },
+  {
+    "text": "23012 F-6.06",
+    "count": 1
+  },
+  {
+    "text": "249L1",
+    "count": 1
+  },
+  {
+    "text": "252L1",
+    "count": 1
+  },
+  {
+    "text": "253L1",
+    "count": 1
+  },
+  {
+    "text": "275L1",
+    "count": 1
+  },
+  {
+    "text": "27A48",
+    "count": 1
+  },
+  {
+    "text": "292L1",
+    "count": 1
+  },
+  {
+    "text": "294L1",
+    "count": 1
+  },
+  {
+    "text": "294L3",
+    "count": 1
+  },
+  {
+    "text": "295L4",
+    "count": 1
+  },
+  {
+    "text": "295L5",
+    "count": 1
+  },
+  {
+    "text": "306L5",
+    "count": 1
+  },
+  {
+    "text": "30B37",
+    "count": 1
+  },
+  {
+    "text": "4-RMU",
+    "count": 1
+  },
+  {
+    "text": "404L1",
+    "count": 1
+  },
+  {
+    "text": "404L4",
+    "count": 1
+  },
+  {
+    "text": "404L5",
+    "count": 1
+  },
+  {
+    "text": "405L1",
+    "count": 1
+  },
+  {
+    "text": "420L5",
+    "count": 1
+  },
+  {
+    "text": "46A08",
+    "count": 1
+  },
+  {
+    "text": "46A11",
+    "count": 1
+  },
+  {
+    "text": "46A20",
+    "count": 1
+  },
+  {
+    "text": "46A35",
+    "count": 1
+  },
+  {
+    "text": "46A55",
+    "count": 1
+  },
+  {
+    "text": "46B03",
+    "count": 1
+  },
+  {
+    "text": "46B04",
+    "count": 1
+  },
+  {
+    "text": "46B05",
+    "count": 1
+  },
+  {
+    "text": "46B06",
+    "count": 1
+  },
+  {
+    "text": "46B07",
+    "count": 1
+  },
+  {
+    "text": "46B09",
+    "count": 1
+  },
+  {
+    "text": "46B11",
+    "count": 1
+  },
+  {
+    "text": "46B13",
+    "count": 1
+  },
+  {
+    "text": "46B14",
+    "count": 1
+  },
+  {
+    "text": "46B16",
+    "count": 1
+  },
+  {
+    "text": "46BL2",
+    "count": 1
+  },
+  {
+    "text": "47A01",
+    "count": 1
+  },
+  {
+    "text": "47A03",
+    "count": 1
+  },
+  {
+    "text": "47A04",
+    "count": 1
+  },
+  {
+    "text": "47A05",
+    "count": 1
+  },
+  {
+    "text": "47A06",
+    "count": 1
+  },
+  {
+    "text": "47A07",
+    "count": 1
+  },
+  {
+    "text": "47A08",
+    "count": 1
+  },
+  {
+    "text": "47A09",
+    "count": 1
+  },
+  {
+    "text": "47A10",
+    "count": 1
+  },
+  {
+    "text": "47A14",
+    "count": 1
+  },
+  {
+    "text": "47A15",
+    "count": 1
+  },
+  {
+    "text": "47A16",
+    "count": 1
+  },
+  {
+    "text": "47A17",
+    "count": 1
+  },
+  {
+    "text": "47A18",
+    "count": 1
+  },
+  {
+    "text": "47A19",
+    "count": 1
+  },
+  {
+    "text": "47A20",
+    "count": 1
+  },
+  {
+    "text": "47A21",
+    "count": 1
+  },
+  {
+    "text": "47A22",
+    "count": 1
+  },
+  {
+    "text": "47A23",
+    "count": 1
+  },
+  {
+    "text": "47A24",
+    "count": 1
+  },
+  {
+    "text": "47A25",
+    "count": 1
+  },
+  {
+    "text": "47A26",
+    "count": 1
+  },
+  {
+    "text": "47A27",
+    "count": 1
+  },
+  {
+    "text": "47A28",
+    "count": 1
+  },
+  {
+    "text": "47A30",
+    "count": 1
+  },
+  {
+    "text": "47A31",
+    "count": 1
+  },
+  {
+    "text": "47A32",
+    "count": 1
+  },
+  {
+    "text": "47A33",
+    "count": 1
+  },
+  {
+    "text": "47A34",
+    "count": 1
+  },
+  {
+    "text": "47A35",
+    "count": 1
+  },
+  {
+    "text": "47A36",
+    "count": 1
+  },
+  {
+    "text": "47A37",
+    "count": 1
+  },
+  {
+    "text": "47A38",
+    "count": 1
+  },
+  {
+    "text": "47A39",
+    "count": 1
+  },
+  {
+    "text": "47A42",
+    "count": 1
+  },
+  {
+    "text": "47A43",
+    "count": 1
+  },
+  {
+    "text": "47AL2",
+    "count": 1
+  },
+  {
+    "text": "47AL3",
+    "count": 1
+  },
+  {
+    "text": "47AL4",
+    "count": 1
+  },
+  {
+    "text": "47AL5",
+    "count": 1
+  },
+  {
+    "text": "47B08",
+    "count": 1
+  },
+  {
+    "text": "47B16",
+    "count": 1
+  },
+  {
+    "text": "47B18",
+    "count": 1
+  },
+  {
+    "text": "47B19",
+    "count": 1
+  },
+  {
+    "text": "47B30",
+    "count": 1
+  },
+  {
+    "text": "47B31",
+    "count": 1
+  },
+  {
+    "text": "47B32",
+    "count": 1
+  },
+  {
+    "text": "47BL3",
+    "count": 1
+  },
+  {
+    "text": "4WRMU-35421",
+    "count": 1
+  },
+  {
+    "text": "508L18",
+    "count": 1
+  },
+  {
+    "text": "525L5",
+    "count": 1
+  },
+  {
+    "text": "559-L5",
+    "count": 1
+  },
+  {
+    "text": "559L4",
+    "count": 1
+  },
+  {
+    "text": "559L5",
+    "count": 1
+  },
+  {
+    "text": "56117^J ^J ^J ^J0.945",
+    "count": 1
+  },
+  {
+    "text": "56118^J ^J ^J ^J0.945",
+    "count": 1
+  },
+  {
+    "text": "561L2",
+    "count": 1
+  },
+  {
+    "text": "570L3",
+    "count": 1
+  },
+  {
+    "text": "617L1",
+    "count": 1
+  },
+  {
+    "text": "618L4",
+    "count": 1
+  },
+  {
+    "text": "61A04",
+    "count": 1
+  },
+  {
+    "text": "61A05",
+    "count": 1
+  },
+  {
+    "text": "61A06",
+    "count": 1
+  },
+  {
+    "text": "61A07",
+    "count": 1
+  },
+  {
+    "text": "61A12",
+    "count": 1
+  },
+  {
+    "text": "61A13",
+    "count": 1
+  },
+  {
+    "text": "61A14",
+    "count": 1
+  },
+  {
+    "text": "61A15",
+    "count": 1
+  },
+  {
+    "text": "61A16",
+    "count": 1
+  },
+  {
+    "text": "61A17",
+    "count": 1
+  },
+  {
+    "text": "61A20",
+    "count": 1
+  },
+  {
+    "text": "61A21",
+    "count": 1
+  },
+  {
+    "text": "61A23",
+    "count": 1
+  },
+  {
+    "text": "61A24",
+    "count": 1
+  },
+  {
+    "text": "61A25",
+    "count": 1
+  },
+  {
+    "text": "61A26",
+    "count": 1
+  },
+  {
+    "text": "61A27",
+    "count": 1
+  },
+  {
+    "text": "61A29",
+    "count": 1
+  },
+  {
+    "text": "61A30",
+    "count": 1
+  },
+  {
+    "text": "61A31",
+    "count": 1
+  },
+  {
+    "text": "61A35",
+    "count": 1
+  },
+  {
+    "text": "61A45",
+    "count": 1
+  },
+  {
+    "text": "61AL1",
+    "count": 1
+  },
+  {
+    "text": "61AL3",
+    "count": 1
+  },
+  {
+    "text": "61AL4",
+    "count": 1
+  },
+  {
+    "text": "634L2",
+    "count": 1
+  },
+  {
+    "text": "634L3",
+    "count": 1
+  },
+  {
+    "text": "634L4",
+    "count": 1
+  },
+  {
+    "text": "634L5",
+    "count": 1
+  },
+  {
+    "text": "634L6",
+    "count": 1
+  },
+  {
+    "text": "635L1",
+    "count": 1
+  },
+  {
+    "text": "635L2",
+    "count": 1
+  },
+  {
+    "text": "635L3",
+    "count": 1
+  },
+  {
+    "text": "641L1",
+    "count": 1
+  },
+  {
+    "text": "641L2",
+    "count": 1
+  },
+  {
+    "text": "64C10",
+    "count": 1
+  },
+  {
+    "text": "662L2",
+    "count": 1
+  },
+  {
+    "text": "672-L1",
+    "count": 1
+  },
+  {
+    "text": "672L1",
+    "count": 1
+  },
+  {
+    "text": "72A30",
+    "count": 1
+  },
+  {
+    "text": "72B18",
+    "count": 1
+  },
+  {
+    "text": "72B20",
+    "count": 1
+  },
+  {
+    "text": "72B41",
+    "count": 1
+  },
+  {
+    "text": "75215^JW0.857143;09716",
+    "count": 1
+  },
+  {
+    "text": "752L1",
+    "count": 1
+  },
+  {
+    "text": "75502^J78x;75114",
+    "count": 1
+  },
+  {
+    "text": "75502^JW0.916667;149L1",
+    "count": 1
+  },
+  {
+    "text": "756L02",
+    "count": 1
+  },
+  {
+    "text": "756L4",
+    "count": 1
+  },
+  {
+    "text": "78806^JW0.916667;149L1",
+    "count": 1
+  },
+  {
+    "text": "85A09",
+    "count": 1
+  },
+  {
+    "text": "85A11",
+    "count": 1
+  },
+  {
+    "text": "85AL4",
+    "count": 1
+  },
+  {
+    "text": "85B13",
+    "count": 1
+  },
+  {
+    "text": "909 F-6.06",
+    "count": 1
+  },
+  {
+    "text": "A0",
+    "count": 1
+  },
+  {
+    "text": "A3",
+    "count": 1
+  },
+  {
+    "text": "A4",
+    "count": 1
+  },
+  {
+    "text": "ABS 141",
+    "count": 1
+  },
+  {
+    "text": "ABS 221",
+    "count": 1
+  },
+  {
+    "text": "ABS 274",
+    "count": 1
+  },
+  {
+    "text": "ABS-177 RISER",
+    "count": 1
+  },
+  {
+    "text": "ABS-545",
+    "count": 1
+  },
+  {
+    "text": "ABS943",
+    "count": 1
+  },
+  {
+    "text": "Active 01.11.23",
+    "count": 1
+  },
+  {
+    "text": "Active 13/12/2023",
+    "count": 1
+  },
+  {
+    "text": "ACTIVE 4/9/2023",
+    "count": 1
+  },
+  {
+    "text": "ACTIVE 5/9/2023",
+    "count": 1
+  },
+  {
+    "text": "ACTVIE 13/12/2023",
+    "count": 1
+  },
+  {
+    "text": "AT 20A48",
+    "count": 1
+  },
+  {
+    "text": "B-318",
+    "count": 1
+  },
+  {
+    "text": "B-341",
+    "count": 1
+  },
+  {
+    "text": "B-352",
+    "count": 1
+  },
+  {
+    "text": "B-354",
+    "count": 1
+  },
+  {
+    "text": "B-356",
+    "count": 1
+  },
+  {
+    "text": "B311",
+    "count": 1
+  },
+  {
+    "text": "B316",
+    "count": 1
+  },
+  {
+    "text": "B320",
+    "count": 1
+  },
+  {
+    "text": "B333 F-6.15",
+    "count": 1
+  },
+  {
+    "text": "B334",
+    "count": 1
+  },
+  {
+    "text": "B347",
+    "count": 1
+  },
+  {
+    "text": "B352",
+    "count": 1
+  },
+  {
+    "text": "B360",
+    "count": 1
+  },
+  {
+    "text": "BS0309",
+    "count": 1
+  },
+  {
+    "text": "BS0570",
+    "count": 1
+  },
+  {
+    "text": "BSP F-1",
+    "count": 1
+  },
+  {
+    "text": "BSP-06",
+    "count": 1
+  },
+  {
+    "text": "BSP-13",
+    "count": 1
+  },
+  {
+    "text": "BSP-21",
+    "count": 1
+  },
+  {
+    "text": "BSP-9",
+    "count": 1
+  },
+  {
+    "text": "BSP.22 RMU-019",
+    "count": 1
+  },
+  {
+    "text": "BSP.F-04",
+    "count": 1
+  },
+  {
+    "text": "BSP.F-06",
+    "count": 1
+  },
+  {
+    "text": "BSP.F-08",
+    "count": 1
+  },
+  {
+    "text": "BSP.F-09",
+    "count": 1
+  },
+  {
+    "text": "BSP.F-20",
+    "count": 1
+  },
+  {
+    "text": "BUS-1",
+    "count": 1
+  },
+  {
+    "text": "CABLE RISER FLASHOVER DUE TO FAULT AT CUST SIDE ALL 3 FCO OPEN & PUT H/TAG R/LOCK",
+    "count": 1
+  },
+  {
+    "text": "CUST-2",
+    "count": 1
+  },
+  {
+    "text": "CUST-337",
+    "count": 1
+  },
+  {
+    "text": "CUST-446",
+    "count": 1
+  },
+  {
+    "text": "CUST-454",
+    "count": 1
+  },
+  {
+    "text": "CUST-462",
+    "count": 1
+  },
+  {
+    "text": "CUST-496",
+    "count": 1
+  },
+  {
+    "text": "CUST-515",
+    "count": 1
+  },
+  {
+    "text": "CUST-517",
+    "count": 1
+  },
+  {
+    "text": "CUST-544",
+    "count": 1
+  },
+  {
+    "text": "CUST-545",
+    "count": 1
+  },
+  {
+    "text": "CUST-550",
+    "count": 1
+  },
+  {
+    "text": "CUST-551",
+    "count": 1
+  },
+  {
+    "text": "CUST-555",
+    "count": 1
+  },
+  {
+    "text": "CUST-580",
+    "count": 1
+  },
+  {
+    "text": "CUST-627",
+    "count": 1
+  },
+  {
+    "text": "CUST-636",
+    "count": 1
+  },
+  {
+    "text": "CUST-639",
+    "count": 1
+  },
+  {
+    "text": "CUST-647",
+    "count": 1
+  },
+  {
+    "text": "CUST-682",
+    "count": 1
+  },
+  {
+    "text": "CUST-694",
+    "count": 1
+  },
+  {
+    "text": "CUST-696",
+    "count": 1
+  },
+  {
+    "text": "CUST-699",
+    "count": 1
+  },
+  {
+    "text": "CUST-701",
+    "count": 1
+  },
+  {
+    "text": "CUST-731",
+    "count": 1
+  },
+  {
+    "text": "CUST-762",
+    "count": 1
+  },
+  {
+    "text": "CUST-764",
+    "count": 1
+  },
+  {
+    "text": "CUST-818",
+    "count": 1
+  },
+  {
+    "text": "CUST-838",
+    "count": 1
+  },
+  {
+    "text": "CUST-845",
+    "count": 1
+  },
+  {
+    "text": "CUST-899",
+    "count": 1
+  },
+  {
+    "text": "CUST-9",
+    "count": 1
+  },
+  {
+    "text": "CUST-909",
+    "count": 1
+  },
+  {
+    "text": "CUST-987",
+    "count": 1
+  },
+  {
+    "text": "D FDR#23",
+    "count": 1
+  },
+  {
+    "text": "D.F-06",
+    "count": 1
+  },
+  {
+    "text": "D.F-07",
+    "count": 1
+  },
+  {
+    "text": "D.F-08",
+    "count": 1
+  },
+  {
+    "text": "D.F-1",
+    "count": 1
+  },
+  {
+    "text": "D.F-11",
+    "count": 1
+  },
+  {
+    "text": "D.F-15",
+    "count": 1
+  },
+  {
+    "text": "D.F-2",
+    "count": 1
+  },
+  {
+    "text": "D.F-25",
+    "count": 1
+  },
+  {
+    "text": "D.F-26",
+    "count": 1
+  },
+  {
+    "text": "D.F-4",
+    "count": 1
+  },
+  {
+    "text": "DF 03",
+    "count": 1
+  },
+  {
+    "text": "DF-23",
+    "count": 1
+  },
+  {
+    "text": "DF-26",
+    "count": 1
+  },
+  {
+    "text": "DIVERTED TO RMU-29620",
+    "count": 1
+  },
+  {
+    "text": "EMERGENCY-2018",
+    "count": 1
+  },
+  {
+    "text": "EOS 584",
+    "count": 1
+  },
+  {
+    "text": "EOS 746",
+    "count": 1
+  },
+  {
+    "text": "EOS 869",
+    "count": 1
+  },
+  {
+    "text": "EOS 886",
+    "count": 1
+  },
+  {
+    "text": "F 6.01",
+    "count": 1
+  },
+  {
+    "text": "F 6.2",
+    "count": 1
+  },
+  {
+    "text": "F 6.32",
+    "count": 1
+  },
+  {
+    "text": "F 7.30",
+    "count": 1
+  },
+  {
+    "text": "F 7.34",
+    "count": 1
+  },
+  {
+    "text": "F-06 Q.PP",
+    "count": 1
+  },
+  {
+    "text": "F-09/QPP",
+    "count": 1
+  },
+  {
+    "text": "F-1 SAWAWI",
+    "count": 1
+  },
+  {
+    "text": "F-1.08",
+    "count": 1
+  },
+  {
+    "text": "F-1.19",
+    "count": 1
+  },
+  {
+    "text": "F-1.7",
+    "count": 1
+  },
+  {
+    "text": "F-10 Q.PP",
+    "count": 1
+  },
+  {
+    "text": "F-10, QPP",
+    "count": 1
+  },
+  {
+    "text": "F-11 Q.BSP",
+    "count": 1
+  },
+  {
+    "text": "F-13/Q.BSP",
+    "count": 1
+  },
+  {
+    "text": "F-16/QBSP",
+    "count": 1
+  },
+  {
+    "text": "F-17 Q.BSP",
+    "count": 1
+  },
+  {
+    "text": "F-17, QBSP",
+    "count": 1
+  },
+  {
+    "text": "F-2.9",
+    "count": 1
+  },
+  {
+    "text": "F-20 Q.BSP",
+    "count": 1
+  },
+  {
+    "text": "F-20/Q.BSP",
+    "count": 1
+  },
+  {
+    "text": "F-24 Q.BSP",
+    "count": 1
+  },
+  {
+    "text": "F-3.03",
+    "count": 1
+  },
+  {
+    "text": "F-3.04",
+    "count": 1
+  },
+  {
+    "text": "F-3.08",
+    "count": 1
+  },
+  {
+    "text": "F-3.6",
+    "count": 1
+  },
+  {
+    "text": "F-4,QPP",
+    "count": 1
+  },
+  {
+    "text": "F-4.2",
+    "count": 1
+  },
+  {
+    "text": "F-4.4",
+    "count": 1
+  },
+  {
+    "text": "F-4.5",
+    "count": 1
+  },
+  {
+    "text": "F-5.01 B321",
+    "count": 1
+  },
+  {
+    "text": "F-5.10",
+    "count": 1
+  },
+  {
+    "text": "F-5.11 B321",
+    "count": 1
+  },
+  {
+    "text": "F-5.19",
+    "count": 1
+  },
+  {
+    "text": "F-5.20",
+    "count": 1
+  },
+  {
+    "text": "F-5.4",
+    "count": 1
+  },
+  {
+    "text": "F-5.5",
+    "count": 1
+  },
+  {
+    "text": "F-6 Q.P/P",
+    "count": 1
+  },
+  {
+    "text": "F-6.16 RMU-1093",
+    "count": 1
+  },
+  {
+    "text": "F-6.2",
+    "count": 1
+  },
+  {
+    "text": "F-6.9",
+    "count": 1
+  },
+  {
+    "text": "F-7 QBSP",
+    "count": 1
+  },
+  {
+    "text": "F-QBSP 11",
+    "count": 1
+  },
+  {
+    "text": "F1.05",
+    "count": 1
+  },
+  {
+    "text": "F13/QBSP",
+    "count": 1
+  },
+  {
+    "text": "F2.18",
+    "count": 1
+  },
+  {
+    "text": "F5.16",
+    "count": 1
+  },
+  {
+    "text": "F5.21",
+    "count": 1
+  },
+  {
+    "text": "F6.05",
+    "count": 1
+  },
+  {
+    "text": "F6.20",
+    "count": 1
+  },
+  {
+    "text": "F6.26",
+    "count": 1
+  },
+  {
+    "text": "F6.28",
+    "count": 1
+  },
+  {
+    "text": "F7.03",
+    "count": 1
+  },
+  {
+    "text": "F7.05",
+    "count": 1
+  },
+  {
+    "text": "F7.08",
+    "count": 1
+  },
+  {
+    "text": "F7.10",
+    "count": 1
+  },
+  {
+    "text": "F7.11",
+    "count": 1
+  },
+  {
+    "text": "F7.17",
+    "count": 1
+  },
+  {
+    "text": "F7.18",
+    "count": 1
+  },
+  {
+    "text": "F7.20",
+    "count": 1
+  },
+  {
+    "text": "F7.20 RMU 260",
+    "count": 1
+  },
+  {
+    "text": "F8.18",
+    "count": 1
+  },
+  {
+    "text": "F8.23",
+    "count": 1
+  },
+  {
+    "text": "FDR-3.1",
+    "count": 1
+  },
+  {
+    "text": "FDR#03",
+    "count": 1
+  },
+  {
+    "text": "FDR#1.23",
+    "count": 1
+  },
+  {
+    "text": "FDR#4.06",
+    "count": 1
+  },
+  {
+    "text": "FDR#4.08",
+    "count": 1
+  },
+  {
+    "text": "FDR#5.08",
+    "count": 1
+  },
+  {
+    "text": "FDR#6.01",
+    "count": 1
+  },
+  {
+    "text": "FDR#6.02",
+    "count": 1
+  },
+  {
+    "text": "FDR#6.23",
+    "count": 1
+  },
+  {
+    "text": "FDR#6.30",
+    "count": 1
+  },
+  {
+    "text": "FDR#7.14",
+    "count": 1
+  },
+  {
+    "text": "FDR#7.17",
+    "count": 1
+  },
+  {
+    "text": "FDR#7.20",
+    "count": 1
+  },
+  {
+    "text": "FDR#7.33",
+    "count": 1
+  },
+  {
+    "text": "FDR#8.10",
+    "count": 1
+  },
+  {
+    "text": "FDR#8.13",
+    "count": 1
+  },
+  {
+    "text": "FDR#8.20",
+    "count": 1
+  },
+  {
+    "text": "FDR#8.3",
+    "count": 1
+  },
+  {
+    "text": "FDR#8.9",
+    "count": 1
+  },
+  {
+    "text": "FEDER BREAKER-01",
+    "count": 1
+  },
+  {
+    "text": "FEDER BREAKER-02",
+    "count": 1
+  },
+  {
+    "text": "FEEDER*16",
+    "count": 1
+  },
+  {
+    "text": "FEEDER#01",
+    "count": 1
+  },
+  {
+    "text": "G-11",
+    "count": 1
+  },
+  {
+    "text": "G-11 F-01",
+    "count": 1
+  },
+  {
+    "text": "GMT-01",
+    "count": 1
+  },
+  {
+    "text": "GMT-04",
+    "count": 1
+  },
+  {
+    "text": "GMT-05",
+    "count": 1
+  },
+  {
+    "text": "GMT-2",
+    "count": 1
+  },
+  {
+    "text": "GMT-27",
+    "count": 1
+  },
+  {
+    "text": "GMT-41",
+    "count": 1
+  },
+  {
+    "text": "GMT-5",
+    "count": 1
+  },
+  {
+    "text": "GMT-62",
+    "count": 1
+  },
+  {
+    "text": "i-89.1359,l89.1359,tz;\\W0.945946;Active 21/8/2023",
+    "count": 1
+  },
+  {
+    "text": "IN F-14/Q.BSP",
+    "count": 1
+  },
+  {
+    "text": "INSTALL AT 01/04/2024",
+    "count": 1
+  },
+  {
+    "text": "LISAFAH-GS F01 R312",
+    "count": 1
+  },
+  {
+    "text": "LISAFAH-GS F01 R312 QRYT. OFFICE",
+    "count": 1
+  },
+  {
+    "text": "LOAD TRANS TO FEEDER 7.20",
+    "count": 1
+  },
+  {
+    "text": "LOAD TRANS TO FEEDER 7.29",
+    "count": 1
+  },
+  {
+    "text": "LOW SF6",
+    "count": 1
+  },
+  {
+    "text": "N64048",
+    "count": 1
+  },
+  {
+    "text": "NEAR SUB-07",
+    "count": 1
+  },
+  {
+    "text": "NO SF6 GAS",
+    "count": 1
+  },
+  {
+    "text": "P-81",
+    "count": 1
+  },
+  {
+    "text": "PMT- 4",
+    "count": 1
+  },
+  {
+    "text": "PMT-01",
+    "count": 1
+  },
+  {
+    "text": "PMT-02",
+    "count": 1
+  },
+  {
+    "text": "PMT-03",
+    "count": 1
+  },
+  {
+    "text": "PMT-04",
+    "count": 1
+  },
+  {
+    "text": "PMT-06",
+    "count": 1
+  },
+  {
+    "text": "PMT-09",
+    "count": 1
+  },
+  {
+    "text": "PMT-32",
+    "count": 1
+  },
+  {
+    "text": "PMT-33",
+    "count": 1
+  },
+  {
+    "text": "PMT-36",
+    "count": 1
+  },
+  {
+    "text": "PMT-40",
+    "count": 1
+  },
+  {
+    "text": "PMT-43",
+    "count": 1
+  },
+  {
+    "text": "PMT-45",
+    "count": 1
+  },
+  {
+    "text": "PMT-5",
+    "count": 1
+  },
+  {
+    "text": "PMT-50",
+    "count": 1
+  },
+  {
+    "text": "PMT-53",
+    "count": 1
+  },
+  {
+    "text": "PMT-56",
+    "count": 1
+  },
+  {
+    "text": "PMT-59",
+    "count": 1
+  },
+  {
+    "text": "PMT-6",
+    "count": 1
+  },
+  {
+    "text": "PMT-66",
+    "count": 1
+  },
+  {
+    "text": "PMT-71",
+    "count": 1
+  },
+  {
+    "text": "PMT-74",
+    "count": 1
+  },
+  {
+    "text": "PMT-79",
+    "count": 1
+  },
+  {
+    "text": "PMT-81",
+    "count": 1
+  },
+  {
+    "text": "PMT-86",
+    "count": 1
+  },
+  {
+    "text": "PMT-99",
+    "count": 1
+  },
+  {
+    "text": "Q,B.S.P F-12",
+    "count": 1
+  },
+  {
+    "text": "Q. BSP F-11",
+    "count": 1
+  },
+  {
+    "text": "Q.BSP F-05",
+    "count": 1
+  },
+  {
+    "text": "Q.BSP F-12",
+    "count": 1
+  },
+  {
+    "text": "Q.F-11",
+    "count": 1
+  },
+  {
+    "text": "Q.MOB. H03",
+    "count": 1
+  },
+  {
+    "text": "Q.PP-7",
+    "count": 1
+  },
+  {
+    "text": "QAI. FDR-4",
+    "count": 1
+  },
+  {
+    "text": "QAI. FDR#07",
+    "count": 1
+  },
+  {
+    "text": "QAI. FDR#11",
+    "count": 1
+  },
+  {
+    "text": "QAISUMA F-09",
+    "count": 1
+  },
+  {
+    "text": "QAISUMA F-10",
+    "count": 1
+  },
+  {
+    "text": "QAISUMA F-11",
+    "count": 1
+  },
+  {
+    "text": "QBSP 03",
+    "count": 1
+  },
+  {
+    "text": "QBSP F-18",
+    "count": 1
+  },
+  {
+    "text": "QBSP F-21",
+    "count": 1
+  },
+  {
+    "text": "QBSP-01",
+    "count": 1
+  },
+  {
+    "text": "QBSP-02",
+    "count": 1
+  },
+  {
+    "text": "QBSP-05",
+    "count": 1
+  },
+  {
+    "text": "QBSP-08",
+    "count": 1
+  },
+  {
+    "text": "QBSP-09",
+    "count": 1
+  },
+  {
+    "text": "QBSP-10",
+    "count": 1
+  },
+  {
+    "text": "QBSP-14",
+    "count": 1
+  },
+  {
+    "text": "QBSP-20",
+    "count": 1
+  },
+  {
+    "text": "QBSP-23",
+    "count": 1
+  },
+  {
+    "text": "QBSP-F22",
+    "count": 1
+  },
+  {
+    "text": "QBSP. F-13",
+    "count": 1
+  },
+  {
+    "text": "QBSP.F-14",
+    "count": 1
+  },
+  {
+    "text": "QBSP.F-5",
+    "count": 1
+  },
+  {
+    "text": "QPP F-03",
+    "count": 1
+  },
+  {
+    "text": "QPP F-05",
+    "count": 1
+  },
+  {
+    "text": "QPP F-06",
+    "count": 1
+  },
+  {
+    "text": "QPP F-08",
+    "count": 1
+  },
+  {
+    "text": "QPP F-10",
+    "count": 1
+  },
+  {
+    "text": "QPP F-7",
+    "count": 1
+  },
+  {
+    "text": "QPP-07",
+    "count": 1
+  },
+  {
+    "text": "QPP-08",
+    "count": 1
+  },
+  {
+    "text": "RISER 1",
+    "count": 1
+  },
+  {
+    "text": "RISER 2",
+    "count": 1
+  },
+  {
+    "text": "RISER 523",
+    "count": 1
+  },
+  {
+    "text": "RISER 531",
+    "count": 1
+  },
+  {
+    "text": "RISER TO F-6.08",
+    "count": 1
+  },
+  {
+    "text": "RMU 01",
+    "count": 1
+  },
+  {
+    "text": "RMU 04340",
+    "count": 1
+  },
+  {
+    "text": "RMU 06028",
+    "count": 1
+  },
+  {
+    "text": "RMU 08812",
+    "count": 1
+  },
+  {
+    "text": "RMU 08816",
+    "count": 1
+  },
+  {
+    "text": "RMU 1039",
+    "count": 1
+  },
+  {
+    "text": "RMU 1058",
+    "count": 1
+  },
+  {
+    "text": "RMU 1108",
+    "count": 1
+  },
+  {
+    "text": "RMU 1111",
+    "count": 1
+  },
+  {
+    "text": "RMU 1171",
+    "count": 1
+  },
+  {
+    "text": "RMU 15122 F-2.12",
+    "count": 1
+  },
+  {
+    "text": "RMU 15411",
+    "count": 1
+  },
+  {
+    "text": "RMU 183",
+    "count": 1
+  },
+  {
+    "text": "RMU 288",
+    "count": 1
+  },
+  {
+    "text": "RMU 293",
+    "count": 1
+  },
+  {
+    "text": "RMU 35314",
+    "count": 1
+  },
+  {
+    "text": "RMU 3WAY",
+    "count": 1
+  },
+  {
+    "text": "RMU 4 WAY",
+    "count": 1
+  },
+  {
+    "text": "RMU 41712",
+    "count": 1
+  },
+  {
+    "text": "RMU 41713",
+    "count": 1
+  },
+  {
+    "text": "RMU 41715",
+    "count": 1
+  },
+  {
+    "text": "RMU 41721",
+    "count": 1
+  },
+  {
+    "text": "RMU 41723",
+    "count": 1
+  },
+  {
+    "text": "RMU 47A45",
+    "count": 1
+  },
+  {
+    "text": "RMU 571017",
+    "count": 1
+  },
+  {
+    "text": "RMU 66703",
+    "count": 1
+  },
+  {
+    "text": "RMU 670",
+    "count": 1
+  },
+  {
+    "text": "RMU 7624",
+    "count": 1
+  },
+  {
+    "text": "RMU 801",
+    "count": 1
+  },
+  {
+    "text": "RMU 824",
+    "count": 1
+  },
+  {
+    "text": "RMU 899",
+    "count": 1
+  },
+  {
+    "text": "RMU 908",
+    "count": 1
+  },
+  {
+    "text": "RMU 916",
+    "count": 1
+  },
+  {
+    "text": "RMU-01840",
+    "count": 1
+  },
+  {
+    "text": "RMU-023",
+    "count": 1
+  },
+  {
+    "text": "RMU-1066",
+    "count": 1
+  },
+  {
+    "text": "RMU-1093",
+    "count": 1
+  },
+  {
+    "text": "RMU-1117",
+    "count": 1
+  },
+  {
+    "text": "RMU-1128",
+    "count": 1
+  },
+  {
+    "text": "RMU-1129",
+    "count": 1
+  },
+  {
+    "text": "RMU-31721",
+    "count": 1
+  },
+  {
+    "text": "RMU-402",
+    "count": 1
+  },
+  {
+    "text": "RMU-52102",
+    "count": 1
+  },
+  {
+    "text": "RMU-61144",
+    "count": 1
+  },
+  {
+    "text": "RMU-629",
+    "count": 1
+  },
+  {
+    "text": "RMU-666",
+    "count": 1
+  },
+  {
+    "text": "RMU-771",
+    "count": 1
+  },
+  {
+    "text": "RMU#479",
+    "count": 1
+  },
+  {
+    "text": "RMU#666",
+    "count": 1
+  },
+  {
+    "text": "RMU#667",
+    "count": 1
+  },
+  {
+    "text": "RMU#668",
+    "count": 1
+  },
+  {
+    "text": "RMU#669",
+    "count": 1
+  },
+  {
+    "text": "RMU#670",
+    "count": 1
+  },
+  {
+    "text": "RMU#747",
+    "count": 1
+  },
+  {
+    "text": "RMU#851",
+    "count": 1
+  },
+  {
+    "text": "RMU002",
+    "count": 1
+  },
+  {
+    "text": "RMU1015",
+    "count": 1
+  },
+  {
+    "text": "RMU813",
+    "count": 1
+  },
+  {
+    "text": "S/S-0303",
+    "count": 1
+  },
+  {
+    "text": "SABS115",
+    "count": 1
+  },
+  {
+    "text": "SADAWI-F-01",
+    "count": 1
+  },
+  {
+    "text": "SADAWI-F-02",
+    "count": 1
+  },
+  {
+    "text": "SET-UP T/F 1250 KVA",
+    "count": 1
+  },
+  {
+    "text": "SET-UP T/F 480-13800V",
+    "count": 1
+  },
+  {
+    "text": "sf6 gas low",
+    "count": 1
+  },
+  {
+    "text": "SL 108",
+    "count": 1
+  },
+  {
+    "text": "SL N64048",
+    "count": 1
+  },
+  {
+    "text": "SL-493",
+    "count": 1
+  },
+  {
+    "text": "SLBS 314",
+    "count": 1
+  },
+  {
+    "text": "SLD - 2019",
+    "count": 1
+  },
+  {
+    "text": "SRMU 07033",
+    "count": 1
+  },
+  {
+    "text": "SRMU-436",
+    "count": 1
+  },
+  {
+    "text": "SS-309",
+    "count": 1
+  },
+  {
+    "text": "STOLEN TF-65623",
+    "count": 1
+  },
+  {
+    "text": "SUB - 06 TO SUB - 08",
+    "count": 1
+  },
+  {
+    "text": "SUB-01",
+    "count": 1
+  },
+  {
+    "text": "SUB-02",
+    "count": 1
+  },
+  {
+    "text": "SUB-03",
+    "count": 1
+  },
+  {
+    "text": "SUB-04",
+    "count": 1
+  },
+  {
+    "text": "SUB-05",
+    "count": 1
+  },
+  {
+    "text": "SUB-06",
+    "count": 1
+  },
+  {
+    "text": "SUB-07",
+    "count": 1
+  },
+  {
+    "text": "SUB-08",
+    "count": 1
+  },
+  {
+    "text": "t89.7616;BSP.F-18",
+    "count": 1
+  },
+  {
+    "text": "t966.032;F-02",
+    "count": 1
+  },
+  {
+    "text": "TF-66602 DISC.CUST CBL & TRANSFER TO 66605 & 66606",
+    "count": 1
+  },
+  {
+    "text": "TF-86",
+    "count": 1
+  },
+  {
+    "text": "TO EOS-794",
+    "count": 1
+  },
+  {
+    "text": "TO F-3.09",
+    "count": 1
+  },
+  {
+    "text": "TO F-3.9",
+    "count": 1
+  },
+  {
+    "text": "TO N.O AT SRMU-60922",
+    "count": 1
+  },
+  {
+    "text": "TO QBSP F-12",
+    "count": 1
+  },
+  {
+    "text": "TO REDUCE LOAD FOR HFR1 BUS1&2",
+    "count": 1
+  },
+  {
+    "text": "TO RMU 41711",
+    "count": 1
+  },
+  {
+    "text": "TO RMU 47B31",
+    "count": 1
+  },
+  {
+    "text": "TO RMU-25414",
+    "count": 1
+  },
+  {
+    "text": "TO SRMU 239 @F#7.14",
+    "count": 1
+  },
+  {
+    "text": "TO SRMU-445",
+    "count": 1
+  },
+  {
+    "text": "TR3",
+    "count": 1
+  },
+  {
+    "text": "U,F-13",
+    "count": 1
+  },
+  {
+    "text": "U/S-07031",
+    "count": 1
+  },
+  {
+    "text": "U/S-15015",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-02",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-03",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-05",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-06",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-07",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-08",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-09",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-10",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-11",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-12",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-15",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-16",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-17",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-18",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-19",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-20",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-21",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-23",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-25",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-27",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-28",
+    "count": 1
+  },
+  {
+    "text": "UNI.F-29",
+    "count": 1
+  },
+  {
+    "text": "VIP-1",
+    "count": 1
+  },
+  {
+    "text": "VR-358",
+    "count": 1
+  },
+  {
+    "text": "WHILE REPLACE BY SMART CABLE FOUND CONNECTED IN SW.1136 F7.01 & KEPT IT GRD AS BEFORE",
+    "count": 1
+  },
+  {
+    "text": "WHILE REPLACE BY SMART CABLE FOUND CONNECTED IN SW.SPARE (PROP. RMU083) & KEPT IT GRD AS BEFORE",
+    "count": 1
+  }
+]

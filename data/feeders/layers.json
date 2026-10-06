@@ -1,0 +1,150 @@
+[
+  {
+    "layer": "d_tf no",
+    "count": 21564
+  },
+  {
+    "layer": "d_switch",
+    "count": 4962
+  },
+  {
+    "layer": "Level 37",
+    "count": 4492
+  },
+  {
+    "layer": "d_eos no",
+    "count": 2580
+  },
+  {
+    "layer": "GRID STATION  04",
+    "count": 1836
+  },
+  {
+    "layer": "fedr no",
+    "count": 1506
+  },
+  {
+    "layer": "d_fco text",
+    "count": 1335
+  },
+  {
+    "layer": "RMU",
+    "count": 1264
+  },
+  {
+    "layer": "GRID STATION 01",
+    "count": 1168
+  },
+  {
+    "layer": "ABS NUMBER",
+    "count": 909
+  },
+  {
+    "layer": "0",
+    "count": 852
+  },
+  {
+    "layer": "d_ug cable",
+    "count": 299
+  },
+  {
+    "layer": "FDR  3  01",
+    "count": 245
+  },
+  {
+    "layer": "FDR  2  17",
+    "count": 124
+  },
+  {
+    "layer": "FDR  3  02",
+    "count": 106
+  },
+  {
+    "layer": "CONTRACTOR NAME",
+    "count": 98
+  },
+  {
+    "layer": "d_village name",
+    "count": 84
+  },
+  {
+    "layer": "FDR  4  02",
+    "count": 59
+  },
+  {
+    "layer": "(NO LAYER)",
+    "count": 39
+  },
+  {
+    "layer": "d_unit sub",
+    "count": 29
+  },
+  {
+    "layer": "FDR  5  05",
+    "count": 20
+  },
+  {
+    "layer": "d_eos",
+    "count": 13
+  },
+  {
+    "layer": "D FDR  03",
+    "count": 12
+  },
+  {
+    "layer": "FDR  5  07",
+    "count": 12
+  },
+  {
+    "layer": "F11-6 (B324)",
+    "count": 7
+  },
+  {
+    "layer": "FDR  4  13",
+    "count": 6
+  },
+  {
+    "layer": "SECTOR BOUNDARY",
+    "count": 6
+  },
+  {
+    "layer": "ABS",
+    "count": 4
+  },
+  {
+    "layer": "HV TFMR",
+    "count": 2
+  },
+  {
+    "layer": "O H MAIN FEEDER",
+    "count": 2
+  },
+  {
+    "layer": "FDR  1  05",
+    "count": 2
+  },
+  {
+    "layer": "SW N O",
+    "count": 2
+  },
+  {
+    "layer": "FDR  2  05",
+    "count": 1
+  },
+  {
+    "layer": "d_ug main line",
+    "count": 1
+  },
+  {
+    "layer": "d_tf",
+    "count": 1
+  },
+  {
+    "layer": "FUSE CUT OUT",
+    "count": 1
+  },
+  {
+    "layer": "FDR  2  02",
+    "count": 1
+  }
+]
