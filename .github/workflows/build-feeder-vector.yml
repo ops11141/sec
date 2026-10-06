@@ -1,0 +1,43 @@
+name: Build feeder vector drawing
+on:
+  push:
+    paths:
+      - 'cad/FINAL DISPATCH - UPDATE.dwg'
+      - '.github/workflows/build-feeder-vector.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Install CAD converter
+        run: npm install --no-save @mlightcad/cad-simple-viewer-cli@1.7.4
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Export DWG to SVG
+        run: |
+          mkdir -p build-cad data/feeders
+          printf 'zoom\ne\ncsvg\nquit\n' > build-cad/export.scr
+          npx cad-simple-viewer-cli -i 'cad/FINAL DISPATCH - UPDATE.dwg' -s build-cad/export.scr -o build-cad/out --mode read --open-view-mode extents
+          SVG=$(find build-cad/out -maxdepth 1 -type f -iname '*.svg' | head -n 1)
+          test -n "$SVG"
+          cp "$SVG" data/feeders/full-drawing.svg
+          wc -c data/feeders/full-drawing.svg
+      - name: Commit vector drawing
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/feeders/full-drawing.svg
+          if git diff --cached --quiet; then
+            echo 'No SVG changes.'
+          else
+            git commit -m 'Generate vector feeder drawing'
+            git pull --rebase origin main
+            git push
+          fi
