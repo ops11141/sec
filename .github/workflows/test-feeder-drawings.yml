@@ -1,0 +1,86 @@
+name: Test feeder drawings
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install LibreDWG
+        run: |
+          sudo apt-get update
+
+          sudo apt-get install -y \
+            build-essential \
+            autoconf \
+            automake \
+            libtool \
+            pkg-config \
+            libpcre2-dev \
+            libxml2-dev \
+            texinfo \
+            wget
+
+          cd /tmp
+
+          wget -q \
+            https://ftp.gnu.org/pub/gnu/libredwg/libredwg-0.14.tar.xz
+
+          tar -xf libredwg-0.14.tar.xz
+
+          cd libredwg-0.14
+
+          ./configure \
+            --disable-shared \
+            --disable-bindings \
+            --disable-docs
+
+          make -j2
+
+          sudo make install
+
+          sudo ldconfig
+
+          dwg2dxf --version
+
+      - name: Install Python
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install ezdxf matplotlib
+
+      - name: Convert DWG to DXF
+        run: |
+          dwg2dxf \
+            -o /tmp/final-dispatch.dxf \
+            "cad/FINAL DISPATCH - UPDATE.dwg"
+
+      - name: Render three test feeders
+        run: |
+          python3 tools/test-feeder-drawings.py
+
+      - name: Commit test drawings
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/feeders/test-drawings
+
+          if git diff --cached --quiet; then
+            echo "No test drawing changes."
+          else
+            git commit -m "Test feeder drawings"
+            git push
+          fi
