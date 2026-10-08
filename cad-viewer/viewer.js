@@ -1836,22 +1836,221 @@ function toggleCameraMenu() {
   button.setAttribute('aria-expanded', open ? 'true' : 'false');
 }
 
+function detectCurrentFrameScreenBounds(options = {}) {
+  if (!canvas || !canvas.width || !canvas.height) return null;
+  // Camera capture is intentionally independent of the search box.
+  // Always use the center of the CURRENT viewport, so a previous search
+  // can never cause the camera to capture another feeder.
+  const targetWorldX = (canvas.clientWidth / 2 - camera.x) / camera.scale;
+  const targetWorldY = (camera.y - canvas.clientHeight / 2) / camera.scale;
+
+  const ratio = Math.max(1, Math.min(devicePixelRatio || 1, 2));
+  const targetX = camera.x + targetWorldX * camera.scale;
+  const targetY = camera.y - targetWorldY * camera.scale;
+  const px = Math.round(targetX * ratio);
+  const py = Math.round(targetY * ratio);
+  if (px < 0 || py < 0 || px >= canvas.width || py >= canvas.height) return null;
+
+  const ctx = canvas.getContext('2d', { willReadFrequently: true });
+  const image = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = image.data;
+
+  // The drawing frames are cyan. Detect the frame color specifically instead
+  // of treating every long CAD line as a possible frame boundary.
+  const isFramePixel = (x, y) => {
+    const o = (y * canvas.width + x) * 4;
+    const red = data[o], green = data[o + 1], blue = data[o + 2], alpha = data[o + 3];
+    return alpha > 100 && red < 100 && green > 95 && blue > 120 &&
+      green + blue > red * 2 + 130;
+  };
+
+  const step = 2;
+  const minHRun = Math.max(40, Math.floor(canvas.width * (options.allowSmallFrame ? 0.16 : 0.45) / step));
+  const minVRun = Math.max(40, Math.floor(canvas.height * (options.allowSmallFrame ? 0.10 : 0.25) / step));
+
+  function horizontalRunAt(y) {
+    let best = 0, run = 0;
+    for (let x = 0; x < canvas.width; x += step) {
+      if (isFramePixel(x, y)) {
+        run += 1;
+        if (run > best) best = run;
+      } else run = 0;
+    }
+    return best;
+  }
+
+  function verticalRunAt(x) {
+    let best = 0, run = 0;
+    for (let y = 0; y < canvas.height; y += step) {
+      if (isFramePixel(x, y)) {
+        run += 1;
+        if (run > best) best = run;
+      } else run = 0;
+    }
+    return best;
+  }
+
+  function findHorizontal(from, direction) {
+    const limit = direction < 0 ? 0 : canvas.height - 1;
+    for (let y = from; direction < 0 ? y >= limit : y <= limit; y += direction * step) {
+      if (horizontalRunAt(y) >= minHRun) return y;
+    }
+    return null;
+  }
+
+  function findVertical(from, direction) {
+    const limit = direction < 0 ? 0 : canvas.width - 1;
+    for (let x = from; direction < 0 ? x >= limit : x <= limit; x += direction * step) {
+      if (verticalRunAt(x) >= minVRun) return x;
+    }
+    return null;
+  }
+
+  const top = findHorizontal(py, -1);
+  const bottom = findHorizontal(py, 1);
+  const left = findVertical(px, -1);
+  const right = findVertical(px, 1);
+  if (top === null || bottom === null || left === null || right === null) return null;
+
+  const minWidth = canvas.width * (options.allowSmallFrame ? 0.10 : 0.35);
+  const minHeight = canvas.height * (options.allowSmallFrame ? 0.06 : 0.15);
+  if (right - left < minWidth || bottom - top < minHeight) return null;
+
+  return {
+    left: left / ratio,
+    top: top / ratio,
+    right: right / ratio,
+    bottom: bottom / ratio,
+  };
+}
+
+
+async function waitForDrawingFrame() {
+  await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+}
+
 async function captureCurrentDrawing() {
   if (!canvas || !canvas.width || !canvas.height) return;
+
+  const savedCamera = { ...camera };
+  let frame = detectCurrentFrameScreenBounds();
+  let captureWorld = null;
+
+  // On phones the complete cyan frame can be larger than the viewport.
+  // Temporarily zoom out and center on the searched item until all four
+  // frame borders are visible. The user's current zoom is restored afterwards.
+  if (!frame) {
+    // Search is deliberately ignored during capture. Zoom out around
+    // the CURRENT viewport center until the feeder frame is detectable.
+    const targetWorldX = (canvas.clientWidth / 2 - savedCamera.x) / savedCamera.scale;
+    const targetWorldY = (savedCamera.y - canvas.clientHeight / 2) / savedCamera.scale;
+
+    // If the current feeder is larger than the phone viewport, zoom out
+    // around the current view center until its frame becomes detectable.
+    for (let attempt = 0; attempt < 7 && !frame; attempt += 1) {
+      const factor = attempt === 0 ? 0.72 : 0.68;
+      camera.scale = Math.max(camera.scale * factor, 0.000001);
+      camera.x = canvas.clientWidth / 2 - targetWorldX * camera.scale;
+      camera.y = canvas.clientHeight / 2 + targetWorldY * camera.scale;
+      scheduleRender();
+      await waitForDrawingFrame();
+      frame = detectCurrentFrameScreenBounds({ allowSmallFrame: true });
+    }
+  }
+
+  if (frame) {
+    // Frame coordinates must be converted using the camera that produced
+    // the detected frame (important when the phone had to zoom out first).
+    const frameCamera = { ...camera };
+    const pad = 5;
+    const left = Math.max(0, frame.left - pad);
+    const top = Math.max(0, frame.top - pad);
+    const right = Math.min(canvas.clientWidth, frame.right + pad);
+    const bottom = Math.min(canvas.clientHeight, frame.bottom + pad);
+    const worldLeft = (left - frameCamera.x) / frameCamera.scale;
+    const worldRight = (right - frameCamera.x) / frameCamera.scale;
+    const worldTop = (frameCamera.y - top) / frameCamera.scale;
+    const worldBottom = (frameCamera.y - bottom) / frameCamera.scale;
+    const worldWidth = Math.max(worldRight - worldLeft, 1e-9);
+    const worldHeight = Math.max(worldTop - worldBottom, 1e-9);
+    const centerX = (worldLeft + worldRight) / 2;
+    const centerY = (worldTop + worldBottom) / 2;
+
+    // Render the vector drawing again into a large temporary canvas.
+    // This is the key mobile improvement: we do NOT enlarge a tiny phone
+    // screenshot. Lines and text are redrawn at high resolution.
+    const outputCssWidth = 1600;
+    const outputCssHeight = Math.max(800, Math.round(outputCssWidth * worldHeight / worldWidth));
+    const outputPixelRatio = 2;
+    const outputWidth = outputCssWidth * outputPixelRatio;
+    const outputHeight = outputCssHeight * outputPixelRatio;
+
+    const originalStyle = canvas.getAttribute('style');
+    const originalWidth = canvas.width;
+    const originalHeight = canvas.height;
+
+    camera = {
+      scale: Math.min(outputCssWidth / worldWidth, outputCssHeight / worldHeight) * 0.97,
+      x: outputCssWidth / 2 - centerX * Math.min(outputCssWidth / worldWidth, outputCssHeight / worldHeight) * 0.97,
+      y: outputCssHeight / 2 + centerY * Math.min(outputCssWidth / worldWidth, outputCssHeight / worldHeight) * 0.97,
+    };
+
+    // Move the real canvas off-screen while it is temporarily enlarged.
+    // Keeping it mounted preserves all existing rendering code and text/font
+    // handling, while the user never sees the temporary capture surface.
+    canvas.style.position = 'fixed';
+    canvas.style.left = '-20000px';
+    canvas.style.top = '0';
+    canvas.style.width = outputCssWidth + 'px';
+    canvas.style.height = outputCssHeight + 'px';
+    canvas.style.visibility = 'hidden';
+    canvas.width = outputWidth;
+    canvas.height = outputHeight;
+
+    render();
+    await waitForDrawingFrame();
+
+    const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+
+    canvas.width = originalWidth;
+    canvas.height = originalHeight;
+    if (originalStyle === null) canvas.removeAttribute('style');
+    else canvas.setAttribute('style', originalStyle);
+
+    camera = savedCamera;
+    interactionCache = undefined;
+    interactionCacheCamera = undefined;
+    scheduleRender();
+
+    if (!blob) throw new Error('تعذر إنشاء صورة الرسم');
+    const stamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+    const name = 'feeder-frame-hq-' + stamp + '.png';
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = name;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1500);
+    return;
+  }
+
   const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+  camera = savedCamera;
+  scheduleRender();
+
   if (!blob) throw new Error('تعذر إنشاء صورة الرسم');
   const stamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
-  const name = 'feeder-drawing-' + stamp + '.png';
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
-  link.download = name;
+  link.download = 'feeder-drawing-' + stamp + '.png';
   document.body.appendChild(link);
   link.click();
   link.remove();
   setTimeout(() => URL.revokeObjectURL(url), 1500);
 }
-
 async function shareCurrentDrawingFromViewer() {
   if (!canvas || !canvas.width || !canvas.height) return;
   const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
