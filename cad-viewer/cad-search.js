@@ -95,7 +95,6 @@
         renderBrowseList();
       };
       button.addEventListener('click', (event) => {
-        if (event.target.closest('.feeder-cad-location')) return;
         selectResult();
       });
       button.addEventListener('keydown', (event) => {
