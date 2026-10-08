@@ -1310,6 +1310,27 @@ function renderTexts(ratio) {
   }
 }
 
+let searchHighlightState = { query: '', matches: [], currentIndex: -1 };
+
+function renderSearchHighlights(ratio) {
+  const state = searchHighlightState;
+  if (!state?.matches?.length || activeRenderer !== 'cad') return;
+  state.matches.forEach((item, index) => {
+    if (!Number.isFinite(item.x) || !Number.isFinite(item.y)) return;
+    const width = Math.max(Number(item.extentWidth) || 0, (Number(item.height) || 1) * Math.max(String(item.text || '').length, 4));
+    const height = Math.max(Number(item.extentHeight) || 0, (Number(item.height) || 1) * 4);
+    const radius = Math.max(width, height) * 0.72;
+    context.save();
+    context.beginPath();
+    context.arc(item.x, item.y, radius, 0, Math.PI * 2);
+    context.strokeStyle = index === state.currentIndex ? '#ff3333' : '#ff5555';
+    context.lineWidth = (index === state.currentIndex ? 3.2 : 2.1) / Math.max(camera.scale, 1e-9);
+    context.globalAlpha = index === state.currentIndex ? 1 : 0.78;
+    context.stroke();
+    context.restore();
+  });
+}
+
 function render() {
   renderPending = false;
   const ratio = Math.min(devicePixelRatio || 1, 2);
@@ -1327,6 +1348,7 @@ function render() {
       context.stroke(path);
     }
   }
+  renderSearchHighlights(ratio);
   context.restore();
   if (visibleStages.has('text')) renderTexts(ratio);
   refreshInteractionCache();
@@ -1736,19 +1758,33 @@ canvas.addEventListener('wheel', onCanvasLoadingWheel, { passive: false });
 window.addEventListener('resize', resize);
 window.cadViewerSearch = function(query, occurrence = 0) {
   const q = String(query || '').trim().toLowerCase();
-  if (!q) return { found: false, count: 0 };
+  if (!q) {
+    searchHighlightState = { query: '', matches: [], currentIndex: -1 };
+    scheduleRender();
+    return { found: false, count: 0 };
+  }
   const pool = [];
-  const add = (item) => {
-    if (item && item.text) pool.push(item);
-  };
+  const add = (item) => { if (item && item.text) pool.push(item); };
   for (const item of textItems) add(item);
   for (const block of blocks.values()) {
     for (const item of (block.directTexts || [])) add(item);
   }
   const matches = pool.filter(item => String(item.text).toLowerCase().includes(q));
-  if (!matches.length) return { found: false, count: 0 };
+  if (!matches.length) {
+    searchHighlightState = { query: q, matches: [], currentIndex: -1 };
+    scheduleRender();
+    return { found: false, count: 0 };
+  }
   const index = Math.max(0, Math.min(Number(occurrence) || 0, matches.length - 1));
   const item = matches[index];
+  searchHighlightState = {
+    query: q,
+    matches: matches.map(match => ({
+      x: Number(match.x), y: Number(match.y), text: String(match.text || ''),
+      height: Number(match.height) || 1, extentWidth: Number(match.extentWidth) || 0, extentHeight: Number(match.extentHeight) || 0,
+    })),
+    currentIndex: index,
+  };
   const width = Math.max(item.extentWidth || item.height * Math.max(String(item.text).length, 4), item.height * 8);
   const height = Math.max(item.extentHeight || item.height * 4, item.height * 4);
   const targetScale = Math.min(canvas.clientWidth / width, canvas.clientHeight / height) * 0.35;
@@ -1756,7 +1792,20 @@ window.cadViewerSearch = function(query, occurrence = 0) {
   camera.x = canvas.clientWidth / 2 - item.x * camera.scale;
   camera.y = canvas.clientHeight / 2 + item.y * camera.scale;
   scheduleRender();
-  return { found: true, count: matches.length, index, text: item.text, x: item.x, y: item.y };
+  return {
+    found: true,
+    count: matches.length,
+    index,
+    text: item.text,
+    x: item.x,
+    y: item.y,
+    results: searchHighlightState.matches.map((match, resultIndex) => ({
+      index: resultIndex,
+      text: match.text,
+      x: match.x,
+      y: match.y,
+    })),
+  };
 };
 window.cadViewerGetTextCount = function() {
   return textItems.length;
